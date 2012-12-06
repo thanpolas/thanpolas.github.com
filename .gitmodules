@@ -1,0 +1,3 @@
+[submodule "assets/themes/thanpolas/bootstrap"]
+	path = assets/themes/thanpolas/bootstrap
+	url = https://github.com/twitter/bootstrap.git
