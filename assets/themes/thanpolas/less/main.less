@@ -4,40 +4,17 @@
 
 @import "../bootstrap/less/bootstrap.less";
 
-.container-narrow {
-  max-width: 770px;
-  margin: 0 auto;
-}
-.masthead {
-  margin-top: 40px;
-  padding: 20px;
-  .border-radius(6px);
+@colorTopBar: #E42200;
+@colorH1: #E50000;
+@colorH2: #E50000;
+@whitepaper-bg: url(/assets/site-img/white_wall/white_wall.png) repeat 0 0;
+//@footer-bg: url('@{noise-100-90-5}') repeat 0 0 @subtle;
+
+body {
+  //border-top: 3px solid @colorTopBar;
   background-color: #F5F5F5;
+
 }
 
-.masthead h1 {
-  text-align: right;
-  font-size: 400%;
-}
+@import "frontpage.less";
 
-.masthead h2 {
-  text-align: right;
-}
-
-.masthead ul {
-  margin-top: 120px;
-}
-
-.masthead li {
-  float: left;
-  margin-left: 6px;
-}
-
-.social-unit {
-  margin-top: 40px;
-}
-
-.social-unit li {
-  float: left;
-  margin-left: 8px;
-}
