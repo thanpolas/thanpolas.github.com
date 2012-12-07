@@ -118,3 +118,6 @@ In this case you can see the significant difference between when the first inlin
 
 Faster page rendering, faster time when page becomes usable, faster page loading, better user experience. It's time to let go of the DOM Ready Event.
 
+
+
+Have some fun with [this plnkr](http://embed.plnkr.co/5ya2mWtrcRDSfR4ozNRz) where you can find the code for the examples used in this post.

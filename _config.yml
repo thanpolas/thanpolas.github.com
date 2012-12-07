@@ -85,16 +85,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+      short_name : thanpolas
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -103,11 +94,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 'UA-123-12'
-    getclicky :
-      site_id :
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
+        tracking_id : 'UA-16398858-7'
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
@@ -115,7 +102,7 @@ JB :
   # Set 'provider' to false to turn sharing off globally.
   #
   sharing :
-    provider : false
+    provider : 'tweet'
 
   # Settings for all other include helpers can be defined by creating
   # a hash with key named for the given helper. ex:

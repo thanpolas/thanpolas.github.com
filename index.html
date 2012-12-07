@@ -15,7 +15,7 @@ tagline: Supporting tagline
     <h1>Thanasis Polychronakis<small> Freelance Web Developer</small></h1>
     <ul class="nav">
       <li class="hide"><a href="#">Projects</a></li>
-      <li class="hide"><a href="#">Blog</a></li>
+      <li class=""><a href="/blog">Blog</a></li>
       <li class="hide"><a href="#">About</a></li>
     </ul>
   </div>
@@ -29,8 +29,8 @@ tagline: Supporting tagline
       <li><a title="thanpolas at gmail.com" href="mailto:thanpolas@gmail.com" target="_blank">email</a></li>
     </ul>
   </div>
-  <div class="row blog-posts-list">
-  </div>
+    {% assign posts_collate = site.posts %}
+    {% include themes/thanpolas/widgets/posts_collate %}
 </div>
 
 
