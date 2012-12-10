@@ -4,8 +4,10 @@
   margin: 40px auto;
   padding: 40px;
   background-color: #fff;
-  border-top: 3px solid #FF00FF;
-  .box-shadow(2px 2px 6px 0px #eee);
+  border-top: 3px solid;
+  border-color: hsl(300, 100%, 50%);
+  .transition(border-color 4s ease-in-out);
+  .box-shadow(1px 2px 6px rgba(0, 0, 0, .1));
 }
 
 .col1 {
@@ -49,7 +51,7 @@
       margin-top: 40px;
       color: #999;
       font-weight: normal;
-      .transition("all 0.3s ease-in-out");
+      .transition(color 0.3s ease-in-out);
       background-image: none;
       background-color: #F5F5F5;
       span {
@@ -63,7 +65,7 @@
       &:hover {
         span {
           color: #FF00FF;
-          .transition("all 0.3s ease-in-out");
+          .transition(color 0.3s ease-in-out);
         }
       }
     }

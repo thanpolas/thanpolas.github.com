@@ -5068,10 +5068,15 @@ pre {
   margin: 40px auto;
   padding: 40px;
   background-color: #fff;
-  border-top: 3px solid #FF00FF;
-  -webkit-box-shadow: 2px 2px 6px 0px #eeeeee;
-  -moz-box-shadow: 2px 2px 6px 0px #eeeeee;
-  box-shadow: 2px 2px 6px 0px #eeeeee;
+  border-top: 3px solid;
+  border-color: #ff00ff;
+  -webkit-transition: border-color 4s ease-in-out;
+  -moz-transition: border-color 4s ease-in-out;
+  -o-transition: border-color 4s ease-in-out;
+  transition: border-color 4s ease-in-out;
+  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
 }
 .col1 {
   width: 200px;
@@ -5103,10 +5108,10 @@ pre {
   margin-top: 40px;
   color: #999;
   font-weight: normal;
-  -webkit-transition: "all 0.3s ease-in-out";
-  -moz-transition: "all 0.3s ease-in-out";
-  -o-transition: "all 0.3s ease-in-out";
-  transition: "all 0.3s ease-in-out";
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   background-image: none;
   background-color: #F5F5F5;
 }
@@ -5119,10 +5124,10 @@ pre {
 }
 .masthead .thanpolas-cta a:hover span {
   color: #FF00FF;
-  -webkit-transition: "all 0.3s ease-in-out";
-  -moz-transition: "all 0.3s ease-in-out";
-  -o-transition: "all 0.3s ease-in-out";
-  transition: "all 0.3s ease-in-out";
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 .front-content {
   margin-top: 60px;
