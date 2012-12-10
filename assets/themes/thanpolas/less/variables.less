@@ -1,35 +1,24 @@
 
 
 
-@baseFontSize: 16;
+@baseFontSize: 16px;
 @em: @baseFontSize*1em;  // Shorthand for outputting ems, e.g. "12/@em"
-@baseLineHeight: 26 / @em;
-
-
-@web-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-@lightFont: QuicksandLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
-/**
- * Quicksand Light font
- * http://www.fontsquirrel.com/fonts/Quicksand
- */
-@font-face {
-    font-family: 'QuicksandLight';
-    src: url('/assets/fonts/Quicksand/Quicksand_Light-webfont.eot');
-    src: url('/assets/fonts/Quicksand/Quicksand_Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/Quicksand/Quicksand_Light-webfont.woff') format('woff'),
-         url('/assets/fonts/Quicksand/Quicksand_Light-webfont.ttf') format('truetype'),
-         url('/assets/fonts/Quicksand/Quicksand_Light-webfont.svg#QuicksandLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@baseLineHeight: (16*20)/14px; // ~22.85
 
 // currently from :http://www.colourlovers.com/palette/199192/Bulcom
 @colorTopBar: #E42200;
 @colorH1: #E50000;
 @colorH2: #E50000;
 @highlight-bg: #0d0d0d;
-@whitepaper-bg: url(/assets/site-img/white_wall/white_wall.png) repeat 0 0;
 //@footer-bg: url('@{noise-100-90-5}') repeat 0 0 @subtle;
 
 @highlight-selection-bg: #ff0000;
+
+/**
+ * Backgrounds
+ *
+ */
+// the-program
+@bg-the-program-header: url('/assets/themes/thanpolas/img/100-90-5-monochrome.png') repeat 0 0 #E2E2DE; // http://noisepng.com/
+@bg-whitepaper: url('/assets/site-img/white_wall/white_wall.png') repeat 0 0;
+@bg-frontpage-blocks: #FFF;

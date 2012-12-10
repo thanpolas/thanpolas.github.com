@@ -140,7 +140,7 @@ textarea {
 .input-block-level {
   display: block;
   width: 100%;
-  min-height: 11.625em;
+  min-height: 32.85714285714286px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -148,8 +148,8 @@ textarea {
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16;
-  line-height: 1.625em;
+  font-size: 16px;
+  line-height: 22.857142857142858px;
   color: #333333;
   background-color: #ffffff;
 }
@@ -292,7 +292,7 @@ a:hover {
 .row-fluid [class*="span"] {
   display: block;
   width: 100%;
-  min-height: 11.625em;
+  min-height: 32.85714285714286px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -487,13 +487,13 @@ a:hover {
   clear: both;
 }
 p {
-  margin: 0 0 0.8125em;
+  margin: 0 0 11.428571428571429px;
 }
 .lead {
-  margin-bottom: 1.625em;
-  font-size: 24;
+  margin-bottom: 22.857142857142858px;
+  font-size: 24px;
   font-weight: 200;
-  line-height: 2.4375em;
+  line-height: 34.285714285714285px;
 }
 small {
   font-size: 85%;
@@ -540,10 +540,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0.8125em 0;
-  font-family: inherit;
-  font-weight: bold;
-  line-height: 1.625em;
+  margin: 11.428571428571429px 0;
+  font-family: "TitilliumText25L250wt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 22.857142857142858px;
   color: inherit;
   text-rendering: optimizelegibility;
 }
@@ -560,47 +560,47 @@ h6 small {
 h1,
 h2,
 h3 {
-  line-height: 3.25em;
+  line-height: 45.714285714285715px;
 }
 h1 {
-  font-size: 44;
+  font-size: 44px;
 }
 h2 {
-  font-size: 36;
+  font-size: 36px;
 }
 h3 {
-  font-size: 28;
+  font-size: 28px;
 }
 h4 {
-  font-size: 20;
+  font-size: 20px;
 }
 h5 {
-  font-size: 16;
+  font-size: 16px;
 }
 h6 {
-  font-size: 13.6;
+  font-size: 13.6px;
 }
 h1 small {
-  font-size: 28;
+  font-size: 28px;
 }
 h2 small {
-  font-size: 20;
+  font-size: 20px;
 }
 h3 small {
-  font-size: 16;
+  font-size: 16px;
 }
 h4 small {
-  font-size: 16;
+  font-size: 16px;
 }
 .page-header {
-  padding-bottom: -0.1875em;
-  margin: 1.625em 0 2.4375em;
+  padding-bottom: 10.428571428571429px;
+  margin: 22.857142857142858px 0 34.285714285714285px;
   border-bottom: 1px solid #eeeeee;
 }
 ul,
 ol {
   padding: 0;
-  margin: 0 0 0.8125em 25px;
+  margin: 0 0 11.428571428571429px 25px;
 }
 ul ul,
 ul ol,
@@ -609,7 +609,7 @@ ol ul {
   margin-bottom: 0;
 }
 li {
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
 }
 ul.unstyled,
 ol.unstyled {
@@ -617,17 +617,17 @@ ol.unstyled {
   list-style: none;
 }
 dl {
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
 }
 dt,
 dd {
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
 }
 dt {
   font-weight: bold;
 }
 dd {
-  margin-left: 0.8125em;
+  margin-left: 11.428571428571429px;
 }
 .dl-horizontal {
   *zoom: 1;
@@ -654,7 +654,7 @@ dd {
   margin-left: 180px;
 }
 hr {
-  margin: 1.625em 0;
+  margin: 22.857142857142858px 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
@@ -670,18 +670,18 @@ abbr.initialism {
 }
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 1.625em;
+  margin: 0 0 22.857142857142858px;
   border-left: 5px solid #eeeeee;
 }
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 2.03125em;
+  line-height: 28.571428571428573px;
 }
 blockquote small {
   display: block;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   color: #999999;
 }
 blockquote small:before {
@@ -712,15 +712,15 @@ blockquote:after {
 }
 address {
   display: block;
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
   font-style: normal;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
 }
 code,
 pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 14;
+  font-size: 14px;
   color: #333333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -734,10 +734,10 @@ code {
 }
 pre {
   display: block;
-  padding: 0.3125em;
-  margin: 0 0 0.8125em;
-  font-size: 15;
-  line-height: 1.625em;
+  padding: 10.928571428571429px;
+  margin: 0 0 11.428571428571429px;
+  font-size: 15px;
+  line-height: 22.857142857142858px;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -750,7 +750,7 @@ pre {
   border-radius: 4px;
 }
 pre.prettyprint {
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
 }
 pre code {
   padding: 0;
@@ -763,7 +763,7 @@ pre code {
   overflow-y: scroll;
 }
 form {
-  margin: 0 0 1.625em;
+  margin: 0 0 22.857142857142858px;
 }
 fieldset {
   padding: 0;
@@ -774,15 +774,15 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 1.625em;
-  font-size: 24;
-  line-height: 3.25em;
+  margin-bottom: 22.857142857142858px;
+  font-size: 24px;
+  line-height: 45.714285714285715px;
   color: #333333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 legend small {
-  font-size: 1.21875em;
+  font-size: 17.142857142857142px;
   color: #999999;
 }
 label,
@@ -790,9 +790,9 @@ input,
 button,
 select,
 textarea {
-  font-size: 16;
+  font-size: 16px;
   font-weight: normal;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
 }
 input,
 button,
@@ -822,11 +822,11 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 1.625em;
+  height: 22.857142857142858px;
   padding: 4px 6px;
-  margin-bottom: 0.8125em;
-  font-size: 16;
-  line-height: 1.625em;
+  margin-bottom: 11.428571428571429px;
+  font-size: 16px;
+  line-height: 22.857142857142858px;
   color: #555555;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -915,13 +915,13 @@ input[type="checkbox"] {
 }
 select,
 input[type="file"] {
-  height: 11.625em;
+  height: 32.85714285714286px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size */
 
   *margin-top: 4px;
   /* For IE7, add top margin to align select with labels */
 
-  line-height: 11.625em;
+  line-height: 32.85714285714286px;
 }
 select {
   width: 220px;
@@ -972,7 +972,7 @@ textarea::-webkit-input-placeholder {
 }
 .radio,
 .checkbox {
-  min-height: 1.625em;
+  min-height: 22.857142857142858px;
   padding-left: 20px;
 }
 .radio input[type="radio"],
@@ -1266,9 +1266,9 @@ select:focus:required:invalid:focus {
   box-shadow: 0 0 6px #f8b9b7;
 }
 .form-actions {
-  padding: 0.625em 20px 1.625em;
-  margin-top: 1.625em;
-  margin-bottom: 1.625em;
+  padding: 21.857142857142858px 20px 22.857142857142858px;
+  margin-top: 22.857142857142858px;
+  margin-bottom: 22.857142857142858px;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
   *zoom: 1;
@@ -1288,7 +1288,7 @@ select:focus:required:invalid:focus {
 }
 .help-block {
   display: block;
-  margin-bottom: 0.8125em;
+  margin-bottom: 11.428571428571429px;
 }
 .help-inline {
   display: inline-block;
@@ -1313,7 +1313,7 @@ select:focus:required:invalid:focus {
 .input-prepend .uneditable-input,
 .input-append .dropdown-menu,
 .input-prepend .dropdown-menu {
-  font-size: 16;
+  font-size: 16px;
 }
 .input-append input,
 .input-prepend input,
@@ -1341,12 +1341,12 @@ select:focus:required:invalid:focus {
 .input-prepend .add-on {
   display: inline-block;
   width: auto;
-  height: 1.625em;
+  height: 22.857142857142858px;
   min-width: 16px;
   padding: 4px 5px;
-  font-size: 16;
+  font-size: 16px;
   font-weight: normal;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
   background-color: #eeeeee;
@@ -1534,14 +1534,14 @@ input.search-query {
   margin-left: 0;
 }
 .control-group {
-  margin-bottom: 0.8125em;
+  margin-bottom: 11.428571428571429px;
 }
 legend + .control-group {
-  margin-top: 1.625em;
+  margin-top: 22.857142857142858px;
   -webkit-margin-top-collapse: separate;
 }
 .form-horizontal .control-group {
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
   *zoom: 1;
 }
 .form-horizontal .control-group:before,
@@ -1574,7 +1574,7 @@ legend + .control-group {
 .form-horizontal input + .help-block,
 .form-horizontal select + .help-block,
 .form-horizontal textarea + .help-block {
-  margin-top: 0.8125em;
+  margin-top: 11.428571428571429px;
 }
 .form-horizontal .form-actions {
   padding-left: 180px;
@@ -1587,12 +1587,12 @@ table {
 }
 .table {
   width: 100%;
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
 }
 .table th,
 .table td {
   padding: 8px;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
@@ -2308,7 +2308,7 @@ table th[class*="span"],
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
-  margin: -0.1875em 1px;
+  margin: 10.428571428571429px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -2319,7 +2319,7 @@ table th[class*="span"],
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   color: #333333;
   white-space: nowrap;
 }
@@ -2498,7 +2498,7 @@ table th[class*="span"],
   float: right;
   font-size: 20px;
   font-weight: bold;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
@@ -2526,9 +2526,9 @@ button.close {
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
-  font-size: 16;
-  line-height: 1.625em;
-  *line-height: 1.625em;
+  font-size: 16px;
+  line-height: 22.857142857142858px;
+  *line-height: 22.857142857142858px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -2616,7 +2616,7 @@ button.close {
 }
 .btn-large {
   padding: 11px 19px;
-  font-size: 20;
+  font-size: 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -2627,7 +2627,7 @@ button.close {
 }
 .btn-small {
   padding: 2px 10px;
-  font-size: 13.6;
+  font-size: 13.6px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -2638,7 +2638,7 @@ button.close {
 }
 .btn-mini {
   padding: 1px 6px;
-  font-size: 12;
+  font-size: 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -2929,8 +2929,8 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-toolbar {
   font-size: 0;
-  margin-top: 0.8125em;
-  margin-bottom: 0.8125em;
+  margin-top: 11.428571428571429px;
+  margin-bottom: 11.428571428571429px;
 }
 .btn-toolbar .btn + .btn,
 .btn-toolbar .btn-group + .btn,
@@ -2948,7 +2948,7 @@ input[type="submit"].btn.btn-mini {
 }
 .btn-group > .btn,
 .btn-group > .dropdown-menu {
-  font-size: 16;
+  font-size: 16px;
 }
 .btn-group > .btn-mini {
   font-size: 11px;
@@ -3124,7 +3124,7 @@ input[type="submit"].btn.btn-mini {
 }
 .alert {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
@@ -3140,7 +3140,7 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   top: -2px;
   right: -21px;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
 }
 .alert-success {
   background-color: #dff0d8;
@@ -3171,7 +3171,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav {
   margin-left: 0;
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
   list-style: none;
 }
 .nav > li > a {
@@ -3189,7 +3189,7 @@ input[type="submit"].btn.btn-mini {
   padding: 3px 15px;
   font-size: 11px;
   font-weight: bold;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   color: #999999;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
@@ -3224,7 +3224,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list .divider {
   *width: 100%;
   height: 1px;
-  margin: -0.1875em 1px;
+  margin: 10.428571428571429px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
   background-color: #e5e5e5;
@@ -3266,7 +3266,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   border: 1px solid transparent;
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
@@ -3496,7 +3496,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar {
   overflow: visible;
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
   color: #777777;
   *position: relative;
   *z-index: 2;
@@ -3541,7 +3541,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 19.1875px 20px 19.1875px;
+  padding: 8.571428571428571px 20px 8.571428571428571px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -3702,7 +3702,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 19.1875px 15px 19.1875px;
+  padding: 8.571428571428571px 15px 8.571428571428571px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
@@ -3981,7 +3981,7 @@ input[type="submit"].btn.btn-mini {
 }
 .breadcrumb {
   padding: 8px 15px;
-  margin: 0 0 1.625em;
+  margin: 0 0 22.857142857142858px;
   list-style: none;
   background-color: #f5f5f5;
   -webkit-border-radius: 4px;
@@ -4004,7 +4004,7 @@ input[type="submit"].btn.btn-mini {
   color: #999999;
 }
 .pagination {
-  margin: 1.625em 0;
+  margin: 22.857142857142858px 0;
 }
 .pagination ul {
   display: inline-block;
@@ -4028,7 +4028,7 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > li > span {
   float: left;
   padding: 4px 12px;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   text-decoration: none;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -4079,7 +4079,7 @@ input[type="submit"].btn.btn-mini {
 .pagination-large ul > li > a,
 .pagination-large ul > li > span {
   padding: 11px 19px;
-  font-size: 20;
+  font-size: 20px;
 }
 .pagination-large ul > li:first-child > a,
 .pagination-large ul > li:first-child > span {
@@ -4124,15 +4124,15 @@ input[type="submit"].btn.btn-mini {
 .pagination-small ul > li > a,
 .pagination-small ul > li > span {
   padding: 2px 10px;
-  font-size: 13.6;
+  font-size: 13.6px;
 }
 .pagination-mini ul > li > a,
 .pagination-mini ul > li > span {
   padding: 1px 6px;
-  font-size: 12;
+  font-size: 12px;
 }
 .pager {
-  margin: 1.625em 0;
+  margin: 22.857142857142858px 0;
   list-style: none;
   text-align: center;
   *zoom: 1;
@@ -4490,13 +4490,13 @@ input[type="submit"].btn.btn-mini {
 }
 .thumbnails > li {
   float: left;
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
   margin-left: 20px;
 }
 .thumbnail {
   display: block;
   padding: 4px;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -4558,7 +4558,7 @@ a.thumbnail:hover {
 .badge {
   display: inline-block;
   padding: 2px 4px;
-  font-size: 13.536;
+  font-size: 13.536px;
   font-weight: bold;
   line-height: 14px;
   color: #ffffff;
@@ -4676,8 +4676,8 @@ a.badge:hover {
 }
 .progress {
   overflow: hidden;
-  height: 1.625em;
-  margin-bottom: 1.625em;
+  height: 22.857142857142858px;
+  margin-bottom: 22.857142857142858px;
   background-color: #f7f7f7;
   background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
@@ -4825,7 +4825,7 @@ a.badge:hover {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .accordion {
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
 }
 .accordion-group {
   margin-bottom: 2px;
@@ -4850,7 +4850,7 @@ a.badge:hover {
 }
 .carousel {
   position: relative;
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
   line-height: 1;
 }
 .carousel-inner {
@@ -4942,7 +4942,7 @@ a.badge:hover {
 .carousel-caption h4,
 .carousel-caption p {
   color: #ffffff;
-  line-height: 1.625em;
+  line-height: 22.857142857142858px;
 }
 .carousel-caption h4 {
   margin: 0 0 5px;
@@ -4955,7 +4955,7 @@ a.badge:hover {
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
-  line-height: 2.4375em;
+  line-height: 34.285714285714285px;
   color: inherit;
   background-color: #eeeeee;
   -webkit-border-radius: 6px;
@@ -4970,7 +4970,7 @@ a.badge:hover {
   letter-spacing: -1px;
 }
 .hero-unit li {
-  line-height: 2.4375em;
+  line-height: 34.285714285714285px;
 }
 .pull-right {
   float: right;
@@ -4991,13 +4991,17 @@ a.badge:hover {
   position: fixed;
 }
 /**
- * Quicksand Light font
- * http://www.fontsquirrel.com/fonts/Quicksand
+ * Backgrounds
+ *
+ */
+/**
+ * TitilliumText font
+ * http://www.fontsquirrel.com/fonts/TitilliumText
  */
 @font-face {
-  font-family: 'QuicksandLight';
-  src: url('/assets/fonts/Quicksand/Quicksand_Light-webfont.eot');
-  src: url('/assets/fonts/Quicksand/Quicksand_Light-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Quicksand/Quicksand_Light-webfont.woff') format('woff'), url('/assets/fonts/Quicksand/Quicksand_Light-webfont.ttf') format('truetype'), url('/assets/fonts/Quicksand/Quicksand_Light-webfont.svg#QuicksandLight') format('svg');
+  font-family: 'TitilliumText25L250wt';
+  src: url('/assets/fonts/Titillium/TitilliumText25L004-webfont.eot');
+  src: url('/assets/fonts/Titillium/TitilliumText25L004-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Titillium/TitilliumText25L004-webfont.woff') format('woff'), url('/assets/fonts/Titillium/TitilliumText25L004-webfont.ttf') format('truetype'), url('/assets/fonts/Titillium/TitilliumText25L004-webfont.svg#TitilliumText25L250wt') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -5042,7 +5046,7 @@ samp {
 }
 /* HIGHLIGHTER */
 pre {
-  margin-bottom: 1.625em;
+  margin-bottom: 22.857142857142858px;
 }
 pre {
   color: #f2f2f2;
@@ -5050,7 +5054,7 @@ pre {
   border: 1px solid #12120f;
   margin-left: 0;
   margin-right: 0;
-  padding: 1.625em;
+  padding: 22.857142857142858px;
   overflow: auto;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -5060,33 +5064,68 @@ pre {
   border-bottom-right-radius: 46px;
 }
 .container-narrow {
-  max-width: 770px;
+  max-width: 820px;
   margin: 40px auto;
-  background-color: #FFF;
-  padding: 20px;
+  padding: 40px;
+  background-color: #fff;
+  border-top: 3px solid #FF00FF;
+  -webkit-box-shadow: 2px 2px 6px 0px #eeeeee;
+  -moz-box-shadow: 2px 2px 6px 0px #eeeeee;
+  box-shadow: 2px 2px 6px 0px #eeeeee;
+}
+.col1 {
+  width: 200px;
+  float: left;
+  margin-left: 20px;
+}
+.col2 {
+  float: left;
+  margin-left: 40px;
+}
+.masthead .thanpolas-fullname {
+  padding-top: 12px;
 }
 .masthead h1 {
-  text-align: right;
-  font-size: 63px;
-  line-height: 68px;
+  margin: 0;
+  text-align: left;
+  font-family: "TitilliumText25L250wt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 320%;
+  line-height: 46px;
   color: #555;
 }
-.masthead h3 {
-  text-align: right;
+.masthead h1 small {
+  display: block;
+  font-size: 21px;
+  line-height: 2;
 }
-.masthead ul {
-  margin-top: 120px;
-}
-.masthead li {
-  float: left;
-  margin-left: 6px;
-}
-.social-unit {
+.masthead .thanpolas-cta a {
   margin-top: 40px;
+  color: #999;
+  font-weight: normal;
+  -webkit-transition: "all 0.3s ease-in-out";
+  -moz-transition: "all 0.3s ease-in-out";
+  -o-transition: "all 0.3s ease-in-out";
+  transition: "all 0.3s ease-in-out";
+  background-image: none;
+  background-color: #F5F5F5;
 }
-.social-unit li {
+.masthead .thanpolas-cta a span {
+  display: block;
   float: left;
-  margin-left: 8px;
+  margin-top: 0;
+  margin-right: 5px;
+  font-size: 28px;
+}
+.masthead .thanpolas-cta a:hover span {
+  color: #FF00FF;
+  -webkit-transition: "all 0.3s ease-in-out";
+  -moz-transition: "all 0.3s ease-in-out";
+  -o-transition: "all 0.3s ease-in-out";
+  transition: "all 0.3s ease-in-out";
+}
+.front-content {
+  margin-top: 60px;
 }
 .social-unit li a {
   color: #999;

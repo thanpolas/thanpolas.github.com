@@ -11,26 +11,39 @@ tagline: Supporting tagline
 
 ---
 <div class="container-narrow">
-  <div class="masthead">
-    <h1>Thanasis Polychronakis<small> Freelance Web Developer</small></h1>
-    <ul class="nav">
-      <li class="hide"><a href="#">Projects</a></li>
-      <li class=""><a href="/blog">Blog</a></li>
-      <li class="hide"><a href="#">About</a></li>
-    </ul>
+  <div class="row masthead">
+    <div class="col1 thanpolas-photo"><img title="Thanasis polychronakis" alt="Thanasis Polychronakis aka thanpolas" width="200px" src="/assets/img/thanpolas-circle-grey.png" /></div>
+    <div class="col2 thanpolas-fullname">
+      <h1>Thanasis Polychronakis<small>Freelance Web Developer</small></h1>
+      <div class="thanpolas-cta">
+        <a class="CTA btn " href="mailto:thanpolas@gmail.com" title="thanpolas@gmail.com"><span>✉</span>Hire Me!</a>
+      </div>
+    </div>
   </div>
-  <div class="row social-unit">
-    <ul class="unstyled pull-right">
-      <li><a title="thanpolas at github" href="https://github.com/thanpolas" target="_blank">github</a></li>
-      <li><a title="thanpolas at linkedIn" href="http://www.linkedin.com/in/thanpolas" target="_blank">linkedin</a></li>
-      <li><a title="thanpolas at twitter" href="http://www.twitter.com/thanpolas" target="_blank">twitter</a></li>
-      <li><a title="thanpolas at facebook" href="http://www.facebook.com/thanpolas" target="_blank">facebook</a></li>
-      <li><a title="thanpolas at Google+" href="http://plus.google.com/116048937566852906915/" target="_blank">google</a></li>
-      <li><a title="thanpolas at gmail.com" href="mailto:thanpolas@gmail.com" target="_blank">email</a></li>
-    </ul>
+<!--
+  <ul class="nav">
+    <li class="hide"><a href="#">Projects</a></li>
+    <li class=""><a href="/blog">Blog</a></li>
+    <li class="hide"><a href="#">About</a></li>
+  </ul> -->
+
+  <div class="row front-content">
+    <div class="col1">
+      <ul class="social-unit unstyled">
+        <li><a title="thanpolas at github" href="https://github.com/thanpolas" target="_blank">github</a></li>
+        <li><a title="thanpolas at linkedIn" href="http://www.linkedin.com/in/thanpolas" target="_blank">linkedin</a></li>
+        <li><a title="thanpolas at twitter" href="http://www.twitter.com/thanpolas" target="_blank">twitter</a></li>
+        <li><a title="thanpolas at facebook" href="http://www.facebook.com/thanpolas" target="_blank">facebook</a></li>
+        <li><a title="thanpolas at Google+" href="http://plus.google.com/116048937566852906915/" target="_blank">google</a></li>
+        <li><a title="thanpolas at gmail.com" href="mailto:thanpolas@gmail.com" target="_blank">email</a></li>
+      </ul>
+    </div>
+    <div class="col2 post_lists">
+      {% assign posts_collate = site.posts %}
+      {% include themes/thanpolas/widgets/posts_collate %}
+    </div>
   </div>
-    {% assign posts_collate = site.posts %}
-    {% include themes/thanpolas/widgets/posts_collate %}
+
 </div>
 
 
