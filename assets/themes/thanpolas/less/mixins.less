@@ -1,0 +1,12 @@
+.lolipop-trans(@property) {
+  .transition(@property 14s ease-in-out);
+}
+
+.content() {
+  padding: 40px;
+  background-color: #fff;
+  border-top: 3px solid;
+  border-color: hsl(300, 100%, 50%);
+  .lolipop-trans(border-color);
+  .box-shadow(1px 2px 6px rgba(0, 0, 0, .1));
+}

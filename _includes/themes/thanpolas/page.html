@@ -1,9 +1,13 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
+<article class="row-fluid">
+  <div class="span10 offset1 lolipop">
+    <div class="page-header">
+      <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+    </div>
 
-<div class="row">
-  <div class="span12">
-    {{ content }}
+    <div class="row-fluid">
+      <div class="span10">
+        {{ content }}
+      </div>
+    </div>
   </div>
-</div>
+</article>

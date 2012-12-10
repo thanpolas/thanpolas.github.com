@@ -17,7 +17,7 @@ Usage:
 
 -->{% endcomment %}
 
-<div class="row blog-posts-list">
+<div class="blog-posts-list">
   <h4><a href="/blog">Blog Posts</a></h4>
   {% for post in posts_collate  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}

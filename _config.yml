@@ -14,6 +14,7 @@ pygments: auto
 # so be sure to set them if your theme uses them.
 #
 title : thanpolas
+jobDescription: Freelance Web Developer
 tagline: web development as it happens
 author :
   name : Thanasis Polychronakis
