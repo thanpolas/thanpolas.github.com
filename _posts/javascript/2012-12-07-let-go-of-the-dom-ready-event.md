@@ -23,50 +23,52 @@ An exception to positioning your scripts at the bottom of your document are scri
 
 Consider this sample document, let's name it `index.html`:
 
-{% highlight html linenos %}
+{% highlight html linenos=table %}
 
-  <!DOCTYPE html>
-  <html>
-    <head lang="en">
-      <title>Our webpage</title>
-      <script type="text/javascript" src="initLoggers.js"></script>
-    </head>
-    <body>
-      <div id="main-content"></div>
-      <div id="logger"></div>
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Our webpage</title>
+    <script type="text/javascript" src="initLoggers.js"></script>
+  </head>
+  <body>
+    <div id="main-content"></div>
+    <div id="logger"></div>
 
-      <script type="text/javascript">log('Inline JS at bottom of BODY. Loading jQuery...');</script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <script type="text/javascript" src="ourApplication.js"></script>
-    </body>
-  </html>
+    <script type="text/javascript">
+      log('Inline JS at bottom of BODY. Loading jQuery...');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="ourApplication.js"></script>
+  </body>
+</html>
 
 {% endhighlight %}
 
 The first script loaded at **line 5** `initLoggers.js` defines some helper functions for measuring the time that events occurred since the page started loading. We include this file in the **HEAD** to illustrate the flow of execution and the time differences of the process:
 
-{% highlight javascript linenos %}
+{% highlight javascript linenos=table %}
 
-  // get the current time difference between page
-  // load and when this func was invoked
-  function getTimeDiff() {
-    return new Date().getTime() - performance.timing.navigationStart;
+// get the current time difference between page
+// load and when this func was invoked
+function getTimeDiff() {
+  return new Date().getTime() - performance.timing.navigationStart;
+}
+var $log, jqLoaded = false;
+function log(message) {
+  if (jqLoaded) {
+    $log = $log || $('#logger');
+    $log.append('<p><b>' + getTimeDiff() + '</b>ms :: ' + message);
   }
-  var $log, jqLoaded = false;
-  function log(message) {
-    if (jqLoaded) {
-      $log = $log || $('#logger');
-      $log.append('<p><b>' + getTimeDiff() + '</b>ms :: ' + message);
+  if (window.console) {
+    console.log(getTimeDiff() + 'ms :: ' + message);
+    if (console.timeStamp){
+      console.timeStamp(message);
     }
-    if (window.console) {
-      console.log(getTimeDiff() + 'ms :: ' + message);
-      if (console.timeStamp){
-        console.timeStamp(message);
-      }
-    }
+  }
 
-  }
-  log('On HEAD, starting...');
+}
+log('On HEAD, starting...');
 
 {% endhighlight %}
 
@@ -76,19 +78,19 @@ Back to our `index.html`, in **lines 8, 9** and thereafter we start loading our 
 
 So after jQuery loads, our applications `ourApplication.js` follows...
 
-{% highlight javascript linenos %}
+{% highlight javascript linenos=table %}
 
-  log('jQuery loaded.');
+log('jQuery loaded.');
 
-  jqLoaded = true;
+jqLoaded = true;
 
-  $(document).ready(function(){
-    log('DOM Ready fired');
-    $('#main-content').append('Style!');
-  });
+$(document).ready(function(){
+  log('DOM Ready fired');
+  $('#main-content').append('Style!');
+});
 
-  log('Inline JS appending content...', true);
-  $('#main-content').append('Gangnam ');
+log('Inline JS appending content...', true);
+$('#main-content').append('Gangnam ');
 
 {% endhighlight %}
 

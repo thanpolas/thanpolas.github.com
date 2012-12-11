@@ -29,25 +29,75 @@ p code, li code {
   color:inherit;
 }
 
-/* HIGHLIGHTER */
-pre  { margin-bottom: @baseLineHeight; }
+/**
+ * ------------------------------------
+ * CODE HIGHLIGHTING
+ * ------------------------------------
+ */
 pre  {
-  color: #f2f2f2;
-  background-color: @highlight-bg;
+  background-color: @bg-codeblock;
   border: 1px solid #12120f;
   margin-left: 0;
   margin-right: 0;
-  padding: @baseLineHeight;
-  overflow: auto;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  color: #f2f2f2;
 
-  -webkit-border-bottom-right-radius: 46px;
-  -moz-border-radius-bottomright: 46px;
-  border-bottom-right-radius: 46px;
-
+  .box-shadow("inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)");
+  .border-top-right-radius(42px);
 }
+
+table.highlighttable {
+  border-spacing: 0;
+  width: 100%;
+  overflow: auto;
+  margin-bottom: @baseLineHeight;
+
+  td {
+    vertical-align: middle;
+    margin:0;
+    padding:0;
+  }
+  pre {
+    white-space: pre;
+    margin:0;
+  }
+  //table-layout: fixed;
+  tbody {
+    vertical-align: top;
+    border-spacing: 0;
+  }
+  td.code {
+    width: 100%;
+    text-align: left;
+    pre {
+      width: 100%;
+      overflow: auto;
+      border-left: 0;
+      padding-left: 0;
+
+      .border-top-left-radius(0);
+      .border-bottom-left-radius(0);
+    }
+  }
+
+  td.linenos {
+    pre {
+      text-align: right;
+      border-right: 0;
+      .border-bottom-right-radius(0);
+      .border-top-right-radius(0);
+    }
+  }
+}
+
+
+
+/**
+ * ------------------------------------
+ * HEADER / FOOTER
+ * ------------------------------------
+ */
+
 header {
   position: fixed;
   top: 0;
