@@ -154,11 +154,11 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #0088cc;
+  color: #05349e;
   text-decoration: none;
 }
 a:hover {
-  color: #005580;
+  color: #042e8d;
   text-decoration: underline;
 }
 .img-rounded {
@@ -2328,28 +2328,28 @@ table th[class*="span"],
 .dropdown-submenu:hover > a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #053194;
+  background-image: -moz-linear-gradient(top, #05349e, #042c85);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#05349e), to(#042c85));
+  background-image: -webkit-linear-gradient(top, #05349e, #042c85);
+  background-image: -o-linear-gradient(top, #05349e, #042c85);
+  background-image: linear-gradient(to bottom, #05349e, #042c85);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff05349e', endColorstr='#ff042c85', GradientType=0);
 }
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #333333;
   text-decoration: none;
   outline: 0;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #053194;
+  background-image: -moz-linear-gradient(top, #05349e, #042c85);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#05349e), to(#042c85));
+  background-image: -webkit-linear-gradient(top, #05349e, #042c85);
+  background-image: -o-linear-gradient(top, #05349e, #042c85);
+  background-image: linear-gradient(to bottom, #05349e, #042c85);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff05349e', endColorstr='#ff042c85', GradientType=0);
 }
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
@@ -2675,17 +2675,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #006dcc;
-  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-color: #07219e;
+  background-image: -moz-linear-gradient(top, #05349e, #09059e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#05349e), to(#09059e));
+  background-image: -webkit-linear-gradient(top, #05349e, #09059e);
+  background-image: -o-linear-gradient(top, #05349e, #09059e);
+  background-image: linear-gradient(to bottom, #05349e, #09059e);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff05349e', endColorstr='#ff09059e', GradientType=0);
+  border-color: #09059e #09059e #050354;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #0044cc;
+  *background-color: #09059e;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2696,12 +2696,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #09059e;
+  *background-color: #080485;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #06036d \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -2895,13 +2895,13 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #0088cc;
+  color: #05349e;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 .btn-link:hover {
-  color: #005580;
+  color: #042e8d;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3040,7 +3040,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #e6e6e6;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #0044cc;
+  background-color: #09059e;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -3215,7 +3215,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #0088cc;
+  background-color: #05349e;
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
@@ -3295,7 +3295,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #05349e;
 }
 .nav-stacked > li {
   float: none;
@@ -3349,13 +3349,13 @@ input[type="submit"].btn.btn-mini {
   border-radius: 6px;
 }
 .nav .dropdown-toggle .caret {
-  border-top-color: #0088cc;
-  border-bottom-color: #0088cc;
+  border-top-color: #05349e;
+  border-bottom-color: #05349e;
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: #005580;
-  border-bottom-color: #005580;
+  border-top-color: #042e8d;
+  border-bottom-color: #042e8d;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -4510,7 +4510,7 @@ input[type="submit"].btn.btn-mini {
   transition: all 0.2s ease-in-out;
 }
 a.thumbnail:hover {
-  border-color: #0088cc;
+  border-color: #05349e;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -5092,11 +5092,11 @@ figure p {
   line-height: 0;
 }
 pre {
-  background-color: #0d0d0d;
+  background-color: #272822;
   border: 1px solid #12120f;
   margin-left: 0;
   margin-right: 0;
-  padding: 20px;
+  padding: 5px 20px;
   color: #f2f2f2;
   -webkit-box-shadow: "inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)";
   -moz-box-shadow: "inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)";
@@ -5138,6 +5138,7 @@ table.highlighttable td.code pre {
 table.highlighttable td.linenos pre {
   text-align: right;
   border-right: 0;
+  color: #8f908a;
   -webkit-border-bottom-right-radius: 0;
   -moz-border-radius-bottomright: 0;
   border-bottom-right-radius: 0;
@@ -5216,8 +5217,22 @@ article > div {
   -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
 }
+/**
+ * ------------------------------------
+ * TYPOGRAPHY
+ * ------------------------------------
+ */
+.initial-dropped {
+  float: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 75px;
+  margin: 0;
+  line-height: 55px;
+  padding: 4px 6px 0 0;
+}
 .container-narrow {
   max-width: 820px;
+  min-width: 400px;
   margin: 40px auto;
   padding: 40px;
   background-color: #fff;
@@ -5237,11 +5252,11 @@ article > div {
   margin-left: 20px;
 }
 .col2 {
-  float: left;
-  margin-left: 40px;
+  float: none;
+  margin-left: 260px;
 }
 .masthead .thanpolas-fullname {
-  padding-top: 12px;
+  padding-top: 33px;
 }
 .masthead h1 {
   margin: 0;
@@ -5289,7 +5304,7 @@ article > div {
   color: #999;
 }
 pre .hll {
-  background-color: #0d0d0d;
+  background-color: #272822;
 }
 pre .c {
   color: #75715e;
