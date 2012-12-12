@@ -9,6 +9,7 @@
 
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Project configuration.
   grunt.initConfig({
@@ -28,27 +29,19 @@ module.exports = function(grunt) {
       scripts: {
         files: 'assets/themes/thanpolas/less/*.less',
         tasks: 'less:development'
+      },
+      generation: {
+        files: '_site/*',
+        tasks: 'copy:dist'
       }
     },
-    jshint: {
-      options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        boss: true,
-        eqnull: true,
-        node: true,
-        es5: true,
-        strict: false
-      },
-      globals: {}
+    copy: {
+      dist: {
+        files: {
+          '_site_git/' : '_site/**'
+        }
+      }
     },
-
   less: {
     development: {
       options: {

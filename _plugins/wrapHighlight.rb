@@ -7,9 +7,10 @@ module Jekyll
       super
     end
     def render(context)
-      prefix = "\n<figure class=\"code\"><figcaption></figcaption>"
-      suffix = "</figure>\n"
-      prefix + super + suffix
+      prefix = "<figure class=\"code\"><figcaption></figcaption>"
+      suffix = "</figure>"
+      #prefix + super + suffix
+      "<figure class=\"code\"><figcaption></figcaption>" + super + "</figure>"
     end
   end
 end

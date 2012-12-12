@@ -37,21 +37,21 @@ The following illustration is from the [overview of the parsing model][parsingMo
 
 Which in code means that:
 
-{% highlight javascript linenos=table %}
+{% highlight html linenos=table %}
 <span id="spanOne"></span>
 <script>
-var one = document.getElementById('spanOne');
-var two = document.getElementById('spanTwo');
+    var one = document.getElementById('spanOne');
+    var two = document.getElementById('spanTwo');
 
-// span one was defined before the script so it's available and can be manipulated
-one.innerHTML = 'Gangnam';
+    // span one was defined before the script so it's available and can be manipulated
+    one.innerHTML = 'Gangnam';
 
-// span two is defined after the script and is undefined
-try {
-  two.innerHTML = ' Style';
-} catch(e) {
-  console.log('Error, span two not defined', e);
-}
+    // span two is defined after the script and is undefined
+    try {
+      two.innerHTML = ' Style';
+    } catch(e) {
+      console.log('Error, span two not defined', e);
+    }
 </script>
 <span id="spanTwo"></span>
 {% endhighlight %}
