@@ -1,0 +1,85 @@
+//
+// Definitions for social icons
+//
+//
+//
+
+
+.social-unit {
+  text-align: center;
+  a {
+    display: block;
+    width: 32px;
+    height:32px;
+    margin: auto;
+    margin-top: 7px;
+    .transition(all 0.2s linear);
+    &:hover {
+    -webkit-transform: rotateY(25deg);
+       -moz-transform: rotateY(25deg);
+        -ms-transform: rotateY(25deg);
+         -o-transform: rotateY(25deg);
+            transform: rotateY(25deg);
+    }
+  }
+}
+
+// colors
+@color-github:     #000;
+@color-linkedin:   #0e76a8;
+@color-twitter:    #0087b2;
+@color-facebook:   #3d599b;
+@color-google:     #D94A38;
+@color-skype:      #00AFF0;
+@color-rss:        #FF6501;
+@color-slideshare: #00A7A8;
+@color-email:      #A8A8A8;
+
+[class^="social-icon-"],
+[class*=" social-icon-"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  .ie7-restore-right-whitespace();
+  line-height: 32px;
+  vertical-align: text-top;
+  background-color: #000;
+  background-image: url("@{socialIconSpritePath}");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-top: 7px;
+  .border-radius(100%);
+  font-style: normal;
+
+
+}
+
+// The height step between each sprite
+@baseSocialIconStep: -32px;
+
+// the mixin to populate the icon items
+.socialIconStep(@stepColor: #000, @stepCount: 1, @stepContent: '') {
+  background-position: 0          @baseSocialIconStep * @stepCount;
+  background-color: @stepColor;
+  color: @stepColor;
+  &:hover {
+    background-color: darken(@stepColor, 10%);
+    color: darken(@stepColor, 10%);
+  }
+  //&:after {content: @stepContent;}
+}
+
+.social-icon-github       {.socialIconStep(@color-github,     0, 'Github');}
+.social-icon-linkedin     {.socialIconStep(@color-linkedin,   1, 'Linkedin');}
+.social-icon-twitter      {.socialIconStep(@color-twitter,    2, 'Twitter');}
+.social-icon-facebook     {.socialIconStep(@color-facebook,   3, 'Facebook');}
+.social-icon-google       {.socialIconStep(@color-google,     4, 'Google');}
+.social-icon-skype        {.socialIconStep(@color-skype,      5, 'Skype');}
+.social-icon-rss          {.socialIconStep(@color-rss,        6, 'RSS');}
+.social-icon-slideshare   {.socialIconStep(@color-slideshare, 7, 'Slideshare');}
+.social-icon-email        {.socialIconStep(@color-email,      8, 'e-mail');}
+
+
+.social-notext {
+  &:after{content: '';}
+}

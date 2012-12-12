@@ -6,7 +6,7 @@ markdown: rdiscount
 
 exclude: [".rvmrc", ".rbenv-version", "README.md",
   "Rakefile", "changelog.md", "*.less", "sandbox",
-  "node_modules", "grunt.js", "bootstrap"
+  "node_modules", "grunt.js", "bootstrap", "_site_git/*"
 
   ]
 auto: false

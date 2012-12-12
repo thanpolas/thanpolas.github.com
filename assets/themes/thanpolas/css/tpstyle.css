@@ -4995,10 +4995,6 @@ a.badge:hover {
  *
  */
 /**
- * Dimentions
- *
- */
-/**
  * TitilliumText font
  * http://www.fontsquirrel.com/fonts/TitilliumText
  */
@@ -5015,7 +5011,7 @@ a.badge:hover {
  * ------------------------------------
  */
 body {
-  background-color: #f5f5f5;
+  background: url('/assets/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
 }
 h1,
 h2,
@@ -5199,7 +5195,7 @@ footer {
 article {
   position: relative;
   z-index: 2;
-  background-color: #f5f5f5;
+  background-color: url('/assets/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
   margin-top: 200px;
 }
 article > div {
@@ -5233,7 +5229,7 @@ article > div {
 .container-narrow {
   max-width: 820px;
   min-width: 400px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 40px;
   background-color: #fff;
   border-top: 3px solid;
@@ -5302,6 +5298,129 @@ article > div {
 }
 .social-unit li a {
   color: #999;
+}
+.social-unit {
+  text-align: center;
+}
+.social-unit a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-unit a:hover {
+  -webkit-transform: rotateY(25deg);
+  -moz-transform: rotateY(25deg);
+  -ms-transform: rotateY(25deg);
+  -o-transform: rotateY(25deg);
+  transform: rotateY(25deg);
+}
+[class^="social-icon-"],
+[class*=" social-icon-"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  *margin-right: .3em;
+  line-height: 32px;
+  vertical-align: text-top;
+  background-color: #000;
+  background-image: url("../img/social-white.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-top: 7px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  font-style: normal;
+}
+.social-icon-github {
+  background-position: 0 0px;
+  background-color: #000000;
+  color: #000000;
+}
+.social-icon-github:hover {
+  background-color: #000000;
+  color: #000000;
+}
+.social-icon-linkedin {
+  background-position: 0 -32px;
+  background-color: #0e76a8;
+  color: #0e76a8;
+}
+.social-icon-linkedin:hover {
+  background-color: #0a5579;
+  color: #0a5579;
+}
+.social-icon-twitter {
+  background-position: 0 -64px;
+  background-color: #0087b2;
+  color: #0087b2;
+}
+.social-icon-twitter:hover {
+  background-color: #00607f;
+  color: #00607f;
+}
+.social-icon-facebook {
+  background-position: 0 -96px;
+  background-color: #3d599b;
+  color: #3d599b;
+}
+.social-icon-facebook:hover {
+  background-color: #2f4476;
+  color: #2f4476;
+}
+.social-icon-google {
+  background-position: 0 -128px;
+  background-color: #d94a38;
+  color: #d94a38;
+}
+.social-icon-google:hover {
+  background-color: #ba3424;
+  color: #ba3424;
+}
+.social-icon-skype {
+  background-position: 0 -160px;
+  background-color: #00aff0;
+  color: #00aff0;
+}
+.social-icon-skype:hover {
+  background-color: #008abd;
+  color: #008abd;
+}
+.social-icon-rss {
+  background-position: 0 -192px;
+  background-color: #ff6501;
+  color: #ff6501;
+}
+.social-icon-rss:hover {
+  background-color: #cd5100;
+  color: #cd5100;
+}
+.social-icon-slideshare {
+  background-position: 0 -224px;
+  background-color: #00a7a8;
+  color: #00a7a8;
+}
+.social-icon-slideshare:hover {
+  background-color: #007475;
+  color: #007475;
+}
+.social-icon-email {
+  background-position: 0 -256px;
+  background-color: #a8a8a8;
+  color: #a8a8a8;
+}
+.social-icon-email:hover {
+  background-color: #8f8f8f;
+  color: #8f8f8f;
+}
+.social-notext:after {
+  content: '';
 }
 pre .hll {
   background-color: #272822;
