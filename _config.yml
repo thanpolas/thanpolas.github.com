@@ -2,6 +2,8 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:title
 
+markdown: rdiscount
+
 exclude: [".rvmrc", ".rbenv-version", "README.md",
   "Rakefile", "changelog.md", "*.less", "sandbox",
   "node_modules", "grunt.js", "bootstrap"
