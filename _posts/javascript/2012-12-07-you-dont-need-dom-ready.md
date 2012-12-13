@@ -165,7 +165,7 @@ Have some fun with [this plnkr](http://embed.plnkr.co/5ya2mWtrcRDSfR4ozNRz) wher
 [readystateChange]: https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/readystatechange "MDN readystateChange event"
 [dom.ready]: http://api.jquery.com/ready/ "jQuery Document Ready event"
 [http1.1]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8.1.4 "HTTP/1.1 Spec at w3c"
-[script.invote]: https://developer.mozilla.org/en-US/docs/HTML/Element/script "MDN script element"
+[script.invoke]: https://developer.mozilla.org/en-US/docs/HTML/Element/script "MDN script element"
 [parsingModel]: http://www.w3.org/TR/2011/WD-html5-20110405/parsing.html#overview-of-the-parsing-model "w3c overview of the parsing model"
 [img.parsingModel]: http://www.w3.org/TR/2011/WD-html5-20110405/images/parsing-model-overview.png "w3c overview of the parsing model"
 [tree.construction]: http://www.w3.org/TR/2011/WD-html5-20110405/tokenization.html#tree-construction "w3c Tokenization - Tree construction"
