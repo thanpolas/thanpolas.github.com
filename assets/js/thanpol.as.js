@@ -7,7 +7,7 @@
       wrapContainer: '<div class="post-image"></div>'
     },
     {
-      selector: 'table.highlighttable, div.highlight',
+      selector: 'table.highlighttable, div>div.highlight',
       wrapContainer: '<figure class="code"></figure>'
     }
   ];
