@@ -5184,10 +5184,6 @@ header .site-description {
 }
 header .site-description .doubleslash {
   color: #ff00ff;
-  -webkit-transition: color 14s steps(4, start);
-  -moz-transition: color 14s steps(4, start);
-  -o-transition: color 14s steps(4, start);
-  transition: color 14s steps(4, start);
 }
 footer {
   height: 300px;
@@ -5207,10 +5203,6 @@ article > div {
   background-color: #fff;
   border-top: 3px solid;
   border-color: #ff00ff;
-  -webkit-transition: border-color 14s steps(4, start);
-  -moz-transition: border-color 14s steps(4, start);
-  -o-transition: border-color 14s steps(4, start);
-  transition: border-color 14s steps(4, start);
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
@@ -5236,10 +5228,6 @@ article > div {
   background-color: #fff;
   border-top: 3px solid;
   border-color: #ff00ff;
-  -webkit-transition: border-color 14s steps(4, start);
-  -moz-transition: border-color 14s steps(4, start);
-  -o-transition: border-color 14s steps(4, start);
-  transition: border-color 14s steps(4, start);
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
@@ -5290,10 +5278,6 @@ article > div {
 }
 .masthead .thanpolas-cta a:hover span {
   color: #FF00FF;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
 }
 .front-content {
   margin-top: 60px;
