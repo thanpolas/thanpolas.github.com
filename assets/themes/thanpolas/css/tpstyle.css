@@ -5151,6 +5151,7 @@ table.highlighttable td.linenos pre {
  * ------------------------------------
  */
 header {
+  position: fixed;
   top: 0;
   height: 200px;
   width: 100%;
