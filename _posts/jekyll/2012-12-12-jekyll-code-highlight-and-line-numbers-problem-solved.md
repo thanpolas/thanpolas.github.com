@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "Jekyll Code Highlight And Line Numbers Problem Solved"
+description: "Setting up my new webpage and blog, thanpol.as, using Jekyll proved to be a bit more cumbersome than expected. Specifically with syntax highlighting."
 category : jekyll
 tags : [jekyll, jekyll plugins]
 ---
@@ -7,7 +9,7 @@ tags : [jekyll, jekyll plugins]
 
 Setting up my new webpage and blog, [thanpol.as][thanpol.as], using [Jekyll][jekyll] proved to be a bit more cumbersome than expected. Specifically with syntax highlighting. To get it just right, I had to create a custom plugin just to wrap the generated markup in a block container.
 
-As a concequence i had to let go of directly deploying the Jekyll repository to [Github pages][github.pages] and resort to pushing the static generated website instead. It strikes me as odd that, what I believed to be a trivial task, proved to be so hard and what I discovered that was required for highlighting to work, was not offered as an option from [Jekyll][jekyll]. So finally, i ended up fixing the problem with Javascript.
+As a consequence i had to let go of directly deploying the Jekyll repository to [Github pages][github.pages] and resort to pushing the static generated website instead. It strikes me as odd that, what I believed to be a trivial task, proved to be so hard and what I discovered that was required for highlighting to work, was not offered as an option from [Jekyll][jekyll]. So finally, i ended up fixing the problem with Javascript.
 
 ## Syntax Highlighting Options
 

@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "You Don't Need the DOM Ready Event"
+description: "It usually takes a long time for the `DOM ready` event to fire. During this time, many parts of a webpage are inactive as they wait for Javascript to kick in and initialize them. This delay is significant and makes a rich web application become available slower. Creates a bad user experience, doesn't adhere to any design pattern and is, really, not needed..."
 category : javascript
 tags : [javascript, jquery, events, optimizations, speed]
 ---
