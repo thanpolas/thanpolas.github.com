@@ -5011,7 +5011,7 @@ a.badge:hover {
  * ------------------------------------
  */
 body {
-  background: url('/assets/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
+  background: url('/assets/themes/thanpolas/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
 }
 h1,
 h2,
@@ -5076,7 +5076,7 @@ li code {
   color: inherit;
 }
 figure {
-  margin: 0;
+  margin: 0 0 22.857142857142858px 0;
   padding: 0;
   overflow: auto;
 }
@@ -5098,13 +5098,16 @@ pre {
   -moz-box-shadow: "inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)";
   box-shadow: "inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)";
 }
+pre .lineno {
+  color: #8f908a;
+}
 table.highlighttable {
   border-spacing: 0;
   width: 100%;
   overflow: auto;
 }
 table.highlighttable td {
-  vertical-align: middle;
+  vertical-align: top;
   margin: 0;
   padding: 0;
 }
@@ -5152,7 +5155,7 @@ header {
   top: 0;
   height: 200px;
   width: 100%;
-  background: url('/assets/themes/thanpolas/img/header-bg.png') repeat 0 0 #1b1b1b;
+  background: url('/assets/themes/thanpolas/img/patterns/header-bg.png') repeat 0 0 #1b1b1b;
 }
 header .titles {
   margin-top: 50px;
@@ -5190,12 +5193,12 @@ header .site-description .doubleslash {
 footer {
   height: 300px;
   margin-top: -50px;
-  background: url('/assets/themes/thanpolas/img/footer-bg.gif') repeat 0 0 #2b2b2b;
+  background: url('/assets/themes/thanpolas/img/patterns/footer-bg.gif') repeat 0 0 #2b2b2b;
 }
 article {
   position: relative;
   z-index: 2;
-  background-color: url('/assets/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
+  background: url('/assets/themes/thanpolas/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
   margin-top: 200px;
 }
 article > div {
@@ -5249,7 +5252,7 @@ article > div {
 }
 .col2 {
   float: none;
-  margin-left: 260px;
+  margin-left: 360px;
 }
 .masthead .thanpolas-fullname {
   padding-top: 33px;
@@ -5299,6 +5302,16 @@ article > div {
 .social-unit li a {
   color: #999;
 }
+.post p .post-image {
+  border: 1px solid #ddd;
+  display: inline-block;
+  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.post p .post-image img {
+  display: block;
+}
 .social-unit {
   text-align: center;
 }
@@ -5327,12 +5340,10 @@ article > div {
   height: 32px;
   *margin-right: .3em;
   line-height: 32px;
-  vertical-align: text-top;
   background-color: #000;
   background-image: url("../img/social-white.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  margin-top: 7px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;

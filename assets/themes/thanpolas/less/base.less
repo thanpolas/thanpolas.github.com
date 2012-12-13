@@ -49,7 +49,7 @@ p code, li code {
   color:inherit;
 }
 figure {
-  margin: 0;
+  margin: 0 0 @baseLineHeight 0;
   padding: 0;
   overflow: auto;
   // reset the p element that is appended inside figure elements
@@ -71,6 +71,10 @@ pre  {
   color: #f2f2f2;
 
   .box-shadow("inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)");
+
+  .lineno {
+    color: @color-linenos;
+  }
 }
 
 table.highlighttable {
@@ -79,7 +83,7 @@ table.highlighttable {
   overflow: auto;
 
   td {
-    vertical-align: middle;
+    vertical-align: top;
     margin:0;
     padding:0;
   }
@@ -173,7 +177,7 @@ footer {
 article {
   position: relative;
   z-index: 2;
-  background-color: @bg-body;
+  background: @bg-body;
   margin-top: @header-height;
   >div {
     position: relative;

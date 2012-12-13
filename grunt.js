@@ -10,6 +10,8 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Project configuration.
   grunt.initConfig({
@@ -30,9 +32,18 @@ module.exports = function(grunt) {
         files: 'assets/themes/thanpolas/less/*.less',
         tasks: 'less:development'
       },
-      generation: {
-        files: '_site/*',
-        tasks: 'copy:dist'
+      jekyllSources: {
+        files: [ 'assets/themes/thanpolas/css/tpstyle.css',
+          '*.html', '*.yml', 'assets/js/**.js', '_posts/**'
+          // '**/*', '!_site/**', '!**/*.less',
+          // '!grunt.js', '!assets', '!node_modules',
+          // '!site_git'
+          ],
+        tasks: 'shell:jekyll',
+        options: {
+          //forceWatchMethod: 'old',
+          debounceDelay: 500
+        }
       }
     },
     copy: {
@@ -42,6 +53,12 @@ module.exports = function(grunt) {
         }
       }
     },
+  shell: {
+      jekyll: {
+          command: 'rm -rf _site/*; jekyll',
+          stdout: true
+      }
+  },
   less: {
     development: {
       options: {
@@ -57,6 +74,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint test');
+  grunt.registerTask('default', 'watch');
 
 };
