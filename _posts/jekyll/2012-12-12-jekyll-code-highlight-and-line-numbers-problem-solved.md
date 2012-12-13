@@ -13,7 +13,7 @@ As a consequence i had to let go of directly deploying the Jekyll repository to 
 
 ## Syntax Highlighting Options
 
-Although I know there are many solutions for [Syntax Highlighting][highlight.js] out there, I wanted to go with Jekyll's "native" way, [pygments][pygments] and [Liquid Templates][liquid]. Syntax looked ok, codeblocks are required to be inside `{% raw %}{% highlight html %}{% endraw %}` and ` {% raw %}{% endhighlight %}{% endraw %}` tags.
+Although I know there are many solutions for [Syntax Highlighting][highlight.js] out there, I wanted to go with Jekyll's "native" way, [pygments][pygments] and [Liquid Templates][liquid]. Syntax looked ok, codeblocks are required to be inside <code> &#123;% highlight html %&#125;</code> and <code> &#123;% endhighlight %&#125;</code> tags.
 
 This codeblock will generate pygmented markup like the following Javascript sample:
 
@@ -31,14 +31,14 @@ Again, it looked simple, just add the key `linenos` in the liquid tags and line 
 
 {% highlight javascript linenos %}
 // so this codeblock has been generated
-// using this opening liquid tag:
-// {% raw %}{% highlight javascript linenos %}{% endraw %}
+// by adding the property 'linenos' to the
+// syntaxhighlight tag
 for (var i = 0, len = ar.length; i < 0; i++) {
 {% endhighlight %}
 
 However, the line numbers are inline with the code which creates a "*Select and Copy*" problem... You get the line numbers in the clipboard, essentially making the codeblock not *copy-pasteable*.
 
-The [solution][stack.linenos.table] for that is to use one additional parameter, the `table`. So the opening liquid tag would look like this `{% raw %}{% highlight language linenos=table %}{% endraw %}`. Which produces this result:
+The [solution][stack.linenos.table] for that is to use one additional parameter, the `table`. So the opening liquid tag would look like this <code> &#123;% highlight language linenos=table %&#125;</code>. Which produces this result:
 
 {% highlight javascript linenos=table %}
 for (var i = 0, len = ar.length; i < 0; i++) {
@@ -81,7 +81,7 @@ Rather than trying to somehow properly align the line numbers with the wrapped l
 
 However, with no fixed width on the table cell, there is [no proper solution][stack.pre.table] to have horizontal bars for a child element. In the case of a [no-wrapping `pre`][stack.pre.tableTwo] things get nasty. Challenge yourself in [this Dabblet][dabblet.table].
 
-A solution to this problem, is to wrap the table into a containing block. Then the block can have horizontal bars if the table overflowed. And this option, plainly does not exist for Jekyll. The `{% raw %}{% highlight %}...{% endraw %}` tag is Jekyll's native [plugin][jekyll.plugin] for the liquid templates. It takes the codeblock and runs it through [albino][albino], a ruby wrapper for pygmentize, before it is pushed upwards the stack, to whatever engine the document is (md, html, textile).
+A solution to this problem, is to wrap the table into a containing block. Then the block can have horizontal bars if the table overflowed. And this option, plainly does not exist for Jekyll. The <code>&#123;% highlight %&#125;...</code> tag is Jekyll's native [plugin][jekyll.plugin] for the liquid templates. It takes the codeblock and runs it through [albino][albino], a ruby wrapper for pygmentize, before it is pushed upwards the stack, to whatever engine the document is (md, html, textile).
 
 There is no option or way to define a wrapper for the generated code. There is also no way to wrap around a `tag` in the liquid templates... This left me with three choices:
 
