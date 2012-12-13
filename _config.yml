@@ -4,9 +4,10 @@ permalink: /:categories/:title
 
 markdown: rdiscount
 
-exclude: [".rvmrc", ".rbenv-version", "README.md",
+exclude: [".rvmrc", ".rbenv-version", "README.md", "less",
   "Rakefile", "changelog.md", "*.less", "sandbox",
-  "node_modules", "grunt.js", "bootstrap", "_site_git"
+  "node_modules", "grunt.js", "bootstrap", "_site_git",
+  "assets/themes/thanpolas/less"
 
   ]
 auto: false
