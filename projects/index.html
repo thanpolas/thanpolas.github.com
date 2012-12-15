@@ -1,0 +1,72 @@
+---
+layout: page
+title: "Projects / Work"
+
+projects:
+  - title: 'ready.js'
+    name: 'ready.js'
+    url: 'https://github.com/thanpolas/ready.js'
+    techs: [Javascript, node.js, Closure Library]
+    descr: 'allows a developer to monitor the progress and completion state of multiple concurrent asynchronous operations. It runs in the browser and node.js'
+
+  - title: 'Closure Boilerplate'
+    name: 'Closure Boilerplate'
+    url: 'https://github.com/thanpolas/closure-boilerplate'
+    techs: ['Closure Library', 'Perl', 'Javascript']
+    descr: |
+       is the starting point for a <a href="https://developers.google.com/closure/library/">Google Closure Library</a> project, Javascript compilers included.'
+
+  - title: 'server2js'
+    name: 'Server to JS'
+    url: 'https://github.com/thanpolas/server2js'
+    techs: ['Javascript', 'node.js', 'Closure Library']
+    descr: 'sends arbitrary data objects from the server to the client on page load time, synchronously.'
+
+  - title: 'Superstartup'
+    name: 'ready.js'
+    url: 'https://github.com/thanpolas/superstartup'
+    techs: ['Javascript', 'node.js', 'Closure Library']
+    descr: 'is a work in progress. It offers a modular frontend solution by providing the essential services and tools every startup needs, <i>user authentication</i>, <i>metrics</i> and <i>social tools</i>.'
+
+  - title: 'Grunt Closure Tools'
+    name: 'Grunt Closure Tools'
+    url: 'https://github.com/thanpolas/grunt-closure-tools'
+    techs: ['Grunt', 'Javascript', 'node.js', 'Closure Library']
+    descr: |
+      for <a href="http://gruntjs.com/">Grunt</a> is a superset of the  tools provided by the Google Closure Library. The powerful compiler, the builder and the dependency writer.'
+
+  - title: 'sublime-autoDocBlockr'
+    name: 'autoDocBlockr'
+    url: 'https://github.com/thanpolas/sublime-autoDocBlockr'
+    techs: ['sublime2', 'python']
+    descr: ' is a plugin for the Sublime2 editor, it will insert Document Blocks automatically. It is triggered seamlessly as you move your cursor through a function...'
+
+  - title: 'Geowarp Mobile App'
+    name: 'Geowarp Mobile'
+    url: 'https://itunes.apple.com/us/app/geowarp/id398624102?mt=8'
+    techs: ['Titanium', 'Javascript', 'iOS']
+    descr: |
+      is the mobile application of <a href="http://geowarp.com">Geowarp</a>, built with <a href="http://www.appcelerator.com/">Appcelerator's</a> <a href="http://www.appcelerator.com/platform/titanium-sdk">Titanium</a> using the same Javascript core that is running on the current website.'
+
+
+---
+{% include JB/setup %}
+<div class="row-fluid">
+{% for project in page.projects %}
+  {% capture rowIter %}{% cycle 1, 2, 3 %}{% endcapture %}
+  <div class="span4 project-unit">
+    <h3><a href="{{project.url}}">{{project.title}}</a></h3>
+    <ul class="code-pills">
+      {% for tech in project.techs %}
+        <li class="{{tech | downcase | replace: ' ', '-' | replace: '.', '-'}}">{{tech}}</li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{project.url}}">{{project.name}}</a>{{project.descr}}</p>
+  </div>
+  {% if '3' == rowIter %}
+</div>
+<div class="row-fluid">
+  {% endif %}
+
+{% endfor %}
+</div>

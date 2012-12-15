@@ -5185,6 +5185,10 @@ header .site-description {
 }
 header .site-description .doubleslash {
   color: #ff00ff;
+  -webkit-transition: color 0.5s linear;
+  -moz-transition: color 0.5s linear;
+  -o-transition: color 0.5s linear;
+  transition: color 0.5s linear;
 }
 footer {
   height: 300px;
@@ -5204,6 +5208,10 @@ article > div {
   background-color: #fff;
   border-top: 3px solid;
   border-color: #ff00ff;
+  -webkit-transition: border-color 0.5s linear;
+  -moz-transition: border-color 0.5s linear;
+  -o-transition: border-color 0.5s linear;
+  transition: border-color 0.5s linear;
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
@@ -5229,6 +5237,10 @@ article > div {
   background-color: #fff;
   border-top: 3px solid;
   border-color: #ff00ff;
+  -webkit-transition: border-color 0.5s linear;
+  -moz-transition: border-color 0.5s linear;
+  -o-transition: border-color 0.5s linear;
+  transition: border-color 0.5s linear;
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
@@ -5653,3 +5665,87 @@ pre .il {
   color: #ae81ff;
 }
 /* Literal.Number.Integer.Long */
+.project-unit h3 {
+  margin: 5px 0 10px 0;
+  line-height: 11.428571428571429px;
+}
+.project-unit h3 a {
+  color: inherit;
+  font-size: 19px;
+}
+.project-unit h3 a:hover {
+  text-decoration: none;
+}
+.project-unit .code-pills {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  *zoom: 1;
+}
+.project-unit .code-pills:before,
+.project-unit .code-pills:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.project-unit .code-pills:after {
+  clear: both;
+}
+.project-unit .code-pills li {
+  float: left;
+  line-height: 17px;
+  list-style: none;
+  margin-right: 5px;
+  margin-top: 5px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 10px;
+  padding: 1px 6px 0 6px;
+  border: 2px solid #555555;
+  border: 2px solid rgba(0, 0, 0, 0.55);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+.project-unit .code-pills .javascript {
+  background-color: #F0DB4F;
+}
+.project-unit .code-pills .node-js {
+  background-color: #8CC84B;
+}
+.project-unit .code-pills .closure-library {
+  background-color: #366CEF;
+  color: #fff;
+}
+.project-unit .code-pills .sublime2 {
+  background-color: #272822;
+  color: #fff;
+}
+.project-unit .code-pills .perl {
+  background-color: #004065;
+  color: #fff;
+}
+.project-unit .code-pills .grunt {
+  background-color: #FBA919;
+}
+.project-unit .code-pills .python {
+  background-color: #ffc634;
+}
+.project-unit .code-pills .titanium {
+  background-color: #A80012;
+  color: #fff;
+}
+.project-unit .code-pills .ios {
+  background-color: #000;
+  color: #fff;
+}
+.project-unit p {
+  font-size: 12px;
+  text-align: left;
+  line-height: 17.5px;
+}
+.project-unit p a:first-child {
+  padding-right: 5px;
+}

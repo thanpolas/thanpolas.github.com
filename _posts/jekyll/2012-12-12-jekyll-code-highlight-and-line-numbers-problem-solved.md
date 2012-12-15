@@ -110,18 +110,6 @@ end
 Liquid::Template.register_tag('highlight', Jekyll::WrapHighlightBlock)
 {% endhighlight %}
 
-There is one small problem with the resulting output. Jekyll's [native plugin][jekyll.syntaxhighlight] for syntax highlighting, outputs two [newlines][jekyll.md.rb] that warp the output. These newlines get converted to `<p>` elements in the final document output, resulting in this markup:
-
-{% highlight html linenos=table %}
-<figure class="code"><figcaption></figcaption>
-  <p></p>
-  <table class="highlighttable">...</table>
-  <p></p>
-</figure>
-{% endhighlight %}
-
-While this does not affect the styling you can understand how it can be a thorn in my eye.
-
 ## Custom plugins == no Github love
 
 Once you step to the other side, using custom plugins for Jekyll's generation, you loose the option to [directly push to Github][github.jekyll] on the `[username].github.com` repo.

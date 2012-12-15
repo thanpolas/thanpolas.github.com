@@ -28,13 +28,14 @@ module.exports = function(grunt) {
       ]
     },
     watch: {
-      scripts: {
+      less: {
         files: 'assets/themes/thanpolas/less/*.less',
         tasks: 'less:development'
       },
       jekyllSources: {
         files: [ 'assets/themes/thanpolas/css/tpstyle.css',
-          '*.html', '*.yml', 'assets/js/**.js', '_posts/**'
+          '*.html', '*.yml', 'assets/js/**.js', '_posts/**',
+          'projects/**', 'blog/**', 'about/**'
           // '**/*', '!_site/**', '!**/*.less',
           // '!grunt.js', '!assets', '!node_modules',
           // '!site_git'
