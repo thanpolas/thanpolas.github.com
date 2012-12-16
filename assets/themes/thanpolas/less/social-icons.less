@@ -7,13 +7,13 @@
 
 .social-unit {
   text-align: center;
+
   a {
-    display: block;
-    width: 32px;
+    display: inline-block;
+    //width: 32px;
     height:32px;
-    margin: auto;
     margin-top: 7px;
-    .transition(all 0.2s linear);
+    .transition(rotateY 0.2s linear);
     &:hover {
     -webkit-transform: rotateY(25deg);
        -moz-transform: rotateY(25deg);
@@ -21,7 +21,20 @@
          -o-transform: rotateY(25deg);
             transform: rotateY(25deg);
     }
+
+    i, span {
+      vertical-align:middle;
+    }
   }
+}
+
+.social-unit.horizontal li {
+  float: left;
+}
+
+.center-block {
+  display:block;
+  margin: auto;
 }
 
 // colors
@@ -40,6 +53,7 @@
   display: inline-block;
   width: 32px;
   height: 32px;
+  margin-right: 5px;
   .ie7-restore-right-whitespace();
   line-height: 32px;
   background-color: #000;
@@ -64,7 +78,9 @@
     background-color: darken(@stepColor, 10%);
     color: darken(@stepColor, 10%);
   }
-  //&:after {content: @stepContent;}
+  & + span {
+    color: @stepColor;
+  }
 }
 
 .social-icon-github       {.socialIconStep(@color-github,     0, 'Github');}
@@ -78,6 +94,3 @@
 .social-icon-email        {.socialIconStep(@color-email,      8, 'e-mail');}
 
 
-.social-notext {
-  &:after{content: '';}
-}

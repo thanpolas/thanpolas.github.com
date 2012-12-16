@@ -5026,6 +5026,11 @@ samp {
   font-family: monospace, serif;
   font-size: 1em;
 }
+sup {
+  top: -0.8em;
+  font-size: 60%;
+  padding-right: 0.2em;
+}
 /**
  * ------------------------------------
  * SELECTION BACKGROUND
@@ -5252,7 +5257,7 @@ article > div {
 }
 .col2 {
   float: none;
-  margin-left: 360px;
+  margin-left: 280px;
 }
 .masthead .thanpolas-fullname {
   padding-top: 33px;
@@ -5271,28 +5276,17 @@ article > div {
   font-size: 21px;
   line-height: 2;
 }
-.masthead .thanpolas-cta a {
-  margin-top: 40px;
-  color: #999;
-  font-weight: normal;
-  -webkit-transition: color 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  background-image: none;
-  background-color: #F5F5F5;
-}
-.masthead .thanpolas-cta a span {
-  display: block;
-  float: left;
-  margin-top: 0;
-  margin-right: 5px;
-  font-size: 28px;
-}
-.masthead .thanpolas-cta a:hover span {
-  color: #FF00FF;
-}
 .front-content {
+  margin-top: 60px;
+}
+.front-content .social-unit {
+  display: inline-block;
+  margin: auto;
+}
+.front-content .col1 {
+  text-align: center;
+}
+.col2.posts {
   margin-top: 60px;
 }
 .social-unit li a {
@@ -5312,15 +5306,13 @@ article > div {
   text-align: center;
 }
 .social-unit a {
-  display: block;
-  width: 32px;
+  display: inline-block;
   height: 32px;
-  margin: auto;
   margin-top: 7px;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: rotateY 0.2s linear;
+  -moz-transition: rotateY 0.2s linear;
+  -o-transition: rotateY 0.2s linear;
+  transition: rotateY 0.2s linear;
 }
 .social-unit a:hover {
   -webkit-transform: rotateY(25deg);
@@ -5329,11 +5321,23 @@ article > div {
   -o-transform: rotateY(25deg);
   transform: rotateY(25deg);
 }
+.social-unit a i,
+.social-unit a span {
+  vertical-align: middle;
+}
+.social-unit.horizontal li {
+  float: left;
+}
+.center-block {
+  display: block;
+  margin: auto;
+}
 [class^="social-icon-"],
 [class*=" social-icon-"] {
   display: inline-block;
   width: 32px;
   height: 32px;
+  margin-right: 5px;
   *margin-right: .3em;
   line-height: 32px;
   background-color: #000;
@@ -5354,6 +5358,9 @@ article > div {
   background-color: #000000;
   color: #000000;
 }
+.social-icon-github + span {
+  color: #000000;
+}
 .social-icon-linkedin {
   background-position: 0 -32px;
   background-color: #0e76a8;
@@ -5362,6 +5369,9 @@ article > div {
 .social-icon-linkedin:hover {
   background-color: #0a5579;
   color: #0a5579;
+}
+.social-icon-linkedin + span {
+  color: #0e76a8;
 }
 .social-icon-twitter {
   background-position: 0 -64px;
@@ -5372,6 +5382,9 @@ article > div {
   background-color: #00607f;
   color: #00607f;
 }
+.social-icon-twitter + span {
+  color: #0087b2;
+}
 .social-icon-facebook {
   background-position: 0 -96px;
   background-color: #3d599b;
@@ -5380,6 +5393,9 @@ article > div {
 .social-icon-facebook:hover {
   background-color: #2f4476;
   color: #2f4476;
+}
+.social-icon-facebook + span {
+  color: #3d599b;
 }
 .social-icon-google {
   background-position: 0 -128px;
@@ -5390,6 +5406,9 @@ article > div {
   background-color: #ba3424;
   color: #ba3424;
 }
+.social-icon-google + span {
+  color: #d94a38;
+}
 .social-icon-skype {
   background-position: 0 -160px;
   background-color: #00aff0;
@@ -5398,6 +5417,9 @@ article > div {
 .social-icon-skype:hover {
   background-color: #008abd;
   color: #008abd;
+}
+.social-icon-skype + span {
+  color: #00aff0;
 }
 .social-icon-rss {
   background-position: 0 -192px;
@@ -5408,6 +5430,9 @@ article > div {
   background-color: #cd5100;
   color: #cd5100;
 }
+.social-icon-rss + span {
+  color: #ff6501;
+}
 .social-icon-slideshare {
   background-position: 0 -224px;
   background-color: #00a7a8;
@@ -5416,6 +5441,9 @@ article > div {
 .social-icon-slideshare:hover {
   background-color: #007475;
   color: #007475;
+}
+.social-icon-slideshare + span {
+  color: #00a7a8;
 }
 .social-icon-email {
   background-position: 0 -256px;
@@ -5426,8 +5454,8 @@ article > div {
   background-color: #8f8f8f;
   color: #8f8f8f;
 }
-.social-notext:after {
-  content: '';
+.social-icon-email + span {
+  color: #a8a8a8;
 }
 pre .hll {
   background-color: #272822;
@@ -5710,36 +5738,48 @@ pre .il {
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
 }
 .project-unit .code-pills .javascript {
-  background-color: #F0DB4F;
+  background-color: #f0db4f;
+  color: 'inherit';
 }
 .project-unit .code-pills .node-js {
-  background-color: #8CC84B;
+  background-color: #8cc84b;
+  color: 'inherit';
 }
 .project-unit .code-pills .closure-library {
-  background-color: #366CEF;
-  color: #fff;
+  background-color: #366cef;
+  color: #ffffff;
 }
 .project-unit .code-pills .sublime2 {
   background-color: #272822;
-  color: #fff;
+  color: #ffffff;
 }
 .project-unit .code-pills .perl {
   background-color: #004065;
-  color: #fff;
+  color: #ffffff;
 }
 .project-unit .code-pills .grunt {
-  background-color: #FBA919;
+  background-color: #fba919;
+  color: 'inherit';
 }
 .project-unit .code-pills .python {
   background-color: #ffc634;
+  color: 'inherit';
 }
 .project-unit .code-pills .titanium {
-  background-color: #A80012;
-  color: #fff;
+  background-color: #a80012;
+  color: #ffffff;
 }
 .project-unit .code-pills .ios {
-  background-color: #000;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
+}
+.project-unit .code-pills .php {
+  background-color: #9999cc;
+  color: 'inherit';
+}
+.project-unit .code-pills .dynamodb {
+  background-color: #ff9900;
+  color: 'inherit';
 }
 .project-unit p {
   font-size: 12px;
@@ -5748,4 +5788,38 @@ pre .il {
 }
 .project-unit p a:first-child {
   padding-right: 5px;
+}
+.about-me > p > img {
+  width: 140px;
+  float: left;
+  margin-right: 5px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.about-me p:nth-child(2) img {
+  float: right;
+  margin-right: 0;
+  margin-left: 5px;
+}
+.footnotes {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 60px;
+}
+.footnotes li {
+  margin-bottom: 10px;
+}
+.footnotes li p {
+  margin: 0;
+}
+.thanpolas-social h3 {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 22px;
+  line-height: 25px;
+}
+.thanpolas-social .social-unit {
+  width: 100%;
+  text-align: left;
 }

@@ -36,15 +36,23 @@
       .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
     }
 
-    .javascript {background-color: #F0DB4F;}
-    .node-js {background-color: #8CC84B;}
-    .closure-library {background-color: #366CEF; color: #fff;}
-    .sublime2 {background-color: #272822; color: #fff;}
-    .perl {background-color: #004065; color: #fff;}
-    .grunt {background-color: #FBA919;}
-    .python {background-color: #ffc634;}
-    .titanium {background-color: #A80012; color: #fff;}
-    .ios {background-color: #000; color: #fff; }
+    .colorCodePills(@bgcolor, @color: 'inherit') {
+      background-color: @bgcolor;
+      color: @color;
+
+    }
+
+    .javascript {.colorCodePills(#F0DB4F);}
+    .node-js {.colorCodePills(#8CC84B);}
+    .closure-library {.colorCodePills(#366CEF, #fff);}
+    .sublime2 {.colorCodePills(#272822, #fff);}
+    .perl {.colorCodePills(#004065, #fff);}
+    .grunt {.colorCodePills(#FBA919);}
+    .python {.colorCodePills(#ffc634);}
+    .titanium {.colorCodePills(#A80012, #fff);}
+    .ios {.colorCodePills(#000, #fff); }
+    .php {.colorCodePills(#9999CC);}
+    .dynamodb {.colorCodePills(#FF9900);}
   }
 
   p {
