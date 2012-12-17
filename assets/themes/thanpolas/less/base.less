@@ -26,6 +26,10 @@ sup {
   padding-right: 0.2em;
 }
 
+.no-wrap {
+  .noWrap();
+}
+
 /**
  * ------------------------------------
  * SELECTION BACKGROUND
@@ -134,7 +138,7 @@ table.highlighttable {
  * ------------------------------------
  */
 
-header {
+.header-master {
   height: @header-height;
   background: @bg-header;
 
@@ -152,12 +156,13 @@ header {
     padding-bottom:0;
   }
 
-  .brand {
+  .site-title-name {
     color: @color-header;
     &:hover {
       text-decoration: none;
     }
   }
+
   .site-title {
     margin: 0;
     small, a {
@@ -167,20 +172,20 @@ header {
       font-size: 17.3px;
     }
   }
-
-  .site-description {
-    margin: 31px 0 0 0;
-    color: @color-header;
-    font-size: 18px;
-    color: #999;
-    text-align: right;
-    .doubleslash {
-      color: hsl(300, 100%, 50%);
-      .lolipop-trans(color);
-    }
-  }
-
 }
+.site-description-title {
+  margin: 31px 0 0 0;
+  color: @color-header;
+  font-size: 18px;
+  color: #999;
+  text-align: right;
+  .doubleslash {
+    color: hsl(300, 100%, 50%);
+    .lolipop-trans(color);
+  }
+}
+
+
 footer {
   height: 300px;
   background: @bg-footer;
