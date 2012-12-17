@@ -46,27 +46,16 @@ pre::selection { background: @highlight-selection-bg}
  * CODE HIGHLIGHTING
  * ------------------------------------
  */
-p code, li code {
+// code pills
+.content p>code{
   padding: 2px 5px;
   white-space: nowrap;
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
-  .border-radius(3px);
+  .border-radius(0);
   color:inherit;
 }
-figure {
-  margin: 0 0 @baseLineHeight 0;
-  padding: 0;
-  overflow: auto;
-  // reset the p element that is appended inside figure elements
-  p {
-    margin:0;
-    padding:0;
-    height:0;
-    width:0;
-    line-height: 0;
-  }
-}
+
 
 pre  {
   background-color: @bg-codeblock;
@@ -76,11 +65,28 @@ pre  {
   padding: 5px 20px;
   color: #f2f2f2;
 
+  font-size: 14px;
+  line-height: 20px;
+
+  .border-radius(0);
+
   .box-shadow("inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)");
 
   .lineno {
     color: @color-linenos;
   }
+}
+
+// target pre inside a table
+figure {
+  margin: 0 0 @baseLineHeight 0;
+  padding: 0;
+  overflow: auto;
+}
+
+// target pre as content child
+.content>pre {
+
 }
 
 table.highlighttable {
@@ -109,9 +115,6 @@ table.highlighttable {
       overflow: auto;
       border-left: 0;
       padding-left: 0;
-
-      .border-top-left-radius(0);
-      .border-bottom-left-radius(0);
     }
   }
 
@@ -120,8 +123,6 @@ table.highlighttable {
       text-align: right;
       border-right: 0;
       color: @color-linenos;
-      .border-bottom-right-radius(0);
-      .border-top-right-radius(0);
     }
   }
 }
@@ -137,8 +138,12 @@ header {
   height: @header-height;
   background: @bg-header;
 
-  .titles{
-    margin-top: 50px;
+  .header-unit{
+    margin-top: 10px;
+  }
+
+  .header-unit-inner {
+    //background: @bg-header-inner;
   }
 
   .content__head {
