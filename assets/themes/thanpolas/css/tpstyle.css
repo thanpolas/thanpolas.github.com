@@ -5011,7 +5011,7 @@ a.badge:hover {
  * ------------------------------------
  */
 body {
-  background: url('/assets/themes/thanpolas/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
+  background: #f5f5f5;
 }
 h1,
 h2,
@@ -5156,11 +5156,11 @@ table.highlighttable td.linenos pre {
  * ------------------------------------
  */
 header {
-  position: fixed;
-  top: 0;
   height: 200px;
-  width: 100%;
-  background: url('/assets/themes/thanpolas/img/patterns/header-bg.png') repeat 0 0 #1b1b1b;
+  background: url("/assets/themes/thanpolas/img/patterns/carbon_fibre_v2/carbon_fibre_v2.png") repeat 0 #292929;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.65);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.65);
 }
 header .titles {
   margin-top: 50px;
@@ -5197,26 +5197,17 @@ header .site-description .doubleslash {
 }
 footer {
   height: 300px;
-  margin-top: -50px;
-  background: url('/assets/themes/thanpolas/img/patterns/footer-bg.gif') repeat 0 0 #2b2b2b;
+  background: #d2d2d2;
 }
 article {
-  position: relative;
-  z-index: 2;
-  background: url('/assets/themes/thanpolas/img/patterns/pattern-chronicl.png') repeat 0 0 #f5f5f5;
-  margin-top: 200px;
+  -webkit-box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.25);
 }
-article > div {
-  position: relative;
-  top: -40px;
+article .content {
   padding: 40px;
+  margin: 40px 0;
   background-color: #fff;
-  border-top: 3px solid;
-  border-color: #ff00ff;
-  -webkit-transition: border-color 0.5s linear;
-  -moz-transition: border-color 0.5s linear;
-  -o-transition: border-color 0.5s linear;
-  transition: border-color 0.5s linear;
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
@@ -5239,13 +5230,8 @@ article > div {
   min-width: 400px;
   margin: 20px auto;
   padding: 40px;
+  margin: 40px 0;
   background-color: #fff;
-  border-top: 3px solid;
-  border-color: #ff00ff;
-  -webkit-transition: border-color 0.5s linear;
-  -moz-transition: border-color 0.5s linear;
-  -o-transition: border-color 0.5s linear;
-  transition: border-color 0.5s linear;
   -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);

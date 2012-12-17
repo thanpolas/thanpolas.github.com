@@ -23,6 +23,22 @@
   }
   wrapElements();
 
+
+
+
+  //.parallax(xPosition, speedFactor, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+
+  // $('#intro').parallax("50%", 0.1);
+  // $('#second').parallax("50%", 0.1);
+  // $('.bg').parallax("50%", 0.4);
+  // $('#third').parallax("50%", 0.3);
+
+
+
+
   var $lolipopBorder = $('.lolipop-border');
   var $lolipopFont = $('.lolipop-font');
   var orientations = [0, 60, 120, 180, 240, 300];
@@ -45,6 +61,10 @@
     setTimeout(lolipop, 14000);
   }
 
-  setTimeout(lolipop, 14000);
+  //setTimeout(lolipop, 14000);
+  //
+  //
+
+  $('#nav').localScroll(800);
 
 }();
