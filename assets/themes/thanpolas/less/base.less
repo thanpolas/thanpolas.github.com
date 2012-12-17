@@ -136,10 +136,15 @@ table.highlighttable {
 header {
   height: @header-height;
   background: @bg-header;
-  .box-shadow(0 2px 10px 0 rgba(0, 0, 0, 0.65));
 
   .titles{
     margin-top: 50px;
+  }
+
+  .content__head {
+    padding: @baseContentPadding;
+    padding-top: 0;
+    padding-bottom:0;
   }
 
   .brand {
@@ -174,10 +179,13 @@ header {
 footer {
   height: 300px;
   background: @bg-footer;
+  .box-shadow(inset 0 10px 10px -10px rgba(0, 0, 0, 0.25));
+
 }
 
 article {
-  .box-shadow(@shadow-container-large);
+  .box-shadow(inset 0 12px 10px -10px rgba(0, 0, 0, 0.55));
+
 
   .content {
     .content-styles();
