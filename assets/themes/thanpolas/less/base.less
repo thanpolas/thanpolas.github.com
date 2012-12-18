@@ -4,9 +4,9 @@
  * RESET
  * ------------------------------------
  */
-body {
+html, body {
   background: @bg-body;
-  #gradient.vertical(lighten(@bg-body-color, 10%), darken(@bg-body-color, 10%));
+  #gradient.vertical(darken(@bg-body-color, 20%), @bg-body-color);
 
 }
 
@@ -228,4 +228,8 @@ article {
   margin: 0;
   line-height: 55px;
   padding: 4px 6px 0 0;
+}
+
+.text-center {
+  text-align: center;
 }
