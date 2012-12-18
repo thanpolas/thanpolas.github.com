@@ -7818,6 +7818,46 @@ article .content {
 .post p .post-image img {
   display: block;
 }
+.posts-collate li {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.posts-title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+.posts-time {
+  display: inline-block;
+  min-width: 60px;
+  color: #555555;
+}
+.posts-description {
+  *zoom: 1;
+  display: block;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.posts-description:before,
+.posts-description:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.posts-description:after {
+  clear: both;
+}
+.posts-description:before,
+.posts-description:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.posts-description:after {
+  clear: both;
+}
 .social-unit {
   text-align: center;
   min-width: 125px;
