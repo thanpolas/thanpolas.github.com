@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     },
     watch: {
       less: {
-        files: 'assets/themes/thanpolas/less/*.less',
+        files: ['assets/themes/thanpolas/less/*.less' ,'/_includes/**'],
         tasks: 'less:development'
       },
       jekyllSources: {
