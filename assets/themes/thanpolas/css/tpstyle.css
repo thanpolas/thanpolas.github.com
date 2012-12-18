@@ -8253,15 +8253,15 @@ pre .il {
 }
 .project-unit .code-pills li {
   float: left;
-  line-height: 17px;
+  line-height: 13px;
   list-style: none;
   margin-right: 5px;
   margin-top: 5px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 10px;
-  padding: 1px 6px 0 6px;
-  border: 2px solid #555555;
-  border: 2px solid rgba(0, 0, 0, 0.55);
+  padding: 0 6px 0 6px;
+  border: 1px solid #555555;
+  border: 1px solid rgba(0, 0, 0, 0.55);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -8270,47 +8270,47 @@ pre .il {
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
 }
 .project-unit .code-pills .javascript {
-  background-color: #f0db4f;
+  background-color: #faf3c4;
   color: 'inherit';
 }
 .project-unit .code-pills .node-js {
-  background-color: #8cc84b;
+  background-color: #cae6ad;
   color: 'inherit';
 }
 .project-unit .code-pills .closure-library {
-  background-color: #366cef;
+  background-color: #acc2f8;
   color: #ffffff;
 }
 .project-unit .code-pills .sublime2 {
-  background-color: #272822;
+  background-color: #6a6d5d;
   color: #ffffff;
 }
 .project-unit .code-pills .perl {
-  background-color: #004065;
+  background-color: #0091e4;
   color: #ffffff;
 }
 .project-unit .code-pills .grunt {
-  background-color: #fba919;
+  background-color: #fdd896;
   color: 'inherit';
 }
 .project-unit .code-pills .python {
-  background-color: #ffc634;
+  background-color: #ffeab3;
   color: 'inherit';
 }
 .project-unit .code-pills .titanium {
-  background-color: #a80012;
+  background-color: #ff283f;
   color: #ffffff;
 }
 .project-unit .code-pills .ios {
-  background-color: #000000;
+  background-color: #404040;
   color: #ffffff;
 }
 .project-unit .code-pills .php {
-  background-color: #9999cc;
+  background-color: #eeeef6;
   color: 'inherit';
 }
 .project-unit .code-pills .dynamodb {
-  background-color: #ff9900;
+  background-color: #ffcc80;
   color: 'inherit';
 }
 .project-unit p {
