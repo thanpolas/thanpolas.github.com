@@ -26,7 +26,7 @@ Usage:
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
 
     {% if forloop.first %}
-      <ul class="posts-collate">
+      <ul class="posts-collate unstyled">
     {% endif %}
 
     <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>

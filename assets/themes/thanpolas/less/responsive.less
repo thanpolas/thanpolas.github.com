@@ -26,9 +26,28 @@
     padding: 0;
   }
   .header-master {
-    height: @header-height * 2;
+    //height: @header-height * 2;
+  }
+
+  .header-unit {
+    margin-top: 0;
+  }
+
+  .header-unit-inner {
+    .border-top-left-radius(0);
   }
   .site-description-title {
     text-align: left;
   }
+
+  .footer-social > .social-unit {
+    float: left;
+    padding-left: @baseContentGutter;
+  }
+
+
+  .footer-note {
+    margin-top: 160px;
+  }
+
 }

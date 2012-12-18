@@ -33,6 +33,7 @@
   float: left;
 }
 
+
 .center-block {
   display:block;
   margin: auto;
@@ -47,7 +48,7 @@
 @color-skype:      #00AFF0;
 @color-rss:        #FF6501;
 @color-slideshare: #00A7A8;
-@color-email:      #A8A8A8;
+@color-email:      #5caeff;
 
 [class^="social-icon-"],
 [class*=" social-icon-"] {
@@ -95,3 +96,11 @@
 .social-icon-email        {.socialIconStep(@color-email,      8, 'e-mail');}
 
 
+.footer-social > .social-unit {
+  float: right;
+
+  [class^="social-icon-"],
+  [class*=" social-icon-"] {
+    background-color: #6f6f6f;
+  }
+}
