@@ -30,20 +30,18 @@ module.exports = function(grunt) {
     watch: {
       less: {
         files: ['assets/themes/thanpolas/less/*.less' ,'/_includes/**'],
-        tasks: 'less:development'
+        tasks: 'lessCopy'
       },
       jekyllSources: {
-        files: [ 'assets/themes/thanpolas/css/tpstyle.css',
+        files: [
+          // capture all except css
           '*.html', '*.yml', 'assets/js/**.js', '_posts/**',
-          'projects/**', 'blog/**', 'about/**'
-          // '**/*', '!_site/**', '!**/*.less',
-          // '!grunt.js', '!assets', '!node_modules',
-          // '!site_git'
+          'projects/**', 'blog/**', 'about/**', '_includes/**'
           ],
         tasks: 'shell:jekyll',
         options: {
           //forceWatchMethod: 'old',
-          debounceDelay: 500
+          //debounceDelay: 500
         }
       }
     },
@@ -51,6 +49,11 @@ module.exports = function(grunt) {
       dist: {
         files: {
           '_site_git/' : '_site/**'
+        }
+      },
+      css : {
+        files: {
+          '_site/assets/themes/thanpolas/css/tpstyle.css': 'assets/themes/thanpolas/css/tpstyle.css'
         }
       }
     },
@@ -74,6 +77,8 @@ module.exports = function(grunt) {
 
   });
 
+  // less watch
+  grunt.registerTask('lessCopy', 'less:development copy:css');
   // Default task.
   grunt.registerTask('default', 'watch');
 

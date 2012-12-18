@@ -1,0 +1,41 @@
+
+// frontpage
+.masthead {
+  .polas-nav {
+    margin-top: 40px;
+  }
+}
+
+// default
+.header-nav {
+  text-align: right;
+  margin-top: 42px;
+  .polas-nav {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+
+.polas-nav {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  li {
+    float: left;
+    margin-right: 5px;
+    font-family: @headingsFontFamily;
+    a {
+      color: @grayDarker;
+    }
+  }
+  li:after{
+    padding-left: 5px;
+    content: "|";
+  }
+  li:last-child:after{
+    content: "";
+  }
+}
