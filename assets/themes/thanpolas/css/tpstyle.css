@@ -7742,6 +7742,7 @@ article .content {
 }
 .header-nav .polas-nav {
   color: #fff;
+  display: inline-block;
 }
 .header-nav .polas-nav a {
   color: #fff;
@@ -8386,6 +8387,9 @@ pre .il {
   .header-nav {
     text-align: left;
     padding-left: 40px;
+  }
+  .polas-nav {
+    display: block;
   }
   .front-content {
     margin-top: 40px;
