@@ -35,6 +35,7 @@
 
   .header-unit-inner {
     .border-top-left-radius(0);
+    height: 170px;
   }
   .site-description-title {
     text-align: left;
@@ -49,12 +50,22 @@
     margin-top: 160px;
   }
 
-.front-content {
-  margin-top: 40px;
-  .span3 {
-    margin-bottom:50px;
+  .header-nav {
+    text-align: left;
+    padding-left: @baseContentGutter;
   }
-}
+
+  .front-content {
+    margin-top: 40px;
+    .text-center {text-align: left;}
+    .span3 {
+      margin-bottom:50px;
+    }
+  }
+
+  .container-narrow {
+    top: 0;
+  }
 
 
 }

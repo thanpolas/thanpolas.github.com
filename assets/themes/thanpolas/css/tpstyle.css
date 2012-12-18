@@ -7749,7 +7749,6 @@ article .content {
 .polas-nav {
   list-style: none;
   margin: 0;
-  display: inline-block;
 }
 .polas-nav li {
   float: left;
@@ -8372,6 +8371,7 @@ pre .il {
     -webkit-border-top-left-radius: 0;
     -moz-border-radius-topleft: 0;
     border-top-left-radius: 0;
+    height: 170px;
   }
   .site-description-title {
     text-align: left;
@@ -8383,10 +8383,20 @@ pre .il {
   .footer-note {
     margin-top: 160px;
   }
+  .header-nav {
+    text-align: left;
+    padding-left: 40px;
+  }
   .front-content {
     margin-top: 40px;
   }
+  .front-content .text-center {
+    text-align: left;
+  }
   .front-content .span3 {
     margin-bottom: 50px;
+  }
+  .container-narrow {
+    top: 0;
   }
 }
