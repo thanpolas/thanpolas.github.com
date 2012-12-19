@@ -8,3 +8,4 @@ _site/*
 .rbenv-version
 .rvmrc
 _site_git
+_site
