@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# Author
+
+   Author: Thanasis Polychronakis
+   Contact: thanpolas@gmail.com
+   Twitter: @thanpolas
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Twitter Bootstrap
+    jQuery, Modernizr,
+    Jekyll, less, grunt

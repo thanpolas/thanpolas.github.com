@@ -7877,6 +7877,11 @@ article .content {
 .posts-description:after {
   clear: both;
 }
+.twenty-minus {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+}
 .social-unit {
   text-align: center;
   min-width: 125px;

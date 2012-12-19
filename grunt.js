@@ -7,6 +7,11 @@
  * https://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
  */
 
+/**
+ * [exports description]
+ * @param  {[type]} grunt [description]
+ * @return {[type]}       [description]
+ */
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
@@ -36,7 +41,8 @@ module.exports = function(grunt) {
         files: [
           // capture all except css
           '*.html', '*.yml', 'assets/js/**.js', '_posts/**',
-          'projects/**', 'blog/**', 'about/**', '_includes/**'
+          'projects/**', 'blog/**', 'about/**', '_includes/**',
+          'atom.xml'
           ],
         tasks: 'shell:jekyll',
         options: {
