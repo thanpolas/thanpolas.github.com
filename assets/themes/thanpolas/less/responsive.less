@@ -43,7 +43,6 @@
 
   .footer-social > .social-unit {
     float: left;
-    padding-left: @baseContentGutter;
   }
 
   .footer-note {
@@ -52,7 +51,6 @@
 
   .header-nav {
     text-align: left;
-    padding-left: @baseContentGutter;
   }
   .polas-nav{ display: block;}
 
@@ -64,9 +62,24 @@
     }
   }
 
+  @smallContentGutter: 5px;
+
   .container-narrow {
     top: 0;
+    padding: @smallContentGutter;
   }
 
+  article .content {
+    padding: @smallContentGutter;
+  }
+
+  .content-gutter-left {
+    padding-left: @smallContentGutter;
+  }
+
+  .content-gutter-right {
+    padding-right: @smallContentGutter;
+    padding-left: @smallContentGutter;
+  }
 
 }

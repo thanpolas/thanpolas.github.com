@@ -8419,14 +8419,12 @@ pre .il {
   }
   .footer-social > .social-unit {
     float: left;
-    padding-left: 40px;
   }
   .footer-note {
     margin-top: 160px;
   }
   .header-nav {
     text-align: left;
-    padding-left: 40px;
   }
   .polas-nav {
     display: block;
@@ -8442,5 +8440,16 @@ pre .il {
   }
   .container-narrow {
     top: 0;
+    padding: 5px;
+  }
+  article .content {
+    padding: 5px;
+  }
+  .content-gutter-left {
+    padding-left: 5px;
+  }
+  .content-gutter-right {
+    padding-right: 5px;
+    padding-left: 5px;
   }
 }
