@@ -20,18 +20,6 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    test: {
-      all: ['test/**/*.js']
-    },
-    lint: {
-      all: [
-        'grunt.js',
-        'lib/**/*.js',
-        'tasks/*.js',
-        'tasks/*/*.js',
-        'test/{grunt,tasks,util}/*.js'
-      ]
-    },
     watch: {
       less: {
         files: ['assets/themes/thanpolas/less/*.less'],

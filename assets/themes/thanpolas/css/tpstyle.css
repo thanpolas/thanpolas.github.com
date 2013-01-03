@@ -8344,7 +8344,7 @@ pre .il {
 }
 .project-unit .code-pills .closure-library {
   background-color: #acc2f8;
-  color: #ffffff;
+  color: 'inherit';
 }
 .project-unit .code-pills .sublime2 {
   background-color: #6a6d5d;
