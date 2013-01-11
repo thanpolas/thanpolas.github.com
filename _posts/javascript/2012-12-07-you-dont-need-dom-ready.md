@@ -133,7 +133,7 @@ $('#main-content').append('Gangnam ');
 
 {% endhighlight %}
 
-As we mentioned, `script` elements are blocking until they load, and when they do they immediately execute. **line 9** performs an inline DOM manipulation. As expected, the manipulation will happen right there, synchronously. Soon after, `DOM Ready` event fires and executes the payload in **lines 6 and 7**.
+As we mentioned, `script` elements are blocking until they load, and when they do they immediately execute. **Line 11** performs an inline DOM manipulation. As expected, the manipulation will happen right there, synchronously. Soon after, `DOM Ready` event fires and executes the payload in **lines 6 and 7**.
 
 When this page runs, this is what we see in the console:
 
