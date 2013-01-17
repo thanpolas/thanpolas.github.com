@@ -4,6 +4,7 @@ title: "Passing Data From Server To Javascript On Page Load"
 description: "Passing arbitrary data from the server to the client on page load is an essential function of modern, rich client-side applications. Over my course in various projects I've seen all kinds of setups and use cases, here is the gist of my experience."
 category : javascript
 tags : [javascript, server2js, data objects]
+shortUrl: http://than.pol.as/MFQc
 ---
 {% include JB/setup %}
 

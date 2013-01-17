@@ -8,8 +8,13 @@
     {{ content }}
 
     <div class="share-social">
+{% if page.shortUrl != null %}
+  {% assign shareUrl = page.shortUrl %}
+{% else %}
+  {% capture shareUrl %}{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}?utm_source=twitter&utm_medium=twitter-post&utm_campaign=twitter-button{% endcapture %}
+{% endif %}
       <h5>Share the love</h5>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}?utm_source=twitter&utm_medium=twitter-post-foot&utm_campaign=twitter-button" data-via="thanpolas" data-lang="en" data-related="thanpolas">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ shareUrl }}" data-via="thanpolas" data-lang="en" data-related="thanpolas" data-counturl="{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}">Tweet</a>
       <a href="https://twitter.com/thanpolas" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @thanpolas</a>
 
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -22,7 +27,7 @@
       {% else %}
         <li class="prev disabled"><a>&larr; Previous</a></li>
       {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+        <li><a href="{{ BASE_PATH }}/blog/">Archive</a></li>
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
       {% else %}

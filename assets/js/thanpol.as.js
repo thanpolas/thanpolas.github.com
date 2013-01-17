@@ -61,10 +61,5 @@
     setTimeout(lolipop, 14000);
   }
 
-  //setTimeout(lolipop, 14000);
-  //
-  //
-
-  $('#nav').localScroll(800);
 
 }();
