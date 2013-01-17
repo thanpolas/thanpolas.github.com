@@ -117,7 +117,8 @@ I got your backs!
 
 [Server 2 JS][server2js] is a library created exactly for this purpose. At a ridiculous ~800bytes you get all the described functionality and more (*Ready option*, *Garbage Collection*).
 
-If you are working on a new project, give it a try, it's well worth it's weight in bytes ;)
+If you are working on a new project, give it a try, it's well worth its weight in bytes ;)
+
  &lt;/shamelessplug&gt;
 
 [ready.post]: http://thanpol.as/javascript/you-dont-need-dom-ready/ "thanpolas blog :: You Don't Need the DOM Ready Event"
