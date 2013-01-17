@@ -120,7 +120,21 @@ I got your backs!
 
 If you are working on a new project, give it a try, it's well worth its weight in bytes ;)
 
- &lt;/shamelessplug&gt;
+&lt;/shamelessplug&gt;
+
+## Addressing Security Concerns
+
+A few moments after this post was published, there were a few [concerns](http://www.reddit.com/r/javascript/comments/16rjjh/passing_data_from_server_to_javascript_on_page/c7yp82q) [raised](http://www.reddit.com/r/javascript/comments/16rjjh/passing_data_from_server_to_javascript_on_page/c7ypqu0) about [security](http://thanpol.as/javascript/passing-data-from-server-to-javascript-on-page-load/#comment-771162843). I hear and understand you.
+
+However there are a few points to be made here. The data passed inside the `script` tags are developer written lines, nothing raw from an external source. The values contained in the *Operations* should be properly sanitized, html entities enforced.
+
+It is one thing to talk about security, a topic I am deeply knowledgeable and sensitive about, and another thing entirely to spread **F**ear **U**ncertenty and **D**oubt. The fact that there are SQL Injection vulnerabilities out there does not mean we must stop writing SQL all together.
+
+Variations of the technique described in this post are actually used by top Alexa websites, including [Google](view-source:http://www.google.com/), [Twitter](view-source:http://www.twitter.com/), [Reddit](view-source:http://www.reddit.com/) and the list goes on. If you use [CSP in your headers](http://en.wikipedia.org/wiki/Content_Security_Policy) then that's an explicit decision that you made that will plainly force you to think of another way of performing the same, in principal, functionality that is described in this post.
+
+Be responsible and informative, don't spread fear and excommunicate knowledge.
+
+
 
 [ready.post]: http://thanpol.as/javascript/you-dont-need-dom-ready/ "thanpolas blog :: You Don't Need the DOM Ready Event"
 [server2js]: https://github.com/thanpolas/server2js "thanpolas server2js library"
