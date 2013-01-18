@@ -81,25 +81,27 @@ pre::selection { background: @highlight-selection-bg}
   color:inherit;
 }
 
-
-pre  {
-  background-color: @bg-codeblock;
-  border: 1px solid #12120f;
+pre {
   margin-left: 0;
   margin-right: 0;
-  padding: 5px 20px;
-  color: #f2f2f2;
-
+  .border-radius(0);
+  border: 1px solid #05232b;
   font-size: 14px;
   line-height: 20px;
-
-  .border-radius(0);
-
+  background-color: @bg-codeblock;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #f2f2f2;
   .box-shadow("inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6)");
+}
 
-  .lineno {
-    color: @color-linenos;
-  }
+.highlight pre  {
+  padding: 5px 20px;
+}
+
+.linenos pre {
+  background-color: #073642;
+  color: @color-linenos;
 }
 
 // target pre inside a table
@@ -139,7 +141,6 @@ table.highlighttable {
     pre {
       overflow: auto;
       border-left: 0;
-      padding-left: 0;
     }
   }
 
