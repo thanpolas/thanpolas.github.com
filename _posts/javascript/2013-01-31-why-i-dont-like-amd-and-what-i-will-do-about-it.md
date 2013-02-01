@@ -10,7 +10,7 @@ shortUrl: http://than.pol.as/MbPR
 
 Today I saw [a tweet][tweet] from [@addyosmani][] talking about why you need *Require.js*:
 
-> If you're still having challenges understanding the need for Require.js, the community have you covered https://gist.github.com/4686136  :)
+> If you're still having challenges understanding the need for Require.js, the community have you covered [https://gist.github.com/4686136](https://gist.github.com/4686136) :)
 
 ## About AMD Modules and Require.js
 Defining the dependencies of your files is more than a requirement for a large scale project. There simply is no other way you can accomplish maintainability and collaboration between teams.
@@ -52,9 +52,9 @@ You are sending over the wire ~1-3% more bytes, from what your JS app size is. T
 
 ## What I Plan On Doing About it
 
-[Google's Closure dependency][depswriter] system is the most elegant solution i know by far. It does what it sais it does, takes care of your dependencies, nothing more, nothing less and it does it very very good.
+[Google's Closure dependency][depswriter] system is the most elegant solution i know by far. It does what it says it does, takes care of your dependencies, nothing more, nothing less and it does it very very well.
 
-It can be ripped of the closure tools and used independently on any kind of project. It's what i plan on doing pretty soon, as soos as i find a free weekend.
+It can be ripped of the closure tools and used independently on any kind of project. It's what i plan on doing pretty soon, as soon as i find a free weekend.
 
 It doesn't dictate how you write your code. You want namespaced hierarchy? Cool! You want AMD modules? Certainly! You want something in between? Can do... no restrictions
 
