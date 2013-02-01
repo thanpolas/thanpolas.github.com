@@ -4,7 +4,7 @@ title: "Why I Don't Like AMD And What I Will Do About It"
 description: "Defining the dependencies of your files is more than a requirement for a large scale project. There simply is no other way you can accomplish maintainability and collaboration between teams. However i beg to defer from calling everything a module and certainly i am not fond of AMD and its' derivatives."
 category : javascript
 tags : [javascript, requirejs, amd, modules, dependencies, google closure]
-shortUrl:
+shortUrl: http://mybad.com
 ---
 {% include JB/setup %}
 
