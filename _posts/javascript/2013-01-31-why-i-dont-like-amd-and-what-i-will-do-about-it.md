@@ -15,7 +15,7 @@ Today I saw [a tweet][tweet] from [@addyosmani][] talking about why you need *Re
 ## About AMD Modules and Require.js
 Defining the dependencies of your files is more than a requirement for a large scale project. There simply is no other way you can accomplish maintainability and collaboration between teams.
 
-However i beg to defer from calling everything a module and certainly i am not fond of AMD and its' derivatives.
+However i beg to defer from calling everything a module and certainly i am not fond of AMD and its' derivatives.  I am a fan of namespaced applications, it's a choice. There's no right or wrong there.
 
 In regards to [Require.js][] specifically, i have stated time and again I am not a big fan. It is a very good effort in trying to solve the dependency problem, it's wildly popular and afaik it's the only package that JS developers go to when talking about dependency management.
 
@@ -33,7 +33,7 @@ It is also a way of defining how your code will be structured by forcing you to 
 define(id?, dependencies?, factory);
 {% endhighlight %}
 
-Some people like this style some people don't. The main reasoning being that you don't want to leak variables to the global namespace. I understand that but that's not the only way. I am a fan of namespaced applications, it's a choice. There's no right or wrong there.
+Some people like this style some people don't. The main reasoning being that you don't want to leak variables to the global namespace. I understand that but the AMD pattern is not the only way to avoid global namespace pollution.
 
 ### AMD Creates Closures For Each File
 
