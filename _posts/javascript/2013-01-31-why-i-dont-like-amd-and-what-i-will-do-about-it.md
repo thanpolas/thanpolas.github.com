@@ -17,11 +17,11 @@ Defining the dependencies of your files is more than a requirement for a large s
 
 However i beg to defer from calling everything a module and certainly i am not fond of AMD and its' derivatives.
 
-In regards to [Require.js][] specifically, i have stated time and again I am not a big fan. It is a very good effort in trying to solve the depencency problem, it's wildly popular and afaik it's the only package that JS developers go to when talking about dependency management.
+In regards to [Require.js][] specifically, i have stated time and again I am not a big fan. It is a very good effort in trying to solve the dependency problem, it's wildly popular and afaik it's the only package that JS developers go to when talking about dependency management.
 
-My main concern with Require.js is that in trying to serve all the needs and requirements out there it has become a very complex and hard to work with package. Especially when trying to test the modules, [mocking and stubing the requirements can be a huge pain][squire].
+My main concern with Require.js is that in trying to serve all the needs and requirements out there it has become a very complex and hard to work with package. Especially when trying to test the modules, [mocking and stubbing the requirements can be a huge pain][squire].
 
-From there on, everything else has to do with the [Asynchronous Module Definition][amd] pattern that Require.js and the other unknown packages rely or are based on.
+From there on, everything else has to do with the [Asynchronous Module Definition][amd] pattern that Require.js and the other packages rely or are based on.
 
 There are 3 reasons for that.
 
