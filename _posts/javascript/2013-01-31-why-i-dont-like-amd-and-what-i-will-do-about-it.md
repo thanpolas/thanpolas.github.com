@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why I Don't Like AMD And What I Will Do About It"
-description: "Defining the dependencies of your files is more than a requirement for a large scale project. There simply is no other way you can accomplish maintainability and collaboration between teams. However i beg to defer from calling everything a module and certainly i am not fond of AMD and its' derivatives."
+description: "Defining the dependencies of your files is more than a requirement for a large scale project. There simply is no other way you can accomplish maintainability and collaboration between teams. However i beg to differ from calling everything a module and certainly i am not fond of AMD and its' derivatives."
 category : javascript
 tags : [javascript, requirejs, amd, modules, dependencies, google closure]
 shortUrl: http://than.pol.as/MbPR
@@ -15,7 +15,7 @@ Today I saw [a tweet][tweet] from [@addyosmani][] talking about why you need *Re
 ## About AMD Modules and Require.js
 Defining the dependencies of your files is more than a requirement for a large scale project. There simply is no other way you can accomplish maintainability and collaboration between teams.
 
-However i beg to defer from calling everything a module and certainly i am not fond of AMD and its' derivatives.  I am a fan of namespaced applications, it's a choice. There's no right or wrong there.
+However i beg to differ from calling everything a module and certainly i am not fond of AMD and its' derivatives.  I am a fan of namespaced applications, it's a choice. There's no right or wrong there.
 
 In regards to [Require.js][] specifically, i have stated time and again I am not a big fan. It is a very good effort in trying to solve the dependency problem, it's wildly popular and afaik it's the only package that JS developers go to when talking about dependency management.
 
