@@ -12,6 +12,7 @@ Today I saw [a tweet][tweet] from [@addyosmani][] talking about why you need *Re
 
 > If you're still having challenges understanding the need for Require.js, the community have you covered https://gist.github.com/4686136  :)
 
+## About AMD Modules and Require.js
 Defining the dependencies of your files is more than a requirement for a large scale project. There simply is no other way you can accomplish maintainability and collaboration between teams.
 
 However i beg to defer from calling everything a module and certainly i am not fond of AMD and its' derivatives.
@@ -64,4 +65,4 @@ And closure compiler in SIMPLE_OPTIMIZATIONS will take care and remove all the d
 [tweet]: https://twitter.com/addyosmani/status/297251937219379200 "Addy Osmani's tweet about requireJS"
 [Require.js]: http://requirejs.org/ "RequireJS is a JavaScript file and module loader."
 [squire]: https://github.com/iammerrick/Squire.js/issues/16 "Squire.js Issue #16: Cannot properly test modules that export a constructor"
-[amd]: https://github.com/amdjs/amdjs-api/wiki/AMD "Wikipedia :: The Asynchronous Module Definition (**AMD**) API "
+[amd]: https://github.com/amdjs/amdjs-api/wiki/AMD "Wikipedia :: The Asynchronous Module Definition (**AMD**) API"
