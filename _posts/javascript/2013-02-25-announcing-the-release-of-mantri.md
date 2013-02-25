@@ -4,6 +4,7 @@ title: "Announcing The Release of Mantri"
 description: "A new solution for Javascript dependency management is now ready. Announcing the release of Mantri, a traditionaλ dependency system."
 category : javascript
 tags : [javascript, mantri, requirejs, amd, modules, dependencies, google closure]
+shortUrl: http://than.pol.as/N9Qz
 ---
 {% include JB/setup %}
 
