@@ -88,7 +88,7 @@ And since this is 2013, our lives are so much easier by using a [watch task][] t
 
 > Easily. Naturaly. Traditionaλy.
 
-Since you can directly access any part of your codebase via the global namespace, it is silly easy to mock anything or unit test everything! Even private methods. A feat that [can proove][amd-test-comment] [nearly impossible][amd-test-issue] [with AMD][amt-test-project] or even commonJS modules.
+Since you can directly access any part of your codebase via the global namespace, it is silly easy to mock anything or unit test everything! Even private methods. A feat that [can proove][amd-test-comment] [nearly impossible][amd-test-issue] [with AMD][amd-test-project] or even commonJS modules.
 
 
 ## There Is Nothing Left in Production But Your Code
