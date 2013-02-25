@@ -109,13 +109,9 @@ Mantri provides a robust and scalable development environment enabling multiple 
 
 Bottom line is, you'll only ever need two commands for the CLI.
 
-#### **mantri watch**
+**`mantri watch`** Will monitor all your javascript files and automatically run the `deps` task for you.
 
-Will monitor all your javascript files and automatically run the `deps` task for you.
-
-#### **mantri build**
-
-Will start the build operation.
+**`mantri build`** Will start the build operation.
 
 #### That's All!
 
