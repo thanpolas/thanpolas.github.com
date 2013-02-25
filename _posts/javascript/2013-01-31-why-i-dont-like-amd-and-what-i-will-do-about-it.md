@@ -60,9 +60,15 @@ It doesn't dictate how you write your code. You want namespaced hierarchy? Cool!
 
 And closure compiler in SIMPLE_OPTIMIZATIONS will take care and remove all the dependency statements from your production code leaving it bare as it should be.
 
+---
+
+**Update 25 Feb, 2013** The solution is now ready. Check out [Mantri][] and read about the [announcement blog post][mantri-post].
+
 [depswriter]: https://developers.google.com/closure/library/docs/depswriter "Google closure dependency management"
 [@addyosmani]: https://twitter.com/addyosmani "Addy Osmani - Googler working on chrome"
 [tweet]: https://twitter.com/addyosmani/status/297251937219379200 "Addy Osmani's tweet about requireJS"
 [Require.js]: http://requirejs.org/ "RequireJS is a JavaScript file and module loader."
 [squire]: https://github.com/iammerrick/Squire.js/issues/16 "Squire.js Issue #16: Cannot properly test modules that export a constructor"
 [amd]: https://github.com/amdjs/amdjs-api/wiki/AMD "Wikipedia :: The Asynchronous Module Definition (**AMD**) API"
+[mantri-post]: http://thanpol.as/javascript/announcing-the-release-of-mantri/ "Announcing the release of mantri"
+[mantri]: https://github.com/thanpolas/mantri "Mantri - Traditionaλ Dependency System"
