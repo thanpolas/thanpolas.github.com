@@ -117,7 +117,7 @@ Bottom line is, you'll only ever need two commands for the CLI.
 
 These simple and powerful commands are all you need.
 
-Of course you have full configuration power. You can use a set of command line options or try Mantri as a [Grunt Plugin][]. Finally, a developer's API is exposed  on node.js that you can `require()`.
+Of course you have full configuration power. You can use a set of command line options or try Mantri as a [Grunt Plugin][]. Finally, a developer API is exposed for node.js, which you can simply `require()` to your codebase.
 
 ## Why Namespaces And not Paths?
 
