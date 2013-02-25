@@ -88,7 +88,7 @@ And since this is 2013, our lives are so much easier by using a [watch task][] t
 
 > Easily. Naturaly. Traditionaλy.
 
-Since you can directly access any part of your codebase via the global namespace, it is silly easy to mock anything or unit test everything! Even private methods. A feat that can proove nearly impossible with AMD or even commonJS modules.
+Since you can directly access any part of your codebase via the global namespace, it is silly easy to mock anything or unit test everything! Even private methods. A feat that [can proove][amd-test-comment] [nearly impossible][amd-test-issue] [with AMD][amt-test-project] or even commonJS modules.
 
 
 ## There Is Nothing Left in Production But Your Code
@@ -132,11 +132,11 @@ Mantri provides a robust and scalable development environment enabling multiple 
 
 Bottom line is, you'll only ever need two commands for the CLI.
 
-#### `mantri watch`
+#### **mantri watch**
 
 Will monitor all your javascript files and automatically run the `deps` task for you.
 
-#### mantri build
+#### **mantri build**
 
 Will start the build operation.
 
@@ -165,3 +165,6 @@ I'd love to hear your thoughts and if you can see Mantri helping you.
 [grunt]: http://gruntjs.com/
 [build operation]: https://github.com/thanpolas/mantri/wiki/Grunt-Task-mantriBuild "Grunt Task mantriBuild"
 [deps task]: https://github.com/thanpolas/mantri/wiki/Grunt-Task-mantriDeps "Grunt Task mantriDeps"
+[amd-test-issue]: https://github.com/iammerrick/Squire.js "Cannot properly test modules that export a constructor"
+[amd-test-project]: https://github.com/iammerrick/Squire.js "Your friendly dependency injector for testing Require.js modules."
+[amd-test-comment]: http://thanpol.as/javascript/why-i-dont-like-amd-and-what-i-will-do-about-it/#comment-787464206 "State of AMD testing by jrburke"
