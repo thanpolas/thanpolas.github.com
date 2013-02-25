@@ -64,7 +64,7 @@ That's another aspect of the traditionaλ nature of Mantri. In the end, the Docu
 
 ## Mantri is Testable
 
-> Easily. Naturaly. Traditionaλy.
+> Easily. Naturally. Traditionaλy.
 
 Since you can directly access any part of your codebase via the global namespace, it is silly easy to mock anything or unit test everything! Even private methods. A feat that [can proove][amd-test-comment] [nearly impossible][amd-test-issue] [with AMD][amd-test-project] or even commonJS modules.
 
@@ -74,7 +74,7 @@ Since you can directly access any part of your codebase via the global namespace
 
 During the [build operation][], Mantri will bundle your application into one file and remove all dependency declarations. They are no longer needed.
 
-No Mantri runtime code inluded either! Only your code and your third-party dependencies, packed in a single dense file.
+No Mantri runtime code included either! Only your code and your third-party dependencies, packed in a single dense file.
 
 Please do not use the dependency system in a production environment. It is highly discouraged as the design patterns used will significantly *slow down your page load time*. Use only the optimized and minified single file that is produced by the [build operation][]. Mantri **is not** a *module loader* for your live site.
 
@@ -97,7 +97,7 @@ goog.provide('app.view.login');
 
 ### There Are no Conflicts With Other Libraries
 
-By design, [Google's dependency system][calcdeps] that Mantri incorporates, is agnostic of its suroundings. A nice way to think of Mantri is as a plain python file operation that also happens to know how to talk Javascript.
+By design, [Google's dependency system][calcdeps] that Mantri incorporates, is agnostic of its surroundings. A nice way to think of Mantri is as a plain python file operation that also happens to know how to talk Javascript.
 
 That leaves plenty of room for hacking, abusing and generally knocking yourselves out with any imaginable combination of dependency management libraries.
 
@@ -131,7 +131,7 @@ There are other ways of finding out what the value of a *private* variable is, l
 
 > Using namespaces expose the internal structures of my app, I want *privates* to be **privates** and not accessible from the outside!
 
-Certainly! That's as easy as writing an [iife][] and instruct the build task to wrap your code inside this immediately invoked fuction expression:
+Certainly! That's as easy as writing an [iife][] and instruct the build task to wrap your code inside this immediately invoked function expression:
 
 {% highlight html %}
 ;(function(){ %output% })();
@@ -143,7 +143,7 @@ Personally, i don't care about privacy. When I author a library, that library is
 
 ---
 
-I'd love to hear your thoughts and if you can see Mantri helping you.
+I'd love to hear your thoughts and if you find Mantri to be helpful.
 
 
 [amd]: https://github.com/amdjs/amdjs-api/wiki/AMD "Wikipedia :: The Asynchronous Module Definition (**AMD**) API"
