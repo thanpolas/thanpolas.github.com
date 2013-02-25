@@ -41,7 +41,7 @@ Because `goog.provide()` only initializes properties if they don't already exist
 
 ### Namespaces or Paths?
 
-[Namespaces][]! You only declare namespaces, the paths will be automatically discovered by the [deps task][!!!LINK]. Using namespaces is what being *traditionaλ* is all about.
+[Namespaces][]! You only declare namespaces, the paths will be automatically discovered by the [deps task][]. Using namespaces is what being *traditionaλ* is all about.
 
 Namespaces is the native way for Javascript to hierarchically organize the structures of your application. Having the ability to directly reference and study your objects from the developer console is priceless. Just hit `app.router._currentView` on the console and see exactly what's going on. For any part of your code, at any time.
 
@@ -53,7 +53,7 @@ There are other ways of finding out what the value of a *private* variable is, l
 
 Certainly! That's as easy as writing an [iife][] and instruct the build task to wrap your code inside this immediately invoked fuction expression:
 
-{% highlight %}
+{% highlight html %}
 ;(function(){ %output% })();
 {% endhighlight %}
 
