@@ -40,27 +40,13 @@ app.view.about = app.view.about || {};
 
 Because `goog.provide()` only initializes properties if they don't already exist, it never overwrites properties.
 
-### Namespaces or Paths?
+## Path and Filename Discovery
 
-[Namespaces][]! You only declare namespaces, the paths will be automatically discovered by the [deps task][]. Using namespaces is what being *traditionaλ* is all about.
+The [deps task][] is another key part of Mantri. The job of declaring the actual filenames and paths of your JS assets (modules?) is done by a back-end task. This task, needs to run whenever you change or create dependency declarations.
 
-Namespaces is the native way for Javascript to hierarchically organize the structures of your application. Having the ability to directly reference and study your objects from the developer console is priceless. Just hit `app.router._currentView` on the console and see exactly what's going on. For any part of your code, at any time.
+This operation allows you to move folders around, with hundreds of files inside them without any issues. You just run the `deps` task once and all paths are updated automatically.
 
-There are other ways of finding out what the value of a *private* variable is, like `console.log()` or the debugger and break-points, but in my humble opinion, it's only fair to say that one more valuable tool in your utility belt does't hurt.
-
-### Exposing Internal Structures to Consumers
-
-> Using namespaces expose the internal structures of my app, I want *privates* to be **privates** and not accessible from the outside!
-
-Certainly! That's as easy as writing an [iife][] and instruct the build task to wrap your code inside this immediately invoked fuction expression:
-
-{% highlight html %}
-;(function(){ %output% })();
-{% endhighlight %}
-
-That's all that's required, really. And it only happens to your production ready file.
-
-Personally, i don't care about privacy. When I author a library, that library is intended to be used by developers. I trust developers. I trust that if you see a method or a property starting with an underscore, you know you are entering dangerous territory. I want to give you the freedom to do it.
+And since this is 2013, our lives are so much easier by using a [watch task][] to have [Grunt][] automatically run the `deps` task for us.
 
 ## Mantri is Synchronous
 
@@ -76,20 +62,11 @@ When the browser parses that element and evaluates Mantri's code, operations sta
 
 That's another aspect of the traditionaλ nature of Mantri. In the end, the Document will look like exactly as it would if you wrote all your app's `<script>` elements yourself.
 
-## Path and Filename Discovery
-
-The [deps task][] is another key part of Mantri. The job of declaring the actual filenames and paths of your JS assets (modules?) is done by a back-end task. This task, needs to run whenever you change or create dependency declarations.
-
-This operation allows you to move folders around, with hundreds of files inside them without any issues. You just run the `deps` task once and all paths are updated automatically.
-
-And since this is 2013, our lives are so much easier by using a [watch task][] to have [Grunt][] automatically run the `deps` task for us.
-
 ## Mantri is Testable
 
 > Easily. Naturaly. Traditionaλy.
 
 Since you can directly access any part of your codebase via the global namespace, it is silly easy to mock anything or unit test everything! Even private methods. A feat that [can proove][amd-test-comment] [nearly impossible][amd-test-issue] [with AMD][amd-test-project] or even commonJS modules.
-
 
 ## There Is Nothing Left in Production But Your Code
 
@@ -103,7 +80,7 @@ Please do not use the dependency system in a production environment. It is highl
 
 ## Mantri Does Not Dictate How You Write Your Code
 
-Don't mind my previous subliminal rant about namespaces. Mantri does not dictate how you write or structure your code. As long as you properly *provide* and *require* unique namespaces you are good to go.
+Mantri does not dictate how you write or structure your code. As long as you properly *provide* and *require* unique namespaces you are good to go.
 
 You can then use the declared namespace as the equivalent of `module.exports`:
 
@@ -124,7 +101,7 @@ By design, [Google's dependency system][calcdeps] that Mantri incorporates, is a
 
 That leaves plenty of room for hacking, abusing and generally knocking yourselves out with any imaginable combination of dependency management libraries.
 
-## A Dependency System For All
+## A Simple Dependency System
 
 Mantri focuses on providing a robust and scalable development environment enabling multiple teams collaborating seamlessly.
 
@@ -140,11 +117,35 @@ Will monitor all your javascript files and automatically run the `deps` task for
 
 Will start the build operation.
 
-### That's All!
+#### That's All!
 
 These simple and powerful commands are all you need.
 
 Of course you have full configuration power. You can use a set of command line options or try Mantri as a [Grunt Plugin][]. Finally, a developer's API is exposed  on node.js that you can `require()`.
+
+## Why Namespaces And not Paths?
+
+You only need to declare and require [Namespaces][]! Paths will be automatically discovered by the [deps task][]. Using namespaces is what being *traditionaλ* is all about.
+
+Namespaces is the native way for Javascript to hierarchically organize the structures of your application. Having the ability to directly reference and study your objects from the developer console is priceless. Just hit `app.router._currentView` on the console and see exactly what's going on. For any part of your code, at any time.
+
+There are other ways of finding out what the value of a *private* variable is, like `console.log()` or the debugger and break-points, but in my humble opinion, it's only fair to say that one more valuable tool in your utility belt does't hurt.
+
+### Exposing Internal Structures to Consumers
+
+> Using namespaces expose the internal structures of my app, I want *privates* to be **privates** and not accessible from the outside!
+
+Certainly! That's as easy as writing an [iife][] and instruct the build task to wrap your code inside this immediately invoked fuction expression:
+
+{% highlight html %}
+;(function(){ %output% })();
+{% endhighlight %}
+
+That's all that's required, really. And it only happens to your production ready file.
+
+Personally, i don't care about privacy. When I author a library, that library is intended to be used by developers. I trust developers. I trust that if you see a method or a property starting with an underscore, you know you are entering dangerous territory. I want to give you the freedom to do it.
+
+---
 
 I'd love to hear your thoughts and if you can see Mantri helping you.
 
