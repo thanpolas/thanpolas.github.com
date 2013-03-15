@@ -60,10 +60,10 @@ module.exports = function(grunt) {
   less: {
     development: {
       options: {
-        paths: ["assets/themes/thanpolas/less"]
+        paths: ['assets/themes/thanpolas/less']
       },
       files: {
-        "assets/themes/thanpolas/css/tpstyle.css": "assets/themes/thanpolas/less/main.less"
+        'assets/themes/thanpolas/css/tpstyle.css': 'assets/themes/thanpolas/less/main.less'
       }
     }
   }
