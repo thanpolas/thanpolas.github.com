@@ -4,82 +4,40 @@ nav: externs
 title: "Closure Library Externs"
 
 externs:
-  - libraryName: 'when'
-    libraryUrl: 'https://github.com/cujojs/when#readme'
-    versions:
-      - filename: 'when.externs.js'
-        url: 'https://github.com/thanpolas/superstartup/blob/master/build/externs/when.externs.js'
-        libraryVer: '1.8.1'
-
-  - libraryName: 'angular'
+  - libraryName: 'Angular JS'
     libraryUrl: 'http://angularjs.org/'
     versions:
       - filename: 'angular.js'
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/angular.js'
         libraryVer: '1.0.5'
 
-  - libraryName: 'Chrome Extensions'
-    libraryUrl: 'https://chrome.google.com/webstore/category/extensions'
-    versions:
-      - filename: 'chrome_extensions.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/chrome_extensions.js'
-        libraryVer: '-'
-
-  - libraryName: 'Dacebook Javascript SDK'
+  - libraryName: 'Facebook Javascript SDK'
     libraryUrl: 'https://developers.facebook.com/docs/reference/javascript/'
     versions:
       - filename: 'facebook_javascript_sdk.js'
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/facebook_javascript_sdk.js'
         libraryVer: '-'
 
-  - libraryName: 'fileapi synchronous'
-    libraryUrl: 'https://developer.mozilla.org/en-US/docs/DOM/File'
+  - libraryName: 'Underscore'
+    libraryUrl: 'http://underscorejs.org/'
     versions:
-      - filename: 'fileapi_synchronous.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/fileapi_synchronous.js'
-        libraryVer: '-'
+      - filename: 'underscore-1.3.1.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/underscore-1.3.1.js'
+        libraryVer: '1.3.1'
 
-  - libraryName: 'fullscreen'
-    libraryUrl: 'http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html'
+  - libraryName: 'JSON'
+    libraryUrl: 'http://www.json.org/'
     versions:
-      - filename: 'fullscreen.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/fullscreen.js'
-        libraryVer: '-'
+      - filename: 'json.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/json.js'
+        libraryVer: '2.0'
 
-  - libraryName: 'Google Analytics API'
-    libraryUrl: 'http://code.google.com/intl/en/apis/analytics/docs/gaJS/gaJSApi.html'
+  - libraryName: 'when.js'
+    libraryUrl: 'https://github.com/cujojs/when#readme'
     versions:
-      - filename: 'google_analytics_api.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_analytics_api.js'
-        libraryVer: '-'
-
-  - libraryName: 'Google Loader API'
-    libraryUrl: 'http://code.google.com/apis/ajax/documentation/'
-    versions:
-      - filename: 'google_loader_api.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_loader_api.js'
-        libraryVer: '-'
-
-  - libraryName: 'Google Maps API v2'
-    libraryUrl: 'http://code.google.com/apis/maps/documentation/javascript/v2/reference.html'
-    versions:
-      - filename: 'google_maps_api_v2.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_maps_api_v2.js'
-        libraryVer: '2.0.0'
-
-  - libraryName: 'Google Visualization API'
-    libraryUrl: 'https://developers.google.com/chart/interactive/docs/reference'
-    versions:
-      - filename: 'google_visualization_api.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_visualization_api.js'
-        libraryVer: '-'
-
-  - libraryName: 'Google YouTube iFrame'
-    libraryUrl: 'http://code.google.com/apis/youtube/iframe_api_reference.html'
-    versions:
-      - filename: 'google_youtube_iframe.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_youtube_iframe.js'
-        libraryVer: '-'
+      - filename: 'when.externs.js'
+        url: 'https://github.com/thanpolas/superstartup/blob/master/build/externs/when.externs.js'
+        libraryVer: '1.8.1'
 
   - libraryName: 'jQuery'
     libraryUrl: 'http://api.jquery.com/'
@@ -116,34 +74,6 @@ externs:
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/jquery-1.9.js'
         libraryVer: '1.9'
 
-  - libraryName: 'JSON'
-    libraryUrl: 'http://www.json.org/'
-    versions:
-      - filename: 'json.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/json.js'
-        libraryVer: '2.0'
-
-  - libraryName: 'w3c mediasource'
-    libraryUrl: 'http://dvcs.w3.org/hg/html-media/raw-file/tip/media-source/media-source.html'
-    versions:
-      - filename: 'mediasource.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/mediasource.js'
-        libraryVer: '-'
-
-  - libraryName: 'silverlight'
-    libraryUrl: 'http://msdn.microsoft.com/en-us/library/bb980101(v=VS.95).aspx'
-    versions:
-      - filename: 'silverlight.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/silverlight.js'
-        libraryVer: '-'
-
-  - libraryName: 'Underscore'
-    libraryUrl: 'http://underscorejs.org/'
-    versions:
-      - filename: 'underscore-1.3.1.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/underscore-1.3.1.js'
-        libraryVer: '1.3.1'
-
   - libraryName: 'w3c Audio'
     libraryUrl: 'http://www.w3.org/TR/webaudio/'
     versions:
@@ -156,6 +86,27 @@ externs:
     versions:
       - filename: 'w3c_eventsource.js'
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/w3c_eventsource.js'
+        libraryVer: '-'
+
+  - libraryName: 'w3c Fileapi synchronous'
+    libraryUrl: 'https://developer.mozilla.org/en-US/docs/DOM/File'
+    versions:
+      - filename: 'fileapi_synchronous.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/fileapi_synchronous.js'
+        libraryVer: '-'
+
+  - libraryName: 'w3c Fullscreen'
+    libraryUrl: 'http://dvcs.w3.org/hg/fullscreen/raw-file/tip/Overview.html'
+    versions:
+      - filename: 'fullscreen.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/fullscreen.js'
+        libraryVer: '-'
+
+  - libraryName: 'w3c Mediasource'
+    libraryUrl: 'http://dvcs.w3.org/hg/html-media/raw-file/tip/media-source/media-source.html'
+    versions:
+      - filename: 'mediasource.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/mediasource.js'
         libraryVer: '-'
 
   - libraryName: 'w3c Gamepad'
@@ -186,21 +137,35 @@ externs:
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/w3c_web_intents.js'
         libraryVer: '-'
 
-  - libraryName: 'Webkit Console'
-    libraryUrl: 'http://trac.webkit.org/browser/trunk/WebCore/page/Console.idl'
+  - libraryName: 'Google +1 button'
+    libraryUrl: 'https://code.google.com/apis/+1button/#jsapi'
     versions:
-      - filename: 'webkit_console.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/webkit_console.js'
+      - filename: 'plusone.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/api/gadgets/plusone.js'
         libraryVer: '-'
 
-  - libraryName: 'youtube JS API'
+  - libraryName: 'YouTube JS API'
     libraryUrl: 'http://code.google.com/apis/youtube/js_api_reference.html'
     versions:
       - filename: 'youtubeplayer.js'
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/youtubeplayer.js'
         libraryVer: '-'
 
-  - libraryName: 'Google Maps API'
+  - libraryName: 'YouTube iFrame'
+    libraryUrl: 'http://code.google.com/apis/youtube/iframe_api_reference.html'
+    versions:
+      - filename: 'google_youtube_iframe.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_youtube_iframe.js'
+        libraryVer: '-'
+
+  - libraryName: 'Google Maps API v2'
+    libraryUrl: 'http://code.google.com/apis/maps/documentation/javascript/v2/reference.html'
+    versions:
+      - filename: 'google_maps_api_v2.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_maps_api_v2.js'
+        libraryVer: '2.0.0'
+
+  - libraryName: 'Google Maps API v3'
     libraryUrl: 'http://code.google.com/apis/maps/documentation/javascript/reference.html'
     versions:
       - filename: 'google_maps_api_v3.js'
@@ -251,6 +216,34 @@ externs:
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/maps/google_maps_api_v3_exp.js'
         libraryVer: '3.exp'
 
+  - libraryName: 'Google Analytics API'
+    libraryUrl: 'http://code.google.com/intl/en/apis/analytics/docs/gaJS/gaJSApi.html'
+    versions:
+      - filename: 'google_analytics_api.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_analytics_api.js'
+        libraryVer: '-'
+
+  - libraryName: 'Google Visualization API'
+    libraryUrl: 'https://developers.google.com/chart/interactive/docs/reference'
+    versions:
+      - filename: 'google_visualization_api.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_visualization_api.js'
+        libraryVer: '-'
+
+  - libraryName: 'Webkit Console'
+    libraryUrl: 'http://trac.webkit.org/browser/trunk/WebCore/page/Console.idl'
+    versions:
+      - filename: 'webkit_console.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/webkit_console.js'
+        libraryVer: '-'
+
+  - libraryName: 'Google Loader API'
+    libraryUrl: 'http://code.google.com/apis/ajax/documentation/'
+    versions:
+      - filename: 'google_loader_api.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/google_loader_api.js'
+        libraryVer: '-'
+
   - libraryName: 'Google Container'
     libraryUrl: 'http://docs.closure-library.googlecode.com/git/class_goog_ui_Container.html'
     versions:
@@ -258,14 +251,21 @@ externs:
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/api/gadgets/google.container.js'
         libraryVer: '-'
 
-  - libraryName: 'oauth for opensocial'
+  - libraryName: 'Chrome Extensions'
+    libraryUrl: 'https://chrome.google.com/webstore/category/extensions'
+    versions:
+      - filename: 'chrome_extensions.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/chrome_extensions.js'
+        libraryVer: '-'
+
+  - libraryName: 'oAuth for opensocial'
     libraryUrl: 'http://code.google.com/apis/gadgets/docs/oauth.html'
     versions:
       - filename: 'oauth.js'
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/api/gadgets/oauth.js'
         libraryVer: '-'
 
-  - libraryName: 'oauth2 for opensocial'
+  - libraryName: 'oAuth2 for opensocial'
     libraryUrl: 'http://code.google.com/apis/gadgets/docs/oauth.html'
     versions:
       - filename: 'oauth2.js'
@@ -279,13 +279,6 @@ externs:
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/api/gadgets/opensocial.js'
         libraryVer: '-'
 
-  - libraryName: 'Google +1 button'
-    libraryUrl: 'https://code.google.com/apis/+1button/#jsapi'
-    versions:
-      - filename: 'plusone.js'
-        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/api/gadgets/plusone.js'
-        libraryVer: '-'
-
   - libraryName: 'Opensocial Shindig'
     libraryUrl: 'http://incubator.apache.org/shindig/shindig-1.1.x/shindig-features/jsdoc'
     versions:
@@ -293,16 +286,25 @@ externs:
         url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/api/gadgets/shindig.js'
         libraryVer: '1.1.x'
 
+  - libraryName: 'silverlight'
+    libraryUrl: 'http://msdn.microsoft.com/en-us/library/bb980101(v=VS.95).aspx'
+    versions:
+      - filename: 'silverlight.js'
+        url: 'https://code.google.com/p/closure-compiler/source/browse/contrib/externs/silverlight.js'
+        libraryVer: '-'
 ---
 
 [Externs][] are files that help the [Closure Compiler][] interface with external libraries.
 
 <table class="table table-striped">
-  <tr>
-    <th>Library Name</th>
-    <th>Version</th>
-    <th>Filename</th>
-  </tr>
+  <thead>
+    <tr>
+      <th>Library Name</th>
+      <th>Version</th>
+      <th>Filename</th>
+    </tr>
+  </thead>
+  <tbody>
 {% for extern in page.externs %}
   {% for ver in extern.versions %}
   <tr>
@@ -318,6 +320,7 @@ externs:
   </tr>
   {% endfor %}
 {% endfor %}
+  </tbody>
 </table>
 [closure externs]: https://code.google.com/p/closure-compiler/source/browse/#git%2Fcontrib%2Fexterns "Closure contrib externs"
 [Externs]: https://developers.google.com/closure/compiler/docs/api-tutorial3#externs "Closure Compiler externs file"
