@@ -8467,6 +8467,9 @@ article .content {
   width: 100%;
   text-align: left;
 }
+table .multirow {
+  vertical-align: middle;
+}
 @media (min-width: 768px) and (max-width: 979px) {
   body {
     padding: 0;

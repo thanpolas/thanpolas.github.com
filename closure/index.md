@@ -1,30 +1,28 @@
 ---
-layout: page
-title: "Google Closure Library Corner"
+layout: closure
+nav: main
+title: "Closure Library Resources"
 
 ---
 
-Welcome to the corner of the [Google Closure Library][closure library]. This is a community maintained resource for tools, libraries and software related to the Closur Library.
-
-> Feel free to send pull requests to get this list more complete
-
-
-## Table Of Contents
-
-<table>
-    <tr>
-        <td>Foo</td>
-    </tr>
-</table>
-
-## Externs
-
-[Externs][] are files that help the [Closure Compiler][] interface with external libraries.
+Community maintained resources for the [Closure Library][closure library].
 
 
 
+### Table Of Contents
 
+* [Externs][externs page] A collection of externs files.
+
+
+### Contribute
+
+Feel free to [send a pull request][repo] to update these resources.
+
+
+[closure externs]: https://code.google.com/p/closure-compiler/source/browse/#git%2Fcontrib%2Fexterns "Closure contrib externs"
+[externs extractor]: http://www.dotnetwise.com/Code/Externs/ "Closure Compiler Externs Extractor"
 [closure compiler]: https://developers.google.com/closure/compiler/ "Google Closure Library Compiler"
 [closure library]: https://developers.google.com/closure/library/ "Google Closure Library"
 [Externs]: https://developers.google.com/closure/compiler/docs/api-tutorial3#externs "Closure Compiler externs file"
-
+[externs page]: /closure/externs/ "Externs collection"
+[repo]: https://github.com/thanpolas/thanpolas.github.com "This repository"

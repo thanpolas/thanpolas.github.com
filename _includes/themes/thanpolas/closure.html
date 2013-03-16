@@ -1,0 +1,17 @@
+<article class="row-fluid">
+  <div class="span10 offset1 content">
+    <div class="page-header">
+      <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+    </div>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="/closure">Closure Library Resources</a>
+        <ul class="nav">
+          <li {% if page.nav == 'main' %}class="active"{% endif %}><a href="/closure/">Main</a></li>
+          <li {% if page.nav == 'externs' %}class="active"{% endif %}><a href="/closure/externs">Externs</a></li>
+        </ul>
+      </div>
+    </div>
+    {{ content }}
+  </div>
+</article>
