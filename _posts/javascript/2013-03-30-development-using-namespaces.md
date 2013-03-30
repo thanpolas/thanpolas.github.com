@@ -137,7 +137,7 @@ Seriously now, when was the last time you ever had a namespace collision problem
 
 Now please take a moment to consider the moments you found yourself in frustration using AMD on the browser. How much time did you spent to consider yourself an expert? Are you now flowing effortlessly or you have to deal with an occasional blooper every now and then? Really, take a moment on this and draw your own conclusions.
 
-![took our jobs][]
+[![took our jobs][]](http://www.youtube.com/watch?v=768h3Tz4Qik)
 
 ### Modules Are The Future Of Javascript
 
