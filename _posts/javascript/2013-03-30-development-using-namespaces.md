@@ -12,7 +12,7 @@ tags : [javascript, module loaders, modular code, amd, modules, dependencies, co
 
 ## Preface
 
-Using global Namespaces for web development is a long forgotten practice, banished, cursed and buried deep under tons of senseless hype. In this post I will try to provide a sober and pragmatic overview of the benefits and disadvantages in using Global Namespaces. How the development workflow compares to the *module* pattern and debunk a few myths and notions that exist about this matter.
+Using global Namespaces for web development is a long forgotten practice, banished, cursed and buried deep under tons of senseless hype. In this post I will try to provide an overview of the pros and cons in using Global Namespaces. How the development workflow compares to the *module pattern* and debunk a few myths and notions that exist about this matter.
 
 This post is examining a very specific aspect of the Javascript ecosystem, **medium to large scale web applications**. It assumes that you are familiar with [modern build flows][build-post] and you have a strong stomach.
 
@@ -55,11 +55,11 @@ Development with namespacing patterns enables you to observe any part of your co
 ![console-autocomplete][]
 ![console-object][]
 
-This simple fact provides you with very powerful debugging capabilities. During development, making an effort to *encapsulate* your code in IIFE's and forego of the javascript console is something that I never understood. Even when I am forced to develop using CJS or AMD patterns I take extra care to expose everything, even private variables and methods, so I can easily observe how they evolve in their lifetime.
+This simple fact provides you with very powerful debugging capabilities. During development, making an effort to *encapsulate* your code in <abbr title="Immediately-Invoked Function Expression">IIFE</abbr>'s and forego of the javascript console is something that I never understood. Even when I am forced to develop using CJS or AMD patterns I take extra care to expose everything, even private variables and methods, so I can easily observe how they evolve in their lifetime.
 
 > I don't want to expose the internal methods and variables!
 
-Sure! Your development environment, has nothing to do with how your application will eventually be served to the end-client. You can feel free to expose everything during development and be rest assured that you won't be *exposed*. After your application is built, add one more simple step to wrap your bundled code in an IIFE, whoop nothing exposed!
+Sure! Your development environment, has nothing to do with how your application will eventually be served to the end-client. You can feel free to expose everything during development and be rest assured that you won't be *exposed*. After your application is built, add one more simple step to wrap your bundled code in an <abbr title="Immediately-Invoked Function Expression">IIFE</abbr>, whoop nothing exposed!
 
 {% highlight javascript %}
 (function(){<%=application%>}).call(this);
