@@ -65,6 +65,8 @@ Sure! Your development environment, has nothing to do with how your application 
 (function(){<%=application%>}).call(this);
 {% endhighlight %}
 
+> *Update*, just found out about [this cool DevTools video](http://discover-devtools.codeschool.com/levels/3/challenges/7), examining exceptions on the console. A deep look into how to leverage the Javascript Console of your browser.
+
 ## Testing Using Namespaces
 
 No one can argue against testing your code. Quite the contrary actually, we have been blessed with so many testing suites and tools that it's like living in heaven! There are all sorts of test types and diving into them is beyond the scope of this article. I will however pick two distinct types that I find to serve a specific and very useful role, TDD and BDD tests.
