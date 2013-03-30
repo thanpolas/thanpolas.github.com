@@ -6,7 +6,7 @@ permalink: /:categories/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "less",
   "Rakefile", "changelog.md", "*.less", "sandbox",
-  "node_modules", "grunt.js", "bootstrap", "_site_git",
+  "node_modules", "Gruntfile.js", "bootstrap", "_site_git",
   "assets/themes/thanpolas/less"
 
   ]
@@ -16,7 +16,7 @@ pygments: auto
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : "Thanasis Polychronakis :: thanpolas"
+title : "Thanasis Polychronakis Web Developer"
 jobDescription: Freelance Web Developer
 tagline: web development as it happens
 author :
@@ -81,6 +81,8 @@ JB :
   archive_path: /archive.html
   categories_path : /categories.html
   tags_path : /tags.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
