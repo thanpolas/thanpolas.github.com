@@ -141,11 +141,11 @@ Now please take a moment to consider the moments you found yourself in frustrati
 
 ### Modules Are The Future Of Javascript
 
-> ES5 will support modules!
+> ES6 will support modules!
 
 Yes. It will and it will be awesome! But again, don't confuse *files* with *modules*. At the end of the day, you will bundle and minify your application one way or another. You app will become a module to be consumed by other libraries or served as the end product to the end-consumer. What your application ends up exposing as a whole has nothing to do with how your application is structured.
 
-I don't like being a party pooper, but when do you realistically believe ES5 and native module support will be in 98% of browser installations? Even at a post ES5 era, all of the above arguments, still stand.
+I don't like being a party pooper, but when do you realistically believe ES6 and native module support will be in 98% of browser installations? Even at a post ES6 era, all of the above arguments, still stand.
 
 ### It is either Modules or Namespaces
 
