@@ -4,7 +4,7 @@ title: "Development Using Namespaces"
 description: "Using Global Namespaces for web development is a long forgotten practice, banished, cursed and buried deep under tons of senseless hype. In this post I will try to provide a sober and pragmatic overview of the benefits and disadvantages in using Global Namespaces. How the development workflow compares to the module pattern and debunk a few myths and notions that exist about this matter."
 category : javascript
 tags : [javascript, module loaders, modular code, amd, modules, dependencies, commonjs]
-#shortUrl: http://than.pol.as/N9Qz
+shortUrl: http://than.pol.as/NvZQ
 ---
 {% include JB/setup %}
 
