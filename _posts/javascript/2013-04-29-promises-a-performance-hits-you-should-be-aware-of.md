@@ -190,6 +190,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>45.25ms</td>
       <td>43.28ms</td>
       <td>274.74ms</td>
+      <td>74.79ms</td>
     </tr>
     <tr>
       <th>Async Diff</th>
@@ -198,6 +199,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>36.23ms</td>
       <td>35.79ms</td>
       <td>235.16ms</td>
+      <td>78.31ms</td>
     </tr>
     <tr>
       <th>Sync Diff vs Async</th>
@@ -206,6 +208,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>18.39x</td>
       <td>17.59x</td>
       <td>111.68x</td>
+      <td>30.40x</td>
     </tr>
     <tr>
       <th>Async Diff vs Async</th>
@@ -214,6 +217,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>14.26x</td>
       <td>14.09x</td>
       <td>92.58x</td>
+      <td>30.83x</td>
     </tr>
   </tbody>
 </table>
@@ -239,6 +243,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>93.29ms</td>
       <td>91.98ms</td>
       <td>1,500.30ms</td>
+      <td>159.63ms</td>
     </tr>
     <tr>
       <th>Async Total</th>
@@ -247,6 +252,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>86.23ms</td>
       <td>86.96ms</td>
       <td>1,385.28ms</td>
+      <td>179.67ms</td>
     </tr>
     <tr>
       <th>Sync Total vs Async</th>
@@ -255,6 +261,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>18.36x</td>
       <td>18.11x</td>
       <td>295.33x</td>
+      <td>31.40x</td>
     </tr>
     <tr>
       <th>Async Total vs Async</th>
@@ -263,6 +270,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>16.36x</td>
       <td>16.50x</td>
       <td>262.86x</td>
+      <td>50.66x</td>
     </tr>
   </tbody>
 </table>
@@ -286,7 +294,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>160.98%</td>
       <td>840.21%</td>
       <td>866.88%</td>
-      <td>1106.67%</td>
+      <td>684.56%</td>
     </tr>
     <tr>
       <th>Async</th>
@@ -295,6 +303,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>811.32%</td>
       <td>834.63%</td>
       <td>1110.21%</td>
+      <td>691.41%</td>
     </tr>
   </tbody>
 </table>
@@ -303,11 +312,11 @@ There are two sets of tests done, in the first set all the promises within the `
 
 #### Total Time to Resolve, 500 Loops
 
-![Promises, Total Time to Resolve, 500 Loops](http://than.pol.as/ObsV/chart_promises_perf_total_time.png)
+![Promises, Total Time to Resolve, 500 Loops](http://than.pol.as/Odeb/chart_promises_perf_total_time_update.png)
 
 #### Memory Consumption
 
-![Promises, Memory Consumption](http://than.pol.as/Oblw/chart_promises_memory_gauges.png)
+![Promises, Memory Consumption](http://than.pol.as/OdOg/chart_promises_memory_gauges_update.png)
 
 > Checkout the results in [this Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq8iSVdp87MFdFhnZGFUTF9ST195TDVGTERXcHBmMUE#gid=6).
 
