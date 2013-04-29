@@ -169,7 +169,7 @@ There are two sets of tests done, in the first set all the promises within the `
 
 ### Difference to First Resolved Promise, 500 Loops
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Perf Type</th>
@@ -218,7 +218,7 @@ There are two sets of tests done, in the first set all the promises within the `
 
 ### Total Time, 500 Loops
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Perf Type</th>
@@ -266,7 +266,7 @@ There are two sets of tests done, in the first set all the promises within the `
 </table>
 
 ### Average Memory Difference - Single 500 Loop Runs
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Pert Type</th>
