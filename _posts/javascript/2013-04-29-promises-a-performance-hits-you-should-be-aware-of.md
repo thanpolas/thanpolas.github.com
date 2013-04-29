@@ -297,6 +297,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <td>160.98%</td>
       <td>840.21%</td>
       <td>866.88%</td>
+      <td>1106.67%</td>
       <td>684.56%</td>
     </tr>
     <tr>
