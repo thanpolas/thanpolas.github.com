@@ -4,6 +4,8 @@ title: "Promises/A+ Performance Hits You Should Be Aware Of"
 description: "The Promises/A+ specification is a fresh and very interesting way of dealing with the asynchronous nature of Javascript. It also provides a sensible way to deal with error handling and exceptions. In this article we will go through the performance hits you should be aware of and as a side-effect do a comparison between the two most popular Promises/A+ implementations, When and Q and how they compare to Async, the lowest abstraction you can get on asynchronicity."
 category : javascript
 tags : [javascript, promises, when.js, q, async]
+reddit: http://www.reddit.com/r/javascript/comments/1dckp9/promisesa_performance_hits_you_should_be_aware_of/
+shortUrl: http://than.pol.as/OeMA
 ---
 {% include JB/setup %}
 
