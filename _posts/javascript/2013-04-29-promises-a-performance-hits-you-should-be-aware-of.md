@@ -309,6 +309,8 @@ There are two sets of tests done, in the first set all the promises within the `
 
 ![Promises, Memory Consumption](http://than.pol.as/Oblw/chart_promises_memory_gauges.png)
 
+> Checkout the results in [this Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq8iSVdp87MFdFhnZGFUTF9ST195TDVGTERXcHBmMUE#gid=6).
+
 ## Comments On The Findings
 
 Synchronous resolution of all 7 chained promises is most likely an unnatural case. Ticking the clock once when resolving the chained promises seems to improve the total time of execution both in Q and When.js, Async will suffer a minor penalty.
