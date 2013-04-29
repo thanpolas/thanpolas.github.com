@@ -329,6 +329,8 @@ Synchronous resolution of all 7 chained promises is most likely an unnatural cas
 
 The Asynchronous Resolution spec requirement for Promises/A+ seems to be the biggest performance hit they have to deal with. When.js handles asyncronicity by conflating the queued callbacks into one, Q on the other hand, apparently needs to assign each resolution in its own tick, resulting in the huge performance hits that we see.
 
+**Update**: [@domenic][domenic] rightly pointed out a faulty tweak i attempted to do with Q. I did not properly enable the option to [zero the long stack traces](http://documentup.com/kriskowal/q/#tutorial/long-stack-traces). With this tweak enabled Q will perform up to 9x times faster! The Charts and Tables have been updated.
+
 The unsung winner here is When v1.8.1, as already mentioned, v1.8.1 contrary to the spec, will resolve the promises synchronously. The next version of When.js, that resolves promises Asynchronously, v2.0.1  performs ~5x slower.
 
 Memory consumption is shaky at best. The tests were perform on single node runs to avoid the previous runs contaminating the measurements. The node option `--expose-gc` was used and `global.gc()` was invoked in each of the 20 master loops. Still, this does not guarantee that the garbage collector will actually kick in. What we can merely observe is, given the same method of measurement, how each package performed individually.
@@ -355,3 +357,4 @@ To conclude the story about why all this started, i switched the Promises depend
 [perf-prom]: https://github.com/thanpolas/perf-promises "Promises Performance"
 [node-microtime]: https://github.com/wadey/node-microtime "node-microtime package"
 [async]: https://github.com/caolan/async#readme "Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript. Although originally designed for use with node.js, it can also be used directly in the browser."
+[domenic]: http://domenicdenicola.com/ "Domenic Denicola"
