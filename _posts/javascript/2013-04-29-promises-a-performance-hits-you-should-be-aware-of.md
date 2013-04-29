@@ -320,7 +320,7 @@ There are two sets of tests done, in the first set all the promises within the `
 
 #### Memory Consumption
 
-![Promises, Memory Consumption](http://than.pol.as/OdOg/chart_promises_memory_gauges_update.png)
+![Promises, Memory Consumption](http://than.pol.as/OdIx/chart_promises_memory_gauges_update__bars.png)
 
 > Checkout the results in [this Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq8iSVdp87MFdFhnZGFUTF9ST195TDVGTERXcHBmMUE#gid=6).
 
