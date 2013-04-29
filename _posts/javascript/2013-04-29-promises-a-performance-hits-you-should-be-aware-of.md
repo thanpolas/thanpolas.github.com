@@ -180,6 +180,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <th>When 2.0.1</th>
       <th>When 2.1.x</th>
       <th>Q</th>
+      <th>Q longStack=0</th>
     </tr>
   </thead>
   <tbody>
@@ -233,6 +234,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <th>When 2.0.1</th>
       <th>When 2.1.x</th>
       <th>Q</th>
+      <th>Q longStack=0</th>
     </tr>
   </thead>
   <tbody>
@@ -285,6 +287,7 @@ There are two sets of tests done, in the first set all the promises within the `
       <th>When 2.0.1</th>
       <th>When 2.1.x</th>
       <th>Q</th>
+      <th>Q longStack=0</th>
     </tr>
   </thead>
   <tbody>
