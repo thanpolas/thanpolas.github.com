@@ -342,7 +342,7 @@ If you are using Promises as glue for the *surface* of your API then these tests
 
 If a functions that resolves using a Promise will get called multiple times per given moment, then you need to take a pause and consider all your options.
 
-In highly repetitive functions, When.js, the best performing library, will finish resolving 16x times slower than Async. Q will finish ~263x times slower, or 1.3 **seconds**! I'm pulling this out of my ... but I think most Promises/A+ implementations will be close to Q's performance rather When.js's.
+In highly repetitive functions, When.js, the best performing library, will finish resolving 16x times slower than Async.
 
 Memory consumption is something that cannot be ignored either. Both When.js and Q will consume 8x to 11x times the memory since node started running. So when the *node* process started it consumed a total of 3,528,880 bytes of memory, when all 20x500 loop runs finished the memory count was at 41,115,800 bytes. This issue alone warrants an equivalent dive into why this happens, why `setTimeout` blows everything up in terms of memory consumption and what are the best practices for keeping the memory footprint low.
 
