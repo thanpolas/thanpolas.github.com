@@ -146,11 +146,11 @@ The tests were run for 10, 100, 500 and 1,000 loops. Each set of loops was run 2
   * **v1.8.1** When.js resolved Promises *Synchronously* against the Promises/A+ spec.
   * **v2.0.1** The current and stable version of When.js, resolved promises *Asynchronously*
   * **v2.1.x** The next version of When.js, currently under development.
-* [**Deferred][deferred] v0.6.3 Promises in a simple and powerful way. Implementation originally inspired by Kris Kowal's Q
+* [**Deferred**][deferred] v0.6.3 Promises in a simple and powerful way. Implementation originally inspired by Kris Kowal's Q
 
 > As more libraries are added this article will get updated with how they performed.
 
-**Updates**
+* **Updates**
   * *May-01-13* Added [Deferred][] library. Resolves promises synchronously.
 
 There are two sets of tests done, in the first set all the promises within the `app.promise()` function resolve *synchronously*. In the second set one promise will resolve asynchronously using `setTimeout()` in an effort to emulate actual asynchronicity that can happen in your app.
