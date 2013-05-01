@@ -329,7 +329,7 @@ Libraries *When.js* v1.8.1 and *Deferred* are not included in this table because
 
 #### Memory Consumption
 
-![Promises, Memory Consumption](http://than.pol.as/Og77/chart_promises_memory_bars_v2.png)
+![Promises, Memory Consumption](http://than.pol.as/OgU3/chart_promises_memory_bars_v3.png)
 
 > Checkout the results in [this Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq8iSVdp87MFdFhnZGFUTF9ST195TDVGTERXcHBmMUE#gid=6).
 
