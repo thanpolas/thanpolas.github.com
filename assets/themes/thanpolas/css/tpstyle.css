@@ -8407,7 +8407,8 @@ article .content {
   background-color: #ff283f;
   color: #ffffff;
 }
-.project-unit .code-pills .ios {
+.project-unit .code-pills .ios,
+.project-unit .code-pills .cli {
   background-color: #404040;
   color: #ffffff;
 }
@@ -8415,8 +8416,33 @@ article .content {
   background-color: #eeeef6;
   color: 'inherit';
 }
-.project-unit .code-pills .dynamodb {
+.project-unit .code-pills .aws-dynamodb,
+.project-unit .code-pills .aws-s3 {
   background-color: #ffcc80;
+  color: 'inherit';
+}
+.project-unit .code-pills .java {
+  background-color: #ffbf7b;
+  color: 'inherit';
+}
+.project-unit .code-pills .html5 {
+  background-color: #f7b0a7;
+  color: 'inherit';
+}
+.project-unit .code-pills .css3 {
+  background-color: #fff880;
+  color: 'inherit';
+}
+.project-unit .code-pills .docpad {
+  background-color: #f4f1e6;
+  color: 'inherit';
+}
+.project-unit .code-pills .redis {
+  background-color: #f89191;
+  color: 'inherit';
+}
+.project-unit .code-pills .yeoman {
+  background-color: #fe7990;
   color: 'inherit';
 }
 .project-unit p {

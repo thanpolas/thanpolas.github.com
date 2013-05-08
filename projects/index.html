@@ -3,24 +3,38 @@ layout: page
 title: "Projects / Work"
 
 projects:
-  - title: 'ready.js'
-    name: 'ready.js'
-    url: 'https://github.com/thanpolas/ready.js'
-    techs: [Javascript, node.js, Closure Library]
-    descr: 'allows a developer to monitor the progress and completion state of multiple concurrent asynchronous operations. It runs in the browser and node.js'
+  - title: 'Kickq'
+    name: 'Kickq'
+    url: 'https://github.com/verbling/kickq'
+    techs: [node.js, Javascript, redis]
+    descr: 'is a Job Queuing system for Node.js built on top of <a href="http://redis.io" title="Redis database">Redis</a>. It features reliable and fast handling of Jobs, delayed execution and an option for the Job Creator to get notified on the spot if the Job completes.'
 
-  - title: 'Closure Boilerplate'
-    name: 'Closure Boilerplate'
-    url: 'https://github.com/thanpolas/closure-boilerplate'
-    techs: [Javascript, Closure Library, Perl]
+  - title: 'Assetflow'
+    name: 'Assetflow'
+    url: 'https://github.com/verbling/assetflow'
+    techs: [node.js, Javascript, AWS S3, Grunt]
+    descr: 'is an asset deployment tool ala Rails Asset Pipeline. It supports md5 hash comparison with S3 and enables you to create powerful asset flows easily and fast. It is a Grunt task and applies solid cache-busting techniques transparently.'
+
+  - title: 'Mantri'
+    name: 'Mantri'
+    url: 'http://mantrijs.com'
+    techs: [Javascript, Closure Library, Grunt, CLI]
     descr: |
-       is the starting point for a <a href="https://developers.google.com/closure/library/">Google Closure Library</a> project, Javascript compilers included.'
+      is a Dependency Management System for medium to large web applications. It wraps around and exposes the powerfull <a href="https://developers.google.com/closure/" title="Google Closure Tools">Google Closure Tools</a>, the same tools used by most of Google's web assets.
 
-  - title: 'server2js'
-    name: 'Server to JS'
-    url: 'https://github.com/thanpolas/server2js'
-    techs: [Javascript, node.js, Closure Library]
-    descr: 'sends arbitrary data objects from the server to the client on page load time, synchronously.'
+  - title: 'closureplease.com'
+    name: 'closureplease.com'
+    url: 'http://closureplease.com'
+    techs: [HTML5, CSS3, Docpad]
+    descr: |
+      is a community based resource for the Closure Library. It's purpose is to lower the barrier to entry for Google's Closure Library and provide a complete list of resources, articles and presentations about CL.
+
+  - title: 'Generator Closure'
+    name: 'Generator Closure'
+    url: 'https://github.com/closureplease/generator-closure'
+    techs: [Yeoman]
+    descr: |
+      creates a fully working Closure Library project in seconds. A setup that required days to build can now be available using a shell command. Built on top of Yeoman's Generator System <a href="https://github.com/yeoman/generator/" title="Yeoman Generator">yo</a>.
 
   - title: 'Superstartup'
     name: 'Superstartup'
@@ -34,6 +48,25 @@ projects:
     techs: [Javascript, Grunt, node.js, Closure Library]
     descr: |
       for <a href="http://gruntjs.com/">Grunt</a> is a superset of the  tools provided by the Google Closure Library. The powerful compiler, the builder and the dependency writer.
+
+  - title: Profy
+    name: Profy
+    url: https://github.com/thanpolas/profy
+    techs: [Node.js, Javascript]
+    descr: |
+       is a performance measurement library that enables stress testing any application. It provides a meaningful set of stats that you can assert on using your favorite testing suite.
+
+  - title: 'ready.js'
+    name: 'ready.js'
+    url: 'https://github.com/thanpolas/ready.js'
+    techs: [Javascript, node.js, Closure Library]
+    descr: 'Monitors the progress and completion state of multiple concurrent asynchronous operations. It runs in the browser and node.js'
+
+  - title: 'server2js'
+    name: 'Server to JS'
+    url: 'https://github.com/thanpolas/server2js'
+    techs: [Javascript, node.js, Closure Library]
+    descr: 'send arbitrary data objects from the server to the client on page load time, synchronously.'
 
   - title: 'sublime-autoDocBlockr'
     name: 'autoDocBlockr'
@@ -51,9 +84,31 @@ projects:
   - title: PPH Metrics
     name: Metrics
     url: http://peopleperhour.com
-    techs: [Javascript, PHP, DynamoDB]
+    techs: [Javascript, PHP, AWS DynamoDB]
     descr: |
        facilities for peopleperhour.com (PPH) was an exciting project I engineered and implemented. Created an API for tracking and storing custom information for every visitor of the site. The system uses Amazon's <a href="http://aws.amazon.com/dynamodb/">DynamoDB</a>.
+
+  - title: Closure Helpers
+    name: closure-helpers
+    url: https://github.com/closureplease/closure-helpers
+    techs: [Javascript, Closure Library]
+    descr: |
+       is a set of helping functions for Closure Library projects.
+
+  - title: Closure Compiler
+    name: Superstartup Closure Compiler
+    url: https://github.com/closureplease/superstartup-closure-compiler
+    techs: [Closure Library, Java]
+    descr: |
+       is a <em>rigged</em> compiler that strips all debug logging messages from the final output. It is available through NPM so it can easily be integrated in any project that requires it.
+
+  - title: Closure Structs
+    name: Closure Structs
+    url: https://github.com/closureplease/closure-structscompiler
+    techs: [Javascript, Closure Library]
+    descr: |
+       is an extension of the struct libraries that Closure Library provides. They add some syntactic sugar and emit events whenever a value changes.
+
 
 ---
 {% include JB/setup %}
