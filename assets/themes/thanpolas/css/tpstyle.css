@@ -7897,17 +7897,6 @@ article .content {
   display: inline-block;
   height: 32px;
   margin-top: 7px;
-  -webkit-transition: rotateY 0.2s linear;
-  -moz-transition: rotateY 0.2s linear;
-  -o-transition: rotateY 0.2s linear;
-  transition: rotateY 0.2s linear;
-}
-.social-unit a:hover {
-  -webkit-transform: rotateY(25deg);
-  -moz-transform: rotateY(25deg);
-  -ms-transform: rotateY(25deg);
-  -o-transform: rotateY(25deg);
-  transform: rotateY(25deg);
 }
 .social-unit a i,
 .social-unit a span {
@@ -8051,6 +8040,11 @@ article .content {
 .footer-social > .social-unit [class^="social-icon-"],
 .footer-social > .social-unit [class*=" social-icon-"] {
   background-color: #6f6f6f;
+}
+.footer-social > .social-unit [class^="social-icon-"]:hover,
+.footer-social > .social-unit [class*=" social-icon-"]:hover {
+  background-color: #565656;
+  color: #565656;
 }
 .highlight {
   background-color: #ffffcc;

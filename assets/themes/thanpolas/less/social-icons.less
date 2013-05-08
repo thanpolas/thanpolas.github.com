@@ -14,13 +14,13 @@
     //width: 32px;
     height:32px;
     margin-top: 7px;
-    .transition(rotateY 0.2s linear);
+    // .transition(rotateY 0.2s linear);
     &:hover {
-    -webkit-transform: rotateY(25deg);
-       -moz-transform: rotateY(25deg);
-        -ms-transform: rotateY(25deg);
-         -o-transform: rotateY(25deg);
-            transform: rotateY(25deg);
+    // -webkit-transform: rotateY(25deg);
+    //    -moz-transform: rotateY(25deg);
+    //     -ms-transform: rotateY(25deg);
+    //      -o-transform: rotateY(25deg);
+    //         transform: rotateY(25deg);
     }
 
     i, span {
@@ -82,6 +82,7 @@
   }
   & + span {
     color: @stepColor;
+
   }
 }
 
@@ -102,5 +103,9 @@
   [class^="social-icon-"],
   [class*=" social-icon-"] {
     background-color: #6f6f6f;
+    &:hover {
+      background-color: darken(#6f6f6f, 10%);
+      color: darken(#6f6f6f, 10%);
+    }
   }
 }

@@ -36,15 +36,14 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      options: {
+        livereload: true
+      },
       less: {
         files: ['assets/themes/thanpolas/less/*.less'],
         tasks: ['lessCopy']
       },
       jekyllSources: {
-        options: {
-          livereload: true,
-          debounceDelay: 2000
-        },
         files: [
           // capture all except css
           '*.html', '*.yml', 'assets/js/**.js', '_posts/**',
