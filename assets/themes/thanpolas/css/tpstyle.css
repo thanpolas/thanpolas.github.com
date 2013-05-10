@@ -7849,41 +7849,43 @@ article .content {
   display: block;
 }
 .posts-collate li {
-  margin-top: 8px;
-  line-height: 12px;
+  font-size: 14px;
+  margin-top: 15px;
 }
 .posts-title {
   margin: 0;
   padding: 0;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 24px;
 }
-.posts-title .posts-time {
+.posts-time {
   display: inline-block;
-  min-width: 40px;
+  min-width: 60px;
   color: #555555;
-  font-size: 12px;
 }
-.posts-title .posts-description {
+.posts-description {
   *zoom: 1;
   display: block;
   margin-left: 20px;
+  font-size: 14px;
+  line-height: 17px;
 }
-.posts-title .posts-description:before,
-.posts-title .posts-description:after {
+.posts-description:before,
+.posts-description:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.posts-title .posts-description:after {
+.posts-description:after {
   clear: both;
 }
-.posts-title .posts-description:before,
-.posts-title .posts-description:after {
+.posts-description:before,
+.posts-description:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.posts-title .posts-description:after {
+.posts-description:after {
   clear: both;
 }
 .twenty-minus {
@@ -7893,6 +7895,18 @@ article .content {
 }
 .share-social {
   margin: 40px 0;
+}
+.frontpage-articles .posts-collate li {
+  margin-top: 8px;
+  line-height: 12px;
+}
+.frontpage-articles .posts-title {
+  font-size: 12px;
+  line-height: 12px;
+}
+.frontpage-articles .posts-time {
+  min-width: 40px;
+  font-size: 12px;
 }
 .social-unit {
   text-align: center;
