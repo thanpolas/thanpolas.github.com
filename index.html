@@ -3,7 +3,7 @@ layout: frontpage
 title: "Thanasis Polychronakis"
 tagline: Supporting tagline
 ---
-<style media="screen" type="text/css">html,body{height:100%; min-height:1000px;}</style>
+<style media="screen" type="text/css">html,body{min-height:1000px;}</style>
 <div class="container-narrow content">
     <div class="row-fluid masthead">
       <div class="span3 thanpolas-photo"><img title="Thanasis polychronakis" alt="Thanasis Polychronakis aka thanpolas" width="200px" src="/assets/img/thanpolas-circle-grey.png" /></div>
@@ -30,14 +30,47 @@ tagline: Supporting tagline
         <p class="bio-tag">Don't be shy, <a href="mailto:thanpolas@gmail.com" title="thanpolas@gmail.com">email me</a>!</p>
       </div>
     </div>
-    <div class="row-fluid frontpage-posts">
-      <div class="span3">
+    <div class="row-fluid">
+      <div class="span3 articles">
         <h4><a href="/blog">Articles</a></h4>
         {% assign posts_collate = site.posts %}
         {% include themes/thanpolas/widgets/posts_frontpage %}
       </div>
-      <div class="span8 offset1 posts">
-        <hr>
+      <div class="span8 offset1 featured-work">
+        <h2>Featured Work</h2>
+        <div class="row-fluid">
+          <div class="span6">
+            <h3>Kickq</h3>
+            <p>Kickq is a Job Queuing system for Node.js built on top of <a href="http://redis.io" title="Redis database">Redis</a>. It features reliable and fast handling of Jobs, delayed execution and an option for the Job Creator to get notified on the spot if the Job completes.</p>
+            <p>
+              <iframe src="http://ghbtns.com/github-btn.html?user=verbling&repo=kickq&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
+            </p>
+          </div>
+          <div class="span6">
+            <h3>Mantri</h3>
+            <p>MantriJS is a Dependency Management System for medium to large web applications. It wraps around and exposes the powerfull <a href="https://developers.google.com/closure/" title="Google Closure Tools">Google Closure Tools</a>, the same tools used by most of Google's web assets.</p>
+            <p>
+              <iframe src="http://ghbtns.com/github-btn.html?user=closureplease&repo=mantri&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
+            </p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span6">
+            <h3>Assetflow</h3>
+            <p>Assetflow is an asset deployment tool ala Rails Asset Pipeline. It supports md5 hash comparison with S3 and enables you to create powerful asset flows easily and fast. It is a Grunt task and applies solid cache-busting techniques transparently.</p>
+            <p>
+              <iframe src="http://ghbtns.com/github-btn.html?user=verbling&repo=assetflow&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
+            </p>
+          </div>
+          <div class="span6">
+            <h3>Grunt Closure Tools</h3>
+            <p>Grunt Closure Tools for <a href="http://gruntjs.com/">Grunt</a> is a superset of the  tools provided by the Google Closure Library. The powerful compiler, the builder and the dependency writer.</p>
+            <p>
+              <iframe src="http://ghbtns.com/github-btn.html?user=closureplease&repo=grunt-closure-tools&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
     <div class="row-fluid">

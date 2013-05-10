@@ -7824,8 +7824,14 @@ article .content {
 .front-content .social-unit {
   display: inline-block;
 }
-.frontpage-posts {
-  margin-top: 60px;
+.featured-work {
+  margin-top: 40px;
+}
+.featured-work h3 {
+  margin: 0;
+}
+.articles {
+  margin-top: 70px;
 }
 .social-unit li a {
   color: #999;
