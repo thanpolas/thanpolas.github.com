@@ -7827,6 +7827,9 @@ article .content {
 .featured-work {
   margin-top: 40px;
 }
+.featured-work h2 {
+  font-weight: bolder;
+}
 .featured-work h3 {
   margin: 0;
 }
