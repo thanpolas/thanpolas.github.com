@@ -7780,7 +7780,6 @@ article .content {
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
   padding-bottom: 0;
   max-width: 820px;
-  min-width: 400px;
   margin: 20px auto;
 }
 .container-narrow:before,
