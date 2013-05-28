@@ -24,5 +24,4 @@ title : Atom Feed
    <content type="html">{{ post.description | xml_escape }}</content>
  </entry>
  {% endfor %}
-
 </feed>
