@@ -34,7 +34,7 @@ I tried to broaden the definition of the test case. If an application uses the P
 
 * There will be a series of promises chained together, representing the various operations that will be performed by your application.
 * The *Deferred* Object is used on each link of the chain to control resolution and how the promise object is exposed.
-* Throughout the whole chain of promises there can be operations that are actually asynchronous, we will measure both cases.
+* Throughout the whole chain of promises there can be operations that are actually synchronous, we will measure all cases.
 
 The number of how many promises will be chained was arbitrarily chosen to be 7, it represents a mean call-stack of an average operation. Any app logic is stripped, we only measure how long it takes to resolve a chain of 7 promises:
 
@@ -72,6 +72,28 @@ app.promise = function(Prom) {
 
 > Find a snapshot of the actual app [in this commit](https://github.com/thanpolas/perf-promises/blob/27527b442eaed4b38f1fd8c8cc2b01348d0b5734/lib/app.js#L5:L36).
 
+### Update 11/Jun/2013
+
+The post has been updated to include one more test and rename what used to be the *Async* test to *Mixed*. Based [on an issue][v2issue] raised by [Domenic][], a few points were made that need to be addressed and implemented in the test. Thus the article update...
+
+#### Promises are built to handle Asynchronous functions
+
+Yes indeed. Libraries or ideas are merely used as their original creator intented. There are two major reasons why you may use promises synchronously.
+
+1. In real world cases you have conditionals, in a Promise returning function a condition may force the function to finish synchronously, thus returning a *Resolved Promise*.
+2. The second case has to do with design choices, maintainable and scalable code. Through time and again, one of the biggest pain points with large codebases, in regard to control flow and asynchronicity is the fact that methods and functions evolve and get refactored.
+
+Over time, what used to be a synchronous function becomes async and vice versa. Each change, means a hell of a lot has to be refactored to match that evolution.
+
+I found Promises to solve that design problem by blanketing everything with a returned promise and not caring about how the function will evolve over time in respect to sync / async. This practice also enables better code compositionality and better abstractions.
+
+Therefore, it is totally expected, for a number of Promises to resolve synchronously, for any of the above reasons.
+
+#### The Perf Test Resolves Synchronous Functions
+
+> In effect Async resolves noop funcs.
+
+Yes. A request was made for all the stub functions to be asynchronous. That request has been implemented and you can view the results bellow, named as **Async**.
 
 ### Time Benchmark
 
@@ -141,37 +163,26 @@ var diff = finishSnapshot - firstSnapshot;
 The tests were run for 10, 100, 500 and 1,000 loops. Each set of loops was run 20 times to normalize the results and the means were taken from these 20 runs. The libraries used for measuring are:
 
 * [**Async**][async] was used to emulate vanilla JS using callbacks. A special, but of equivalent logic, [test app was used](https://github.com/thanpolas/perf-promises/blob/27527b442eaed4b38f1fd8c8cc2b01348d0b5734/lib/app.js#L81:L99)
-* [**Q**][q] is one of the most prominent Promises/A+ implementations. v0.9.3 was used.
-* [**When.js**][when] is the other most prominent Promises/A+ implementation. Three versions of when.js were used:
+* [**Q**][q] is one of the most prominent Promises/A+ implementations. v0.9.5 was used.
+* [**When.js**][when] is the other most prominent Promises/A+ implementation. Two versions of when.js were used:
   * **v1.8.1** When.js resolved Promises *Synchronously* against the Promises/A+ spec.
-  * **v2.0.1** The current and stable version of When.js, resolved promises *Asynchronously*
-  * **v2.1.x** The next version of When.js, currently under development.
-* [**Deferred**][deferred] v0.6.3 Promises in a simple and powerful way. Implementation originally inspired by Kris Kowal's Q
+  * **v2.1.0** Current version of When.js, resolves Promises asynchronously.
+* [**Deferred**][deferred] v0.6.3 Promises in a simple and powerful way. Implementation originally inspired by Kris Kowal's Q.
+* [**Promise**][promise] v3.0.1 Bare bones Promises/A+ implementation.
 
 > As more libraries are added this article will get updated with how they performed.
 
 * **Updates**
   * *May-01-13* Added [Deferred][] library. Resolves promises synchronously.
+  * *Jun-11-13* Added [Promise][] library. Resolves promises asynchronously.
 
-There are two sets of tests done, in the first set all the promises within the `app.promise()` function resolve *synchronously*. In the second set one promise will resolve asynchronously using `setTimeout()` in an effort to emulate actual asynchronicity that can happen in your app.
+There are three sets of tests done:
 
-{% highlight javascript %}
-  // SET 1: Synchronous resolution
-  def2.resolve();
-  def3.resolve();
-  def4.resolve();
-  def5.resolve();
-  def6.resolve();
-  def7.resolve();
+1. All stub functions resolve *synchronously*.
+2. Half the stub functions resolve *synchronously* and the other hald *asynchronously*
+3. All stub functions resolve *asynchronously*.
 
-  // SET 2: Delayed resolution
-  def2.resolve();
-  def3.resolve();
-  def4.resolve();
-  setTimeout(def5.resolve);
-  def6.resolve();
-  def7.resolve();
-{% endhighlight %}
+Sets 1 and 3 can be considered edge cases. The most close to reality test case is 2, Mixed.
 
 ### Difference to First Resolved Promise, 500 Loops
 
@@ -180,51 +191,60 @@ There are two sets of tests done, in the first set all the promises within the `
     <tr>
       <th>Perf Type</th>
       <th>Async</th>
-      <th>When 2.0.1</th>
-      <th>When 2.1.x</th>
-      <th>Q</th>
-      <th>Q longStack=0</th>
+      <th>When 2.1.0</th>
+      <th>Q 0.9.5</th>
+      <th>Promise 3.0.1</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Sync Diff</th>
-      <td>2.46ms</td>
-      <td>45.25ms</td>
-      <td>43.28ms</td>
-      <td>274.74ms</td>
-      <td>74.79ms</td>
+      <td>0.01ms</td>
+      <td>36.62ms</td>
+      <td>186.43ms</td>
+      <td>63.96ms</td>
+    </tr>
+    <tr>
+      <th>Mixed Diff</th>
+      <td>5.37ms</td>
+      <td>41.78ms</td>
+      <td>226.34ms</td>
+      <td>83.83ms</td>
     </tr>
     <tr>
       <th>Async Diff</th>
-      <td>2.54ms</td>
-      <td>36.23ms</td>
-      <td>35.79ms</td>
-      <td>235.16ms</td>
-      <td>78.31ms</td>
+      <td>22.42ms</td>
+      <td>58.18ms</td>
+      <td>241.80ms</td>
+      <td>93.68ms</td>
     </tr>
     <tr>
-      <th>Sync Diff vs Async</th>
+      <th>Sync Diff vs AsyncLib</th>
       <td>1x</td>
-      <td>18.39x</td>
-      <td>17.59x</td>
-      <td>111.68x</td>
-      <td>30.40x</td>
+      <td>3,662x</td>
+      <td>18,643x</td>
+      <td>6,396x</td>
     </tr>
     <tr>
-      <th>Async Diff vs Async</th>
+      <th>Mixed Diff vs AsyncLib</th>
       <td>1x</td>
-      <td>14.26x</td>
-      <td>14.09x</td>
-      <td>92.58x</td>
-      <td>30.83x</td>
+      <td>7.78x</td>
+      <td>42.15x</td>
+      <td>15.61x</td>
+    </tr>
+    <tr>
+      <th>Async Diff vs AsyncLib</th>
+      <td>1x</td>
+      <td>2.60x</td>
+      <td>10.79x</td>
+      <td>4.18x</td>
     </tr>
   </tbody>
 </table>
 
 Libraries *When.js* v1.8.1 and *Deferred* are not included in this table because they resolve promises synchronously. This difference makes the *Diff* metric inapplicable.
 
-### Total Time, 500 Loops
+### Total Time of execution, 500 Loops
 
 <table class="table table-striped">
   <thead>
@@ -232,53 +252,66 @@ Libraries *When.js* v1.8.1 and *Deferred* are not included in this table because
       <th>Perf Type</th>
       <th>Async</th>
       <th>When 1.8.1</th>
-      <th>When 2.0.1</th>
-      <th>When 2.1.x</th>
-      <th>Q</th>
-      <th>Q longStack=0</th>
-      <th>Deferred</th>
+      <th>When 2.1.0</th>
+      <th>Q 0.9.5</th>
+      <th>Deferred 0.6.3</th>
+      <th>Promise 3.0.1</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th>Sync Total</th>
-      <td>5.08ms</td>
-      <td>16.41ms</td>
-      <td>93.29ms</td>
-      <td>91.98ms</td>
-      <td>1,500.30ms</td>
-      <td>159.63ms</td>
-      <td>87.26ms</td>
+    <tbody>
+      <tr>
+        <th>Sync Total</th>
+        <td>5.15ms</td>
+        <td>12.35ms</td>
+        <td>72.35ms</td>
+        <td>301.47ms</td>
+        <td>71.25ms</td>
+        <td>80.50ms</td>
     </tr>
     <tr>
-      <th>Async Total</th>
-      <td>5.27ms</td>
-      <td>15.84ms</td>
-      <td>86.23ms</td>
-      <td>86.96ms</td>
-      <td>1,385.28ms</td>
-      <td>179.67ms</td>
-      <td>92.94ms</td>
+      <td>Mixed Total</td>
+      <td>18.94ms</td>
+      <td>40.57ms</td>
+      <td>80.21ms</td>
+      <td>325.49ms</td>
+      <td>94.58ms</td>
+      <td>95.67ms</td>
     </tr>
     <tr>
-      <th>Sync Total vs Async</th>
+      <td>Async Total</td>
+      <td>35.70ms</td>
+      <td>50.63ms</td>
+      <td>90.52ms</td>
+      <td>337.82ms</td>
+      <td>105.87ms</td>
+      <td>107.01ms</td>
+    </tr>
+    <tr>
+      <td>Sync Total vs AsyncLib</td>
       <td>1x</td>
-      <td>3.23x</td>
-      <td>18.36x</td>
-      <td>18.11x</td>
-      <td>295.33x</td>
-      <td>31.40x</td>
-      <td>17.18x</td>
+      <td>2.40x</td>
+      <td>14.05x</td>
+      <td>58.54x</td>
+      <td>13.83x</td>
+      <td>15.63x</td>
     </tr>
     <tr>
-      <th>Async Total vs Async</th>
+      <td>Mixed Total vs AsyncLib</td>
       <td>1x</td>
-      <td>3.01x</td>
-      <td>16.36x</td>
-      <td>16.50x</td>
-      <td>262.86x</td>
-      <td>50.66x</td>
-      <td>18.30x</td>
+      <td>2.14x</td>
+      <td>4.23x</td>
+      <td>17.19x</td>
+      <td>4.99x</td>
+      <td>5.05x</td>
+    </tr>
+    <tr>
+      <td>Async Total vs AsyncLib</td>
+      <td>1x</td>
+      <td>1.42x</td>
+      <td>2.54x</td>
+      <td>9.46x</td>
+      <td>2.97x</td>
+      <td>3.00x</td>
     </tr>
   </tbody>
 </table>
@@ -325,19 +358,17 @@ Libraries *When.js* v1.8.1 and *Deferred* are not included in this table because
 
 #### Total Time to Resolve, 500 Loops
 
-![Promises, Total Time to Resolve, 500 Loops](http://than.pol.as/Ofw5/chart_promises_perf_total_time_v2.png)
+![Promises, Total Time to Resolve, 500 Loops](http://f.cl.ly/items/3k3R1e3B3p3K3j1e2p2o/chart-promises-perf-totals-v4.png)
 
 #### Memory Consumption
 
 ![Promises, Memory Consumption](http://than.pol.as/OgU3/chart_promises_memory_bars_v3.png)
 
-> Checkout the results in [this Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq8iSVdp87MFdFhnZGFUTF9ST195TDVGTERXcHBmMUE#gid=6).
+> Checkout the updated results in [this Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq8iSVdp87MFdDlsMzJ3MlNIa2FuX0I5eFgzRlJ6N2c#gid=6), you can find the first version results in [this spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Aq8iSVdp87MFdFhnZGFUTF9ST195TDVGTERXcHBmMUE#gid=6).
 
 ## Comments On The Findings
 
-Synchronous resolution of all 7 chained promises is most likely an unnatural case. Ticking the clock once when resolving the chained promises seems to improve the total time of execution both in Q and When.js, Async will suffer a minor penalty.
-
-The Asynchronous Resolution spec requirement for Promises/A+ seems to be the biggest performance hit they have to deal with. When.js handles asyncronicity by conflating the queued callbacks into one, Q on the other hand, apparently needs to assign each resolution in its own tick, resulting in the huge performance hits that we see.
+Synchronous resolution of all 7 chained promises is most likely an unnatural case, much like Asynchronous on all 7 cases is. Using Mixed asynchronous resolution in the stub funcs seems to improve the total time of execution both in Q and When.js, Async will suffer a minor penalty.
 
 **Update**: [@domenic][domenic] rightly pointed out a faulty tweak i attempted to do with Q. I did not properly enable the option to [zero the long stack traces](http://documentup.com/kriskowal/q/#tutorial/long-stack-traces). With this tweak enabled Q will perform up to 9x times faster! The Charts and Tables have been updated.
 
@@ -352,6 +383,8 @@ If you are using Promises as glue for the *surface* of your API then these tests
 If a functions that resolves using a Promise will get called multiple times per given moment, then you need to take a pause and consider all your options.
 
 In highly repetitive functions, When.js, the best performing library, will finish resolving 16x times slower than Async.
+
+The Asynchronous Resolution spec requirement for Promises/A+ seems to be the biggest performance hit they have to deal with. When.js handles asyncronicity by conflating the queued callbacks into one, Q on the other hand, apparently needs to assign each resolution in its own tick, resulting in the huge performance hits that we see. Anyway you slice it, the additional Tick that the Promises/A+ spec requires, comes with a cost. The cost can be negligent or quite measurable, depending on the situation.
 
 Memory consumption is something that cannot be ignored either. Both When.js and Q will consume 8x to 11x times the memory since node started running. So when the *node* process started it consumed a total of 3,528,880 bytes of memory, when all 20x500 loop runs finished the memory count was at 41,115,800 bytes. This issue alone warrants an equivalent dive into why this happens, why `setTimeout` blows everything up in terms of memory consumption and what are the best practices for keeping the memory footprint low.
 
@@ -369,3 +402,5 @@ To conclude the story about why all this started, i switched the Promises depend
 [async]: https://github.com/caolan/async#readme "Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript. Although originally designed for use with node.js, it can also be used directly in the browser."
 [domenic]: http://domenicdenicola.com/ "Domenic Denicola"
 [deferred]: https://github.com/medikoo/deferred#readme "Deferred – Asynchronous JavaScript with Promises"
+[v2issue]: https://github.com/thanpolas/perf-promises/pull/2 "Perf Test Issue"
+[promise]: https://github.com/then/promise "Bare bones Promises/A+ implementation"
