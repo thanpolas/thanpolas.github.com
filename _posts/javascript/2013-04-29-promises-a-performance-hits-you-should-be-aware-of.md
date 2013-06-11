@@ -95,6 +95,35 @@ Therefore, it is totally expected, for a number of Promises to resolve synchrono
 
 Yes. A request was made for all the stub functions to be asynchronous. That request has been implemented and you can view the results bellow, named as **Async**.
 
+#### The Added nextTick in Promises/A+ should not be always added
+
+Domenic [painstakingly explained](https://gist.github.com/thanpolas/5758331) to me the subtle details of the Promises/A+ spec that requires asynchronous resolution. Consider this simple case:
+
+{% highlight javascript %}
+
+function asyncOp(){
+  var def = when.defer();
+
+  // emulate an async operation (e.g. file read)
+  setTimeout(function(){
+    def.resolve();
+    console.log('X');
+  });
+
+  return def.promise;
+}
+
+asyncOp().then(function(){
+  console.log('Y');
+});
+
+console.log('Z');
+{% endhighlight %}
+
+You'd typically expect that you'll see printed Z, X, Y. But that is not the case as per the spec. The spec only requires that resolution "is not invoked in the same turn of the event loop as the call to then to which they are passed.".
+
+If it is *another turn* the Promise implementation can resolve the promise **synchronously** thus printing Z, Y, X. A very subtle detail, and one that according to Domenic not all implementations have really implemented.
+
 ### Time Benchmark
 
 The `app.promise()` function gets invoked asynchronously in a loop of *n* times. We mark the time down to microseconds, using the [node-microtime][] library. The time is marked in the following events:
@@ -382,9 +411,7 @@ If you are using Promises as glue for the *surface* of your API then these tests
 
 If a functions that resolves using a Promise will get called multiple times per given moment, then you need to take a pause and consider all your options.
 
-In highly repetitive functions, When.js, the best performing library, will finish resolving 16x times slower than Async.
-
-The Asynchronous Resolution spec requirement for Promises/A+ seems to be the biggest performance hit they have to deal with. When.js handles asyncronicity by conflating the queued callbacks into one, Q on the other hand, apparently needs to assign each resolution in its own tick, resulting in the huge performance hits that we see. Anyway you slice it, the additional Tick that the Promises/A+ spec requires, comes with a cost. The cost can be negligent or quite measurable, depending on the situation.
+In highly repetitive functions, When.js, the best performing and Promises/A+ compliant library, will finish resolving 4x times slower than Async.
 
 Memory consumption is something that cannot be ignored either. Both When.js and Q will consume 8x to 11x times the memory since node started running. So when the *node* process started it consumed a total of 3,528,880 bytes of memory, when all 20x500 loop runs finished the memory count was at 41,115,800 bytes. This issue alone warrants an equivalent dive into why this happens, why `setTimeout` blows everything up in terms of memory consumption and what are the best practices for keeping the memory footprint low.
 
