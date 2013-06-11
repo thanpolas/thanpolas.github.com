@@ -7528,6 +7528,12 @@ body {
 .text-center {
   text-align: center;
 }
+pre,
+code,
+kbd,
+samp {
+  font-size: 16px;
+}
 h1,
 h2,
 h3 {
