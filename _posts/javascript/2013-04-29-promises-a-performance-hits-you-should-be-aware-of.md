@@ -387,7 +387,7 @@ Libraries *When.js* v1.8.1 and *Deferred* are not included in this table because
 
 #### Total Time to Resolve, 500 Loops
 
-![Promises, Total Time to Resolve, 500 Loops](http://f.cl.ly/items/3k3R1e3B3p3K3j1e2p2o/chart-promises-perf-totals-v4.png)
+![Promises, Total Time to Resolve, 500 Loops](http://f.cl.ly/items/20422u0s1D2y2g2N0v3F/chart-promises-perf-totals-v5.png)
 
 #### Memory Consumption
 
