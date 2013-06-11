@@ -7533,14 +7533,6 @@ h2,
 h3 {
   margin-top: 22.857142857142858px;
 }
-/* Redeclare monospace font family: h5bp.com/j */
-pre,
-code,
-kbd,
-samp {
-  font-family: monospace, serif;
-  font-size: 16px;
-}
 sup {
   top: -0.8em;
   font-size: 60%;
