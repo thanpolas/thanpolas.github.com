@@ -4,6 +4,8 @@ title: "Writing Modular Javascript REWIND"
 description: "The Module term in Javascript, has been overstretched to the point where it's ambiguous. The primary reason for that is because of Module Definition Patterns and the torrent of 'Write Modular Javascript using AMD' blog posts. Let's put that claims aside for a moment and revisit the definition of what is a Module and what is a Modular Application or Library, in javascript, for the first time."
 category : javascript
 tags : [javascript, module loaders, modular code, amd, modules, commonjs, modular programming, mantri]
+shortUrl: http://than.pol.as/Palc
+reddit: http://www.reddit.com/r/javascript/comments/1g6qmv/writing_modular_javascript_rewind/
 ---
 {% include JB/setup %}
 
