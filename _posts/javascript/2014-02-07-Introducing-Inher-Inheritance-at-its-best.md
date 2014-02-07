@@ -258,12 +258,13 @@ So far so good, but as you might have suspected, the inheritance chain always en
 var EventEmitter = require('events').EventEmitter;
 var inher = require('inher');
 
-inher.wrap(EventEmitter);
+var IeventEmitter = inher.wrap(EventEmitter);
 
-var Thing = EventEmitter.extend();
+var Thing = IeventEmitter.extend();
 
 var newThing = new Thing();
 
+newThing instanceof IEventEmitter; // true
 newThing instanceof EventEmitter; // true
 {% endhighlight %}
 
