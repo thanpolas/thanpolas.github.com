@@ -4,6 +4,8 @@ title: "Introducing Inher Pseudo-Classical Inheritance at its best"
 description: "Inher is a robust and compact library for applying natural inheritance to your applications, check out to see what it can do for you!"
 category : javascript
 tags : [javascript, nodejs, node, prototypal, inheritance, pseudo-classical]
+shortUrl: http://than.pol.as/TnOi
+reddit: http://www.reddit.com/r/javascript/comments/1x9rmd/feedback_for_inher_pseudoclassical_inheritance_at/
 ---
 {% include JB/setup %}
 
