@@ -13,7 +13,7 @@ It's been a very long time i've been trying to tackle the boilerplate required b
 
 [Inher](https://github.com/thanpolas/inher) is a big step towards bundling the pseudo-classical pattern wholesale and offering a compact, robust and small library that will help us apply sophisticated inheritance patterns throughout our projects.
 
-> [Check out Inher on Github](https://github.com/thanpolas/inher)
+<iframe src="http://ghbtns.com/github-btn.html?user=thanpolas&repo=inher&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
 
 ## The Pseudo-Classical Pattern
 
