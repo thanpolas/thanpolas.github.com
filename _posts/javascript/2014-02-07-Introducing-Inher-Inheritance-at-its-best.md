@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "Introducing Inher Pseudo-Classical Inheritance at its best"
-description: "Inher is a robust and compact library for applying natural inheritance to your applications, check out to see what it can do for you!"
+title: "Introducing cip Classical Inheritance Pattern at its best"
+description: "Cip is a robust and compact library for applying natural inheritance to your applications."
 category : javascript
 tags : [javascript, nodejs, node, prototypal, inheritance, pseudo-classical]
 shortUrl: http://than.pol.as/TnOi
-reddit: http://www.reddit.com/r/javascript/comments/1x9rmd/feedback_for_inher_pseudoclassical_inheritance_at/
 ---
 {% include JB/setup %}
 
 It's been a very long time i've been trying to tackle the boilerplate required by the pseudo-classical inheritance pattern in Javascript. Another very important goal was to lower the amount of experience required to consume the libraries i author. I am a great fan of prototypal inheritance and wanted to have an inheritance library that implements `extend()`, `mixin()` and does not compromise on any of the principals of the pseudo-classical inheritance pattern, none at all.
 
-[Inher](https://github.com/thanpolas/inher) is a big step towards bundling the pseudo-classical pattern wholesale and offering a compact, robust and small library that will help us apply sophisticated inheritance patterns throughout our projects.
+[Cip](https://github.com/thanpolas/cip) is a big step towards bundling the Classical pattern wholesale and offering a compact, robust and small library that will help us apply sophisticated inheritance patterns throughout our projects.
 
-<iframe src="http://ghbtns.com/github-btn.html?user=thanpolas&repo=inher&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
+<iframe src="http://ghbtns.com/github-btn.html?user=thanpolas&repo=cip&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
+
+> Update *17 Feb 2014*, The library was originally named `inher`, didn't like it, changed to `cip`.
 
 ## The Pseudo-Classical Pattern
 
@@ -55,18 +56,18 @@ childBase.add();
 childBase.a; // value will be 2
 {% endhighlight %}
 
-So that's the pattern in a nutshell, that's too much boilerplate to apply the inheritance pattern, we have to require the `util` library, we have to properly invoke the parent constructor (minding the right amount of arguments passed), and then apply the actual inheritance using `util.inherits()`. What if we could pack all these operations in a single function? Meet Inher.
+So that's the pattern in a nutshell, that's too much boilerplate to apply the inheritance pattern, we have to require the `util` library, we have to properly invoke the parent constructor (minding the right amount of arguments passed), and then apply the actual inheritance using `util.inherits()`. What if we could pack all these operations in a single function? Meet Cip.
 
-## Working with Inher
+## Working with Cip
 
-Inher's first class citizen is the `extend()` method. It will perform the same exact operations as pseudo-classical and apply the inheritance pattern with just a one liner. Here's how the same example would be authored using Inher.
+Cip's first class citizen is the `extend()` method. It will perform the same exact operations as pseudo-classical and apply the inheritance pattern with just a one liner. Here's how the same example would be authored using Cip.
 
 
 {% highlight javascript %}
-var inher = require('inher');
+var cip = require('cip');
 
 // create our Base constructor
-var Base = inher.extend(function(a) {
+var Base = cip.extend(function(a) {
   this.a = 1;
 });
 
@@ -93,16 +94,16 @@ childBase.add();
 childBase.a; // value will be 2
 {% endhighlight %}
 
-So you can notice that the result is exactly the same, we tossed the `util` library and the `inherits()` declaration, and we tossed the Parent Constructor invocation in the `ChildBase` constructor. Passed arguments also work as expected and populate throughout the inheritance chain.
+You notice that the result is exactly the same, we tossed the `util` library and the `inherits()` declaration, and we tossed the Parent Constructor invocation in the `ChildBase` constructor. Passed arguments also work as expected and populate throughout the inheritance chain.
 
 ## What extend() does
 
-The `extend()` function is a *Static* function assigned directly on the constructor. When invoked it will create a new Constructor that encapsulates your provided constructor, or use a noop if none is defined. After applying the pseudo-classical inheritance pattern, `extend()` will copy all the inheritance *Static* functions to the new constructor so itself will be able to perform `extend()` and all the other functions we'll see in a very while.
+The `extend()` function is a *Static* function assigned directly on the Constructor. When invoked it will create a new Constructor that encapsulates your provided constructor, or use a noop if none is defined. After applying the Classical Inheritance Pattern, `extend()` will copy all the inheritance *Static* functions to the new constructor so itself will be able to perform `extend()` and all the other functions we'll see in a very while.
 
 This enables you to perform infinite inheritance using the tools provided, this is a valid statement:
 
 {% highlight javascript %}
-var GreatGreatGrandChild = inher.extend().extend().extend().extend();
+var GreatGreatGrandChild = cip.extend().extend().extend().extend();
 {% endhighlight %}
 
 ## Mixing in different Constructors
@@ -139,12 +140,12 @@ var ChildBase = function(b) {
 // here is where inheritance happens
 util.inherits(ChildBase, Base);
 
-// to add the mixin prototype methods we can no longer 
+// to add the mixin prototype methods we can no longer
 // use util.inherits, we have to use an assignment method instead
 _.assign(ChildBase.prototype, CtorMixin.prototype);
 {% endhighlight %}
 
-You can see how the plot thickens here, hopefully Inher got's your back and provides a convenience method that performs the same exact operations. Enter `mixin()`! The `mixin()` method accepts any number of arguments, as long as they are of type Function, or an Array of Functions, all representing Constructors.
+You can see how the plot thickens here, hopefully Cip has you covered and provides a convenience method that performs the same exact operations. Meet `mixin()`! The `mixin()` method accepts any number of arguments, as long as they are of type Function, or an Array of Functions, all representing Constructors.
 
 {% highlight javascript %}
 var ChildBase = Base.extend(function(b) {
@@ -154,10 +155,10 @@ var ChildBase = Base.extend(function(b) {
 ChildBase.mixin(MixinCtor);
 
 // add any number of mixins
-ChildBase.mixin(MixinOne, MixinTwo, MixinThree, [MixinFour, MixinFive]);
+ChildBase.mixin(MixinOne, MixinTwo, MixinThree);
 {% endhighlight %}
 
-Mixins have never been easier to apply. One might wonder what happens with the arguments the Constructors expect, and you will be right on the money, passing arguments down the inheritance chain is one of the tedious tasks you have to perform, taking care what argument is passed to what constructor. Inher abstracts that away from you and provides every constructor, either it be a Parent or a Mixin, with the same arguments that were passed on instantiation.
+Mixins have never been easier to apply. One might wonder what happens with the arguments the Constructors expect, and you will be right on the money, passing arguments down the inheritance chain is one of the tedious tasks you have to perform, taking care what argument is passed to what constructor. Cip abstracts that away from you and provides every constructor, either it be a Parent or a Mixin, with the same arguments that were passed on instantiation.
 
 {% highlight javascript %}
 var childBase = new ChildBase(2);
@@ -165,7 +166,7 @@ var childBase = new ChildBase(2);
 
 The argument `2` will get passed on to the Parent Constructor (`Base`) and all the parents there might be, and every Mixin we defined (MixinOne, MixinTwo...) and all their respective parents! So you have to mindful of how many arguments your Constructor accepts, or in other words, the arity.
 
-Now not all is lost! Inher gotz your back one more time, introducing the Stubbed Arguments!
+Now not all is lost! Cip gotz your back one more time, introducing the Stubbed Arguments!
 
 ## Stubbed Arguments
 
@@ -174,7 +175,7 @@ Argument Stubbing is providing arguments to the `extend()` function with the int
 ##### base.model.js
 
 {% highlight javascript %}
-var Model = inher.extend(function(name) {
+var Model = cip.extend(function(name) {
   this._modelName = name;
 });
 
@@ -222,12 +223,12 @@ badAss.c === 3; // true
 
 ## Working with Singletons
 
-A Singleton is a single instance of a constructor, that is used in every occasion throughout the application's lifetime. The singleton pattern requires a method for easily fetching that single instance and dictates a few other details that are beyond our scope here. Singletons are particularly useful for core components of our Application, Models, Controllers, Views, Routers, these are components that we need to instantiate once per runtime. Inher will attach the `getInstance()` method to every constructor that inherits using `extend()`.
+A Singleton is a single instance of a constructor, that is used in every occasion throughout the application's lifetime. The singleton pattern requires a method for easily fetching that single instance and dictates a few other details that are beyond our scope here. Singletons are particularly useful for core components of our Application, Models, Controllers, Views, Routers, these are components that we need to instantiate once per runtime. Cip will create a Singleton Constructor with `extendSingleton()`. This explicit statement allows for better clarity and will hopefully save you from some common pitfalls.
 
 {% highlight javascript %}
 var Model = require('./base.model');
 
-var UserModel = Model.extend();
+var UserModel = Model.extendSingleton();
 
 /* ... */
 
@@ -249,34 +250,26 @@ var user = userModel.create(
 
 Notice the use of the `UserModel.Type`, that's an enum defined statically on the UserModel constructor.
 
-## How Inher plays nice with everyone
+## How Cip plays nice with everyone
 
-So far so good, but as you might have suspected, the inheritance chain always ends at the Inher's base class. That's not required. Using the `wrap()` method you can augment any vanilla constructor with Inher's properties and functions:
+So far so good, but as you might have suspected, the inheritance chain always ends at the Cip's base class. That's not required. Using the `cast()` method you can augment any vanilla constructor with Cip's properties and functions:
 
 {% highlight javascript %}
 // Use EventEmitter as the base Constructor.
 var EventEmitter = require('events').EventEmitter;
-var inher = require('inher');
+var cip = require('cip');
 
-var IeventEmitter = inher.wrap(EventEmitter);
+var CeventEmitter = cip.cast(EventEmitter);
 
-var Thing = IeventEmitter.extend();
+var Thing = CeventEmitter.extend();
 
 var newThing = new Thing();
 
-newThing instanceof IEventEmitter; // true
+newThing instanceof CEventEmitter; // true
 newThing instanceof EventEmitter; // true
 {% endhighlight %}
 
 Ta-dahhhh! Now all your ancestors will inherit the EventEmitter properties and methods. Plain simple, effective, works.
-
-## Not for performance
-
-As well as Inher incorporates all the known best practices and techniques to be performant it cannot escape the fact that it's an abstraction layer on top of the vanilla mechanisms. As such Inher might not be the best choice if you are going to instantiate thousands of new objects in a short time, there will be a measurable performance cost.
-
-The centerpiece of Inher's design is the singleton pattern. Designing and implementing Node.js applications from the ground-up over and over again i could see a distinct need for a set of methods to help me and my team to easily and reliably deploy the inheritance infrastructure throughout the projects. Define the base Model class, from there on extend it to become the MongooseModel or RedisModel, and from there on to extend to actual data object Models like the UserModel.
-
-All these inheritance chains and patterns where starting to clog up after the project reached a certain size. That is the problem i wanted to solve, that is what Inher is about.
 
 Hope you like it, let me know if you find it useful.
 
