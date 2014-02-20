@@ -7861,6 +7861,16 @@ article .content {
   min-width: 60px;
   color: #555555;
 }
+time.post {
+  text-align: right;
+  float: right;
+  width: 100%;
+  display: block;
+  font-size: 13px;
+  font-style: italic;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
 .posts-description {
   *zoom: 1;
   display: block;

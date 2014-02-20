@@ -20,7 +20,7 @@ module.exports = function(grunt) {
     },
     shell: {
       jekyll: {
-        command: 'rm -rf _site/*; jekyll',
+        command: 'rm -rf _site/*; jekyll build',
         stdout: true
       }
     },
