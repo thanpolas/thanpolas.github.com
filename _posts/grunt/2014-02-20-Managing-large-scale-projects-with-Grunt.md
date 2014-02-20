@@ -4,7 +4,7 @@ title: "Managing Large Scale Projects with Grunt"
 description: "Grunt offers infinite ways to get extended and configured, easily tackling the most demanding build flows out there. In this article a sensible setup for complex build flows will be presented, it will demonstrate how you can scale Grunt to use in large and distributed teams and perform complex and optimized builds."
 category : Grunt
 tags : [javascript, nodejs, node, node.js, grunt, grunt-plugins]
-shortUrl: http://than.pol.as/TnOi
+shortUrl: http://than.pol.as/U1Sk
 ---
 {% include JB/setup %}
 
