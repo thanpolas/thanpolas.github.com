@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An open letter to the TasteJS folks"
+title: "An open letter to the @TasteJS folks"
 description: "TasteJS folks, we need to talk."
 category : rants
 tags : [rants, tastejs, todomvc, javascript, frameworks]
