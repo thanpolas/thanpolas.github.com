@@ -4,6 +4,7 @@ title: "An open letter to the TasteJS folks"
 description: "TasteJS folks, we need to talk."
 category : rants
 tags : [rants, tastejs, todomvc, javascript, frameworks]
+shortUrl: http://than.pol.as/U2vl
 ---
 {% include JB/setup %}
 
