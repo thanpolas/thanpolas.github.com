@@ -18,15 +18,19 @@ TasteJS is a constitution among the Javascript community. It is one of the 4 thi
 
 But it's not just that.
 
-One cannot start a poetry group, become a worldwide success and then write an article "The Yet Another Poet Syndrome". It's tasteless! It's insulting and shows of a man/woman who holds no regard and respect for their peers.
+One cannot start a poetry group, become a worldwide success and then write an article "The Yet Another Poet Syndrome". It's tasteless! It's insulting and shows of a man/woman who holds no regard or respect for their peers.
 
-I start a comedy club, become the most prominent comedy club in the world and then i'm tweeting "*Everyong's a fucking comedian*". It's not funny. Ok maybe that was, but not in your case. You, the constitution representative, simply cannot make these statements. EVERYONE else can; but not you. The Browserify author cannot call RequireJS a piece of junk! The Ember folks cannot say the Angular dudes don't know what they are talking about! You just cannot do that, it's inappropriate.
+I start a comedy club, become the most prominent comedy club in the world and then i'm tweeting "*Everyong's a fucking comedian*". It's not funny. Ok maybe that was, but not in your case. You, the constitution representative, simply cannot make these statements. EVERYONE else CAN; but not you.
 
-There was [noticeable][reddit yafs] [criticism][reddit post] for that YAFS post when it came out, including [myself][thanpolas tweet] being part of that. While at the time i felt like this (post) answer should be made, i didn't do go forward because i understand that humans make mistakes and it's ok. But then, today, three weeks after the YAFS post, i saw this tweet from a TasteJS member:
+The Browserify author cannot call RequireJS a piece of junk! The Ember folks cannot say the Angular dudes don't know what they are talking about! You just cannot do that, it's inappropriate.
+
+There was [noticeable][reddit yafs] [criticism][reddit post] for the YAFS post when it came out, including [myself][thanpolas tweet] being part of that. While at the time i felt like this (post) answer should be made, i didn't do go forward because i understand that humans make mistakes and it's ok. But then, today, three weeks after the YAFS post, i saw this tweet from a TasteJS member:
 
 ![TasteJS Twitter Convo for YAFS](/assets/img/twitter-yafs-convo.jpg)
 
-This is not personal, it's not about who tweeted what, what i want to illustrate here, is the belief among the TasteJS team that indeed people should stop doing what they like to do. Which is the reason the TasteJS exists in the first place!?¡☯¿  So, TasteJS folks, if you are tired of doing the job that the community expects you to do, then please stop doing it. Do whatever gives you joy and pleasure and satisfies your need for the next challenge. But please, respect the same need for a challenge other people have, it just happens to be a framework.
+This is not personal, it's not about who tweeted what, what i want to illustrate here, is the belief among the TasteJS team that indeed people should stop doing what they like to do. Which is the reason the TasteJS exists in the first place!?¡☯¿
+
+So, TasteJS folks, if you are tired of doing the job that the community expects you to do, then please stop doing it. Do whatever gives you joy and pleasure and satisfies your need for the next challenge. But please, respect the same need for a challenge other people have, it just happens to be a framework.
 
 
 
