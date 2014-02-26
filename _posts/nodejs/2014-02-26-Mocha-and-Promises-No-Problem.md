@@ -4,7 +4,7 @@ title: "Mocha and Promises No Problem!"
 description: "After a few itterations a pattern emerged that works for Mocha and Promises, or any test framework for that matter."
 category : nodejs
 tags : [nodejs, javascript, testing, mocha, promises]
-shortUrl: http://than.pol.as/U2vl
+shortUrl: http://than.pol.as/U7g0
 ---
 {% include JB/setup %}
 
