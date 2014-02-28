@@ -8073,7 +8073,7 @@ time.post {
   background-color: #565656;
   color: #565656;
 }
-.highlight {
+.highlight:not(.gist .highlight) {
   background-color: #ffffcc;
 }
 .highlight .c {
@@ -8349,7 +8349,8 @@ time.post {
 .highlight .il {
   color: #2aa198;
 }
-/* Literal.Number.Integer.Long */.project-unit h3 {
+/* Literal.Number.Integer.Long */
+.project-unit h3 {
   margin: 5px 0 10px 0;
   line-height: 11.428571428571429px;
 }
