@@ -53,6 +53,8 @@ Finally, nothing of this setup would work without the use of [grunt-parallel](ht
 
 The final two `grunt.registerTask` alias statements will put everything together and expose running all those tasks using the `web` alias `grunt web`, and finally that alias task is defined as the default task so the only thing you need to do to launch your project is:
 
+> If you are into Grunt [you might wanna check the "Managing large scale projects with Grunt" post too](http://thanpol.as/grunt/Managing-large-scale-projects-with-Grunt/).
+
 
 
 {% highlight PowerShell %}

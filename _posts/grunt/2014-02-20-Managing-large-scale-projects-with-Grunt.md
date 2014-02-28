@@ -152,7 +152,7 @@ module.exports = function(grunt) {
 };
 {% endhighlight %}
 
-So what happens here is that we instruct Grunt to go look in the local folder `grunt-tasks/` and require all files from there. The github-pages file is loaded and evaluated and the configuration *injected* into the main Grunt's process by the use of `grunt.config()`. 
+So what happens here is that we instruct Grunt to go look in the local folder `grunt-tasks/` and require all files from there. The github-pages file is loaded and evaluated and the configuration *injected* into the main Grunt's process by the use of `grunt.config()`.
 
 This pattern is your first line of defence when your Gruntfile starts to grow to a non manageable state. You can check out a [sample repo][wesbos repo] made by [Ben Alman][], author of Grunt, that exposes this pattern to its fullest.
 
@@ -175,7 +175,7 @@ gruntConf.less.production = {
 }
 };
 
-gruntConf.less.devone = {}; 
+gruntConf.less.devone = {};
 // ... and so on for another 50 Less targets
 
 module.exports = function(grunt) {
@@ -250,6 +250,8 @@ module.exports = function(grunt) {
 {% endhighlight %}
 
 So, bottom line, to properly extend your custom tasks [`grunt.task.loadTasks`](http://gruntjs.com/api/grunt.task#grunt.task.loadtasks) is your friend.
+
+> If you are into Grunt [you might wanna check this post too](http://thanpol.as/grunt/Grunt-with-express-server-and-Livereload/), it's about running your Express NodeJS webserver with Grunt and Livereload.
 
 [Handling Frontend Dependencies]: #handling-frontend-dependencies
 [extconf]: #extending-grunts-configuration
