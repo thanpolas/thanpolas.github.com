@@ -4,7 +4,7 @@ title: "Grunt with express server and Livereload"
 description: "Launching a NodeJS webserver using express from Grunt has been an elusive topic for some time. Adding LiveReload to the mix is even more tedious. After many iterations and setups i've resorted to a Gruntfile that will work for everyone, launch the Express Webserver with Livereload using Grunt or launch it the from command line."
 category : grunt
 tags : [nodejs, grunt, gruntjs, tasks, livereload, watch, build, sass]
-shortUrl: http://than.pol.as/U7g0
+shortUrl: http://than.pol.as/UAo8
 ---
 {% include JB/setup %}
 
