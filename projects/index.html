@@ -3,16 +3,52 @@ layout: page
 title: "Projects / Work"
 
 projects:
+  - title: 'CIP'
+    name: 'CIP'
+    url: 'https://github.com/thanpolas/cip'
+    techs: [Node.js]
+    descr: CIP is Classical Inheritance at its' best. It provides an easy to work with API for performing classical inheritance in Javascript. It features a powerfull and flexible <code>extend()</code> method that allows custom constructors and <a href="https://github.com/thanpolas/cip/#argument-stubbing-with-extend" title="CIP Argument Stubbing">argument stubbing</a> which enables to pass stubbed arguments to the parent constructor. CIP is a foundational building block.
+
+  - title: 'Middlewarify'
+    name: 'Middlewarify'
+    url: 'https://github.com/thanpolas/middlewarify'
+    techs: [Node.js, Promises/A+]
+    descr: Middlewarify will apply the middleware pattern to your Objects. It will enable you to attach middleware using the typical <code>use()</code> method or use <code>before() / after()</code> hooks. Middlewarify uses the Promises/A+ spec for resolution and handling asynchronicity.
+
+  - title: 'Kansas'
+    name: 'Kansas'
+    url: 'https://github.com/thanpolas/kansas'
+    techs: [Node.js, redis]
+    descr: Kansas is a usage limited API controller. It will consumer API Units based on a token for the resources you have chosen. If the usage limit is reached with the given period (one month) all further calls will be rejected. Kansas was built on Redis and there's an <a href="https://github.com/thanpolas/kansas-express" title="Kansas Express">express module (kansas-express)</a> that will enable fast integration with your services.
+
+  - title: 'Kansas Express'
+    name: 'Kansas Express'
+    url: 'https://github.com/thanpolas/kansas-express'
+    techs: [Node.js, Express.js]
+    descr: Kansas-express is the Kansas Express module that exposes a RESTfull API for managing tokens and consuming your API resources.
+
+  - title: 'Idify'
+    name: 'Idify'
+    url: 'https://github.com/thanpolas/idify'
+    techs: [Node.js, redis]
+    descr: Idify will provide you with a guaranteed unique id using the powerfull and very fast Redis SET data structure.
+
+  - title: 'Entity'
+    name: 'Entity'
+    url: 'https://github.com/thanpolas/entity'
+    techs: [Node.js]
+    descr: Entity is a new application design concept, it abstracts the storage layer from the business logic and manages all the resources needed to perform operations.
+
   - title: 'Kickq'
     name: 'Kickq'
     url: 'https://github.com/verbling/kickq'
-    techs: [node.js, Javascript, redis]
+    techs: [Node.js, redis]
     descr: 'is a Job Queuing system for Node.js built on top of <a href="http://redis.io" title="Redis database">Redis</a>. It features reliable and fast handling of Jobs, delayed execution and an option for the Job Creator to get notified on the spot if the Job completes.'
 
   - title: 'Assetflow'
     name: 'Assetflow'
     url: 'https://github.com/verbling/assetflow'
-    techs: [node.js, Javascript, AWS S3, Grunt]
+    techs: [Node.js, AWS S3, Grunt]
     descr: 'is an asset deployment tool ala Rails Asset Pipeline. It supports md5 hash comparison with S3 and enables you to create powerful asset flows easily and fast. It is a Grunt task and applies solid cache-busting techniques transparently.'
 
   - title: 'Mantri'
@@ -73,20 +109,6 @@ projects:
     url: 'https://github.com/thanpolas/sublime-autoDocBlockr'
     techs: [sublime2, python]
     descr: 'is a plugin for the Sublime2 editor, it will insert Document Blocks automatically. It is triggered seamlessly as you move your cursor through a function...'
-
-  - title: 'Geowarp Mobile App'
-    name: 'Geowarp Mobile'
-    url: 'https://itunes.apple.com/us/app/geowarp/id398624102?mt=8'
-    techs: [Javascript, Titanium, iOS]
-    descr: |
-      is the mobile application of <a href="http://geowarp.com">Geowarp</a>, built with <a href="http://www.appcelerator.com/">Appcelerator's</a> <a href="http://www.appcelerator.com/platform/titanium-sdk">Titanium</a> using the same Javascript core that is running on the current website.
-
-  - title: PPH Metrics
-    name: Metrics
-    url: http://peopleperhour.com
-    techs: [Javascript, PHP, AWS DynamoDB]
-    descr: |
-       facilities for peopleperhour.com (PPH) was an exciting project I engineered and implemented. Created an API for tracking and storing custom information for every visitor of the site. The system uses Amazon's <a href="http://aws.amazon.com/dynamodb/">DynamoDB</a>.
 
   - title: Closure Helpers
     name: closure-helpers
