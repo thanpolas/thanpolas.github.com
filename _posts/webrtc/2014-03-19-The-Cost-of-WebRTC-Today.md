@@ -10,7 +10,7 @@ shortUrl: http://than.pol.as/UVib
 
 It's been a few years since [WebRTC][] has hit the deck, companies and developers scramble to embrace it and just about now we are experiencing the first polished products that rely on this amazing new technology. And just about now we can really talk about how much WebRTC is going to cost your business.
 
-I've had the pleasure of working for a company that heavily relies on WebRTC and have gained significant insight into the WebRTC industry, what it needs to get rolled out and who are the players. Hell i even made my own [free WebRTC connectivity tool][netscan] but more on that in another post.
+I've had the pleasure of [working for a company](http://talksession.com) that heavily relies on WebRTC and have gained significant insight into the WebRTC industry, what it needs to get rolled out and who are the players. Hell i even made my own [free WebRTC connectivity tool][netscan] but more on that in another post.
 
 ## WebRTC Essentials
 
