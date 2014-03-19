@@ -38,7 +38,7 @@ The Signaling Server is your own implementation of how the two clients will exch
 
 Here's where all the bucks are at. Apart from the ultimate fallback in case of p2p connectivity not being possible, the media servers will allow you to perform an array of different tasks like multiplexing, broadcasting, forking and more depending on the hardware and what your business needs are.
 
-Mind you, this is an actual piece of hardware that you buy as is, a typical choice is [Cisco's MCU5300](http://www.cisco.com/c/en/us/products/conferencing/telepresence-mcu-5300-series/index.html), the more your business scales the more of those you gonna need...
+Mind you, this is an actual piece of hardware that you buy as is, a typical choice is [Cisco's MCU5300](http://www.cisco.com/c/en/us/products/conferencing/telepresence-mcu-5300-series/index.html), the more your business scales the more of those you're gonna need...
 
 ## The WebRTC SaaS landscape
 
@@ -70,7 +70,7 @@ Even with the providers' APIs in flux you are way better of using on of those se
 
 ## You are not alone
 
-Working in the edges of technology gives you a sense of pioneering and innovation. In the case of WebRTC that's both true and false. 
+Working on the edges of technology gives you a sense of pioneering and innovation. In the case of WebRTC that's both true and false. 
 
 It's true in its technological context, you are after all the guinea pig that battle tests the technology. The community landscape is barren and lacking, you will have a real hard time finding critical components to setup WebRTC, for example there are only a couple open source libraries that will enable you to implement WebRTC and the learning curve is daunting and support is very sparse.
 
@@ -78,7 +78,7 @@ It's false from in the business context, WebRTC will not give you a competitive 
 
 ## Conclusions
 
-Get ready for a world of pain. The costs of rolling out WebRTC in your company go far and beyond what the WebRTC shop will charge you. You will need to be engaged with experimental technologies and bleed development cycles and product release delays.
+Get ready for a world of hurt. The costs of rolling out WebRTC in your company go far and beyond what the WebRTC shop will charge you. You will need to be engaged with experimental technologies and bleed development cycles and product release delays.
 
 Now you know.
 
