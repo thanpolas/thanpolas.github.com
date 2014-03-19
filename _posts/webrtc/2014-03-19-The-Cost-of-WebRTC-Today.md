@@ -36,7 +36,7 @@ The Signaling Server is your own implementation of how the two clients will exch
 
 ### The Media Servers
 
-Here's where all the bucks are at. The media server need to be able to stream multiple video channels in real time. Apart from the ultimate fallback in case of p2p connectivity not being possible, the media servers will allow you to perform an array of different tasks like multiplexing, broadcasting, forking and more depending on the hardware.
+Here's where all the bucks are at. Apart from the ultimate fallback in case of p2p connectivity not being possible, the media servers will allow you to perform an array of different tasks like multiplexing, broadcasting, forking and more depending on the hardware and what your business needs are.
 
 Mind you, this is an actual piece of hardware that you buy as is, a typical choice is [Cisco's MCU5300](http://www.cisco.com/c/en/us/products/conferencing/telepresence-mcu-5300-series/index.html), the more your business scales the more of those you gonna need...
 
@@ -49,6 +49,7 @@ These are the 360° WebRTC SaaS services i've come up with so far:
 * [AddLive](http://www.addlive.com/)
 * [FACEmeeting](https://facemeeting.com/)
 * [Showkit](http://www.showkit.com/)
+* [TokBox](http://tokbox.com/)
 * [Vidyo](http://www.vidyo.com/)
 * [vLine](https://vline.com/developer/)
 * [weemo](http://www.weemo.com/)
