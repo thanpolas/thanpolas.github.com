@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "The cost of WebRTC Today"
-description: ""
+description: "Just about now we can really talk about how much WebRTC is going to cost your business."
 category : webrtc
 tags : [webrtc]
+shortUrl: http://than.pol.as/UVib
 ---
 {% include JB/setup %}
 
@@ -53,7 +54,7 @@ These are the 360° WebRTC SaaS services i've come up with so far:
 * [weemo](http://www.weemo.com/)
 * [Xirsys](http://xirsys.com/)
 
-A full list of SaaS services for all the required components can be found at [this WebRTC World page](http://www.webrtcworld.com/webrtc-list.aspx), if you are a WebRTC Shop and not in the above list feel free to send a pull request.
+A full list of SaaS services for all the required components can be found at [this WebRTC World page](http://www.webrtcworld.com/webrtc-list.aspx), if you are a WebRTC Shop and not in the above list feel free to [send a pull request](https://github.com/thanpolas/thanpolas.github.com/blob/master/_posts/webrtc/2014-03-19-The-Cost-of-WebRTC-Today.md).
 
 ### The state of WebRTC SaaS Providers
 
