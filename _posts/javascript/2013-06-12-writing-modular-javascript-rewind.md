@@ -79,7 +79,7 @@ A web library is a package that is intended only for web developers (i.e. jQuery
 
 A modular web application, at its production state, will only load a small portion of the codebase, and then, at a later time, dynamically load the parts (built-modules) that are required. Using various techniques like eager or lazy loading.
 
-A modular web library, at its published state, provides multiple bundles that include the whole library or parts of it. For example jQuery now offers a way [to create custom builds][jq build] with only the modules that you need. Another example  of a Modular Library is [Modernizr][]. There are two ways a Modular Library can be consumed:
+A modular web library, at its published state, provides multiple bundles that include the whole library or parts of it. For example jQuery now offers a way [to create custom builds][jq build] with only the modules that you need. <s>Another example  of a Modular Library is [Modernizr][]</s>. **Edit** 3/24/14: [As it turns out][https://github.com/Modernizr/Modernizr/issues/1276] [Modernizr][] isn't a Modular applications. There are two ways a Modular Library can be consumed:
 
 1. Consume from source, which is only possible if the same Dependency System is used.
 2. Consume using the provided *built-modules*.
