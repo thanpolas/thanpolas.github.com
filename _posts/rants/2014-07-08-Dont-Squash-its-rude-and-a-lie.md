@@ -16,13 +16,13 @@ If you ask me: never. Squashing is there because it needs to be there. There are
 
 ## Squashing is a lie
 
-I am not the first one to say that, [Paul Statig](http://www.twitter.com/pjstadig) in his wonderful post explains [why rebasing, amending and squashing are all lies](http://paul.stadig.name/2010/12/thou-shalt-not-lie-git-rebase-ammend.html). It is not by chance that at git-scm.com, the goto online documentation for git, has squashing under the "[Rewritting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)" chapter. When you squash, you are rewritting history, you lie.
+I am not the first one to say that; [Paul Statig](http://www.twitter.com/pjstadig) in his wonderful post explains [why rebasing, amending and squashing are all lies](http://paul.stadig.name/2010/12/thou-shalt-not-lie-git-rebase-ammend.html). It is not by chance that at git-scm.com, the goto online documentation for git, has squashing under the "[Rewritting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)" chapter. When you squash, you are rewritting history, you lie.
 
 ## Squashing is wrong and dangerous
 
 When you have a topical branch that you are working on, tens or hundreds of commits and you regularly push to your *origin* remote repository, there's a history written there, a history of commits. That branch typically also has the form of a pull-request, where peers, project maintainers and tech leads review and comment on your code.
 
-If your last act before your branch is merged is to squash, you are essentially throwing all the code review in a bucket and need to start over. By squashing, you are effectively re-writing history, which means that the 10-20-100 commits you made get ziped down to one. Now that single commit can no longer be pushed to your topical branch...
+If your last act before your branch is merged is to squash, you are essentially throwing all the code review in a bucket and need to start over. By squashing, you are effectively re-writing history, which means that the 10-20-100 commits you made get zipped down to one. Now that single commit can no longer be pushed to your topical branch...
 
 {% highlight shell %}
 To git@github.com:thanpolas/Practice.git
