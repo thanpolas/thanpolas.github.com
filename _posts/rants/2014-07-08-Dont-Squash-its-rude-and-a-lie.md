@@ -16,7 +16,7 @@ If you ask me: never. Squashing is there because it needs to be there. There are
 
 ## Squashing is a lie
 
-I am not the first one to say that; [Paul Statig](http://www.twitter.com/pjstadig) in his wonderful post explains [why rebasing, amending and squashing are all lies](http://paul.stadig.name/2010/12/thou-shalt-not-lie-git-rebase-ammend.html). It is not by chance that at git-scm.com, the goto online documentation for git, has squashing under the "[Rewritting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)" chapter. When you squash, you are rewritting history, you lie.
+I am not the first one to say that; [Paul Statig](http://www.twitter.com/pjstadig) in his wonderful post explains [why rebasing, amending and squashing are all lies](http://paul.stadig.name/2010/12/thou-shalt-not-lie-git-rebase-ammend.html). It is not by chance that at git-scm.com, the goto online documentation for git, has squashing under the "[Rewriting History](http://git-scm.com/book/en/Git-Tools-Rewriting-History)" chapter. When you squash, you are rewriting history, you lie.
 
 ## Squashing is wrong and dangerous
 
