@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Squashing. Or how to be ungratefull and a lier"
-description: "Git squashing is still a 'thing' among developers, "
+title: "Squashing. Or how to be a liar and ungrateful"
+description: "It appears that more than enough open source maintainers have a fixation with git squashing. It serves no purpose other than to tone the maintainers' excessive OCD, it is wrong, it is a lie, it is rude and ungrateful; stop doing it folks!"
 category : javascript
 tags : [git]
 shortUrl: http://than.pol.as/TnOi
 ---
 {% include JB/setup %}
 
-The git squash is a git practice that enables developers to join multiple commits into a single one. It is typically performed via an [interactive git rebase](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) `git rebase -i` and it appears that more than enough open source maintainers have a fixation with it. It serves no purpose other than tone the maintainers' excessive OCD, it is wrong, it is a lie, it is rude and ungratefull; stop doing it folks!
+The git squash is a git practice that enables developers to join multiple commits into a single one. It is typically performed via an [interactive git rebase](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) `git rebase -i` and it appears that more than enough open source maintainers have a fixation with it. It serves no purpose other than to tone the maintainers' excessive OCD, it is wrong, it is a lie, it is rude and ungrateful; stop doing it folks!
 
 ## When should we squash?
 
