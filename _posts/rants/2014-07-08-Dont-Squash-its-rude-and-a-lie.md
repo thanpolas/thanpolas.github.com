@@ -8,7 +8,7 @@ shortUrl: http://than.pol.as/TnOi
 ---
 {% include JB/setup %}
 
-The git squash is a git practice that enables developers to join multiple commits into a single one. It is typically performed via an [interactive git rebase](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) `git rebase -i` and it appears that more than enough open source maintainers have a fixation with it. It serves no purpose other than to tone the maintainers' excessive OCD, it is wrong, it is a lie, it is rude and ungrateful; stop doing it folks!
+The git squash is a git practice that enables developers to join multiple commits into a single one. It is typically performed via an [interactive git rebase](http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) (`git rebase -i`) and it appears that more than enough open source maintainers have a fixation with it. It serves no purpose other than to tone the maintainers' excessive OCD, it is wrong, it is a lie, it is rude and ungrateful; stop doing it folks!
 
 ## When should we squash?
 
@@ -20,9 +20,9 @@ I am not the first one to say that; [Paul Statig](http://www.twitter.com/pjstadi
 
 ## Squashing is wrong and dangerous
 
-When you have a topical branch that you are working on, tens or hundreds of commits and you regularly push to your *origin* remote repository, there's a history written there, a history of commits. That branch typically also has the form of a pull-request, where peers, project maintainers and tech leads review and comment on your code.
+Think about this very common case for a moment... You have a topical branch that you are working on with tens or hundreds of commits and you regularly push to your *origin* remote repository. There's history written there, a history of commits. That branch typically also has the form of a pull-request, where peers, project maintainers and tech leads review and comment on your code.
 
-If your last act before your branch is merged is to squash, you are essentially throwing all the code review in a bucket and need to start over. By squashing, you are effectively re-writing history, which means that the 10-20-100 commits you made get zipped down to one. Now that single commit can no longer be pushed to your topical branch...
+If your last act before your branch is merged is to squash, you are essentially throwing all the code review in a bucket. By squashing, you are effectively re-writing history, which means that the 10-20-100 commits you made get zipped down to one. Now that single commit can no longer be pushed to your topical branch...
 
 {% highlight shell %}
 To git@github.com:thanpolas/Practice.git
@@ -44,7 +44,7 @@ To git@github.com:thanpolas/Practice.git
  + 77479bc...4d9a9bd edits -> edits (forced update)
 {% endhighlight %}
 
-And that is exactly the point where you've committed a security atrocity. At this very point you could be pushing to your *origin* pretty much **anything** you'd like, skipping all the eyeballs that reviewed your code. With each "squashing & force push" the code reviewers need to go through the code again, line by line, character by character.
+See that "(forced update)" at the last line? That is exactly the point where you've committed a security atrocity. At this very point you could be pushing to your *origin* pretty much **anything** you'd like, skipping all the eyeballs that reviewed your code. With each "squashing & force push" the code reviewers need to go through the code again, line by line, character by character.
 
 > You, the reviewer, the maintainer, have essentially zero control over what gets pushed after a squashing operation.
 
@@ -56,11 +56,11 @@ So naturally when you spend your time to contribute to another library you will 
 
 And then they ask you to squash. The kinder ones, will pull your branch and squash themselves.
 
-This, apart from the two previous issues I've mentioned, that it's a lie and security-wise dangerous, now also adds *ungratefulness* in the mix. Your work is 8 commits of *value*, half of them were created because of the code reviews that the maintainer required you to pass through, this is your contribution, this is your work, this is what Github measures in the *Contributors* pane and the maintainer takes all that away and throws it in oblivion forever.
+This, apart from the two previous issues I've mentioned, that it's a lie and security-wise dangerous, now also adds *ungratefulness* in the mix. Your work is 8 commits of *value*, half of them were created because of the code reviews that the maintainer required you to go through, this is your contribution, this is your work, this is what Github measures in the *Contributors* pane and the maintainer takes all that away and throws it in oblivion forever.
 
 ![Github Contribution Type](/assets/blogimg/github-contribution-type.png)
 
-Let me state this one more time, [there is absolutely no reason to Squash](https://news.ycombinator.com/item?id=7648237) other than to satisfy the maintainers excessive and uncontrollable [OCD](http://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) and sense of self-importance, either as individuals or as a policy of the project (which most of the times is all the same).
+Let me state this one more time, [there is absolutely no reason to Squash](https://news.ycombinator.com/item?id=7648237) other than to satisfy the maintainers' uncontrollable [OCD](http://en.wikipedia.org/wiki/Obsessive%E2%80%93compulsive_disorder) and sense of self-importance, either as individuals or as a policy of the project (which most of the times is all the same).
 
 You'd ask, ok where does *rudeness* comes into play? And you'd be right, haven't touched on this. Yet. Rudeness comes out of the fact that a maintainer may ask you to squash on **every** hoop they make you jump. Now that's not only a lie, wrong and ungrateful but is blatantly outright rude and an abuse of your time as a contributor. Some very high profile projects are practicing this, I've been through it, it's demeaning, exhausting and outright rude.
 
