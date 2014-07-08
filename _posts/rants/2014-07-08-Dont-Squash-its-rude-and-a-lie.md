@@ -25,7 +25,7 @@ Think about this very common case for a moment... You have a topical branch that
 If your last act before your branch is merged is to squash, you are essentially throwing all the code review in a bucket. By squashing, you are effectively re-writing history, which means that the 10-20-100 commits you made get zipped down to one. Now that single commit can no longer be pushed to your topical branch...
 
 {% highlight PowerShell %}
-To git@github.com:thanpolas/Practice.git
+To git@github.com:thanpolas/Practice.gi
  ! [rejected]        HEAD -> edits (non-fast-forward)
 error: failed to push some refs to 'git@github.com:thanpolas/Practice.git'
 {% endhighlight %}
@@ -33,7 +33,7 @@ error: failed to push some refs to 'git@github.com:thanpolas/Practice.git'
 What you need to do now is *push by force*:
 
 {% highlight PowerShell %}
-$ git push origin edits -ff
+$ git push origin edits -f
 
 Counting objects: 7, done.
 Delta compression using up to 4 threads.
