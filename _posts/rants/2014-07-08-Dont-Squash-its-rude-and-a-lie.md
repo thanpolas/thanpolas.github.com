@@ -4,7 +4,7 @@ title: "Squashing. Or how to be a liar and ungrateful"
 description: "It appears that more than enough open source maintainers have a fixation with git squashing. It serves no purpose other than to tone the maintainers' excessive OCD, it is wrong, it is a lie, it is rude and ungrateful; stop doing it folks!"
 category : javascript
 tags : [git]
-shortUrl: http://than.pol.as/TnOi
+shortUrl: http://than.pol.as/WS9e
 ---
 {% include JB/setup %}
 
