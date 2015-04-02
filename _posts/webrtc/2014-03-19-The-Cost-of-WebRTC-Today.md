@@ -10,7 +10,7 @@ shortUrl: http://than.pol.as/UVib
 
 It's been a few years since [WebRTC][] has hit the deck, companies and developers scramble to embrace it and just about now we are experiencing the first polished products that rely on this amazing new technology. And just about now we can really talk about how much WebRTC is going to cost your business.
 
-I've had the pleasure of [working for a company](http://talksession.com) that heavily relies on WebRTC and have gained significant insight into the WebRTC industry, what it needs to get rolled out and who are the players. Hell i even made my own [free WebRTC connectivity tool][netscan] but more on that in another post.
+I've had the pleasure of working for a company that heavily relies on WebRTC and have gained significant insight into the WebRTC industry, what it needs to get rolled out and who are the players. Hell i even made my own [free WebRTC connectivity tool][netscan] but more on that in another post.
 
 ## WebRTC Essentials
 
@@ -42,7 +42,7 @@ Mind you, this is an actual piece of hardware that you buy as is, a typical choi
 
 ## The WebRTC SaaS landscape
 
-When starting out, the required infrastructure can be a big show stopper both in terms of upfront costs and human resources required to setup, configure and QA. Hopefully there are more than a few companies whose mission is to abstract all of this away from you. 
+When starting out, the required infrastructure can be a big show stopper both in terms of upfront costs and human resources required to setup, configure and QA. Hopefully there are more than a few companies whose mission is to abstract all of this away from you.
 
 These are the 360° WebRTC SaaS services i've come up with so far:
 
@@ -71,7 +71,7 @@ Even with the providers' APIs in flux you are way better of using on of those se
 
 ## You are not alone
 
-Working on the edges of technology gives you a sense of pioneering and innovation. In the case of WebRTC that's both true and false. 
+Working on the edges of technology gives you a sense of pioneering and innovation. In the case of WebRTC that's both true and false.
 
 It's true in its technological context, you are after all the guinea pig that battle tests the technology. The community landscape is barren and lacking, you will have a real hard time finding critical components to setup WebRTC, for example there are only a couple open source libraries that will enable you to implement your own WebRTC client and the learning curve is daunting and support is very sparse.
 
@@ -84,5 +84,5 @@ Get ready for a world of hurt. The costs of rolling out WebRTC in your company g
 Now you know.
 
 [WebRTC]: http://www.webrtc.org/
-[netscan]: http://www.check-connectivity.com/
+[netscan]: https://www.netscan.co/
 [ice]: http://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment
