@@ -9,6 +9,9 @@ shortUrl: http://than.pol.as/OeMA
 ---
 {% include JB/setup %}
 
+>
+> **BEWARE** This article is old, it's 2013 old. Since then things have changed and a winner has prevailed, [Bluebird](https://github.com/petkaantonov/bluebird/) is a Promises Library build with performance in mind and when actually tested with the benchmarks of this article it did even better than Async!
+>
 
 The [Promises/A+][promises] specification is a fresh and very interesting way of dealing with the asynchronous nature of Javascript. It also provides a sensible way to deal with error handling and exceptions. In this article we will go through the performance hits you should be aware of and as a side-effect do a comparison between the two most popular Promises/A+ implementations, [When][] and [Q][] and how they compare to [Async][], the lowest abstraction you can get on asynchronicity.
 
