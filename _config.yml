@@ -7,16 +7,15 @@ markdown: redcarpet
 exclude: [".rvmrc", ".rbenv-version", "README.md", "less",
   "Rakefile", "changelog.md", "*.less", "sandbox",
   "node_modules", "Gruntfile.js", "bootstrap", "_site_git",
-  "assets/themes/thanpolas/less"
+  "assets/themes/thanpolas/less", ".nvmrc"
 
   ]
-auto: false
-pygments: auto
+highlighter: auto
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : "Thanasis Polychronakis Web Developer"
+title : "Thanasis Polychronakis | Web Developer"
 jobDescription: Freelance Web Developer
 tagline: web development as it happens
 author :
