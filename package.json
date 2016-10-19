@@ -2,7 +2,7 @@
   "private": true,
   "name": "thanpol.as",
   "description": "Blog of Thanasis Polychronakis",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/thanpolas/thanpolas.github.com",
   "author": {
     "name": "Thanasis Polychronakis",
@@ -17,26 +17,21 @@
   "bugs": {
     "url": "https://github.com/thanpolas/thanpolas.github.com/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://en.wikipedia.org/wiki/MIT_License"
-    }
-  ],
+  "license": "MIT",
   "main": "",
   "engines": {
-    "node": "~0.8.0"
+    "node": "6.9.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-less": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.0",
-    "grunt-shell": "~0.2.1",
-    "grunt-contrib-watch": "~0.4.0",
-    "matchdep": "~0.1.2",
-    "grunt-open": "~0.2.0",
-    "grunt-contrib-connect": "~0.3.0"
+    "grunt": "~1.0.1",
+    "grunt-contrib-less": "~1.4.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-shell": "~2.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "matchdep": "~1.0.1",
+    "grunt-open": "~0.2.3",
+    "grunt-contrib-connect": "~1.0.2"
   },
   "keywords": []
 }
