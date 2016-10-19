@@ -2,7 +2,7 @@
   "private": true,
   "name": "thanpol.as",
   "description": "Blog of Thanasis Polychronakis",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/thanpolas/thanpolas.github.com",
   "author": {
     "name": "Thanasis Polychronakis",
@@ -17,15 +17,10 @@
   "bugs": {
     "url": "https://github.com/thanpolas/thanpolas.github.com/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://en.wikipedia.org/wiki/MIT_License"
-    }
-  ],
+  "license": "MIT",
   "main": "",
   "engines": {
-    "node": "~0.8.0"
+    "node": "6.9.0"
   },
   "dependencies": {},
   "devDependencies": {
