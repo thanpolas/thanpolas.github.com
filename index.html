@@ -4,11 +4,11 @@ title: "Thanasis Polychronakis"
 tagline: Supporting tagline
 ---
 <style media="screen" type="text/css">html,body{min-height:1000px;}</style>
-<div class="container-narrow content">
-    <div class="row-fluid masthead">
-      <div class="span3 thanpolas-photo"><img title="Thanasis polychronakis" alt="Thanasis Polychronakis aka thanpolas" width="200px" src="/assets/img/thanpolas-circle-grey.png" /></div>
-      <div class="span8 offset1 thanpolas-fullname">
-        <h1>Thanasis Polychronakis<small>Freelance Web Developer</small></h1>
+<div class="container-fluid container-narrow content">
+    <div class="row masthead">
+      <div class="col-md-4 thanpolas-photo"><img title="Thanasis polychronakis" alt="Thanasis Polychronakis aka thanpolas" width="200px" src="/assets/img/thanpolas-circle-grey.png" /></div>
+      <div class="col-md-8 thanpolas-fullname">
+        <h1>Thanasis Polychronakis<small>Web Developer, Founder</small></h1>
         <ul class="polas-nav">
           <li><a href="/blog">blog</a></li>
           <li><a href="/projects">projects</a></li>
@@ -16,37 +16,38 @@ tagline: Supporting tagline
         </ul>
       </div>
     </div>
-    <div class="row-fluid front-content">
-      <div class="span3 text-center">
-        <ul class="social-unit unstyled horizontal">
+    <div class="row front-content">
+      <div class="col-md-4 text-center">
+        <ul class="social-unit list-unstyled list-inline">
           <li><a title="thanpolas at github" href="https://github.com/thanpolas" target="_blank"><i class="social-icon-github"></i></a></li>
           <li><a title="thanpolas at linkedIn" href="http://www.linkedin.com/in/thanpolas" target="_blank"><i class="social-icon-linkedin"></i></a></li>
           <li><a title="thanpolas at twitter" href="http://www.twitter.com/thanpolas" target="_blank"><i class="social-icon-twitter"></i></a></li>
           <li><a title="thanpolas at gmail.com" href="mailto:thanpolas@gmail.com" target="_blank"><i class="social-icon-email"></i></a></li>
         </ul>
       </div>
-      <div class="span8 offset1 post_lists">
-        <p class="bio"><span class="initial-dropped">Hello!</span> My name is <strong>Thanasis</strong>, also known as <em>thanpolas</em>. My <a href="http://osrc.dfm.io/thanpolas/" target="_blank" title="Statistical analysis of Thanasis Open Source contributions">passion is doing Open Source</a>, contributing to projects of any size and helping the community. I am also a seasoned web developer with entrepreneurial aspirations, lately I'm into Node.JS and React <a href="https://www.npmjs.org/~thanpolas" target="_blank" title="Thanasis on NPM">and I have published over 40 packages on NPM</a>.
-        <p class="bio-tag">Don't be shy, <a href="mailto:thanpolas@gmail.com" title="my email thanpolas@gmail.com">email me</a>!</p>
+      <div class="col-md-8 post_lists">
+        <p class="bio"><span class="initial-dropped">Hello!</span> My name is <strong>Thanasis</strong>, also known as <em>thanpolas</em>. I am passionate about the web, both the technical and the business aspects of it. I have a strong <a href="https://github.com/thanpolas/" target="_blank" title="Thanasis Github repository">Open Source presence</a>, and love all things tech!
+
+        <p class="bio-tag">I am available for hire, <a href="mailto:thanpolas@gmail.com" title="my email thanpolas@gmail.com">email me</a>!</p>
       </div>
     </div>
-    <div class="row-fluid">
-      <div class="span3 frontpage-articles">
+    <div class="row">
+      <div class="col-md-4 frontpage-articles">
         <h4><a href="/blog">Articles</a></h4>
         {% assign posts_collate = site.posts %}
         {% include themes/thanpolas/widgets/posts_frontpage %}
       </div>
-      <div class="span8 offset1 featured-work">
+      <div class="col-md-8 featured-work">
         <h2>Featured Work</h2>
-        <div class="row-fluid">
-          <div class="span6">
+        <div class="row">
+          <div class="col-md-6">
             <h3><a href="https://github.com/thanpolas/cip" title="Cip">CIP</a></h3>
             <p>CIP is Classical Inheritance at its' best. It provides an easy to work with API for performing classical inheritance in Javascript. It features a powerfull and flexible <code>extend()</code> method that allows custom constructors and <a href="https://github.com/thanpolas/cip/#argument-stubbing-with-extend" title="CIP Argument Stubbing">argument stubbing</a> which enables to pass stubbed arguments to the parent constructor. CIP is a foundational building block.</p>
             <p>
               <iframe src="http://ghbtns.com/github-btn.html?user=thanpolas&repo=cip&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
             </p>
           </div>
-          <div class="span6">
+          <div class="col-md-6">
             <h3><a href="https://github.com/thanpolas/middlewarify" title="Middlewarify">Middlewarify</a></h3>
             <p>Middlewarify will apply the middleware pattern to your Objects. It will enable you to attach middleware using the typical <code>use()</code> method or use <code>before() / after()</code> hooks. Middlewarify uses the Promises/A+ spec for resolution and handling asynchronicity.</p>
             <p>
@@ -54,15 +55,15 @@ tagline: Supporting tagline
             </p>
           </div>
         </div>
-        <div class="row-fluid">
-          <div class="span6">
+        <div class="row">
+          <div class="col-md-6">
             <h3><a href="https://github.com/thanpolas/kansas" title="Kansas">Kansas</a></h3>
             <p>Kansas is a usage limited API controller. It will consumer API Units based on a token for the resources you have chosen. If the usage limit is reached with the given period (one month) all further calls will be rejected. Kansas was built on Redis and there's an <a href="https://github.com/thanpolas/kansas-express" title="Kansas Express">express module (kansas-express)</a> that will enable fast integration with your services.</p>
             <p>
               <iframe src="http://ghbtns.com/github-btn.html?user=thanpolas&repo=kansas&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160" height="60"></iframe>
             </p>
           </div>
-          <div class="span6">
+          <div class="col-md-6">
             <h3><a href="https://github.com/thanpolas/grunt-closure-tools" title="Grunt Closure Tools">Grunt Closure Tools</a></h3>
             <p>Grunt Closure Tools for <a href="http://gruntjs.com/">Grunt</a> is a superset of the  tools provided by the Google Closure Library. The powerful compiler, the builder and the dependency writer.</p>
             <p>
@@ -73,8 +74,8 @@ tagline: Supporting tagline
 
       </div>
     </div>
-    <div class="row-fluid">
-      <div class="span3">&nbsp;</div>
-      <div class="span8 offset1">&nbsp;</div>
+    <div class="row">
+      <div class="col-md-3">&nbsp;</div>
+      <div class="col-md-8">&nbsp;</div>
     </div>
 </div>

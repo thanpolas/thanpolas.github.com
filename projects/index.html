@@ -134,10 +134,10 @@ projects:
 
 ---
 {% include JB/setup %}
-<div class="row-fluid">
+<div class="row">
 {% for project in page.projects %}
   {% capture rowIter %}{% cycle 1, 2, 3 %}{% endcapture %}
-  <div class="span4 project-unit">
+  <div class="col-md-4 project-unit">
     <h3><a href="{{project.url}}">{{project.title}}</a></h3>
     <ul class="code-pills">
       {% for tech in project.techs %}
@@ -148,7 +148,7 @@ projects:
   </div>
   {% if '3' == rowIter %}
 </div>
-<div class="row-fluid">
+<div class="row">
   {% endif %}
 
 {% endfor %}
