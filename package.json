@@ -24,6 +24,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "bootstrap": "3.3.6",
     "grunt": "~1.0.1",
     "grunt-contrib-less": "~1.4.0",
     "grunt-contrib-copy": "~1.0.0",
