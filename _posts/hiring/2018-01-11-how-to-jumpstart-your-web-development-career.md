@@ -130,7 +130,7 @@ Attend meetups and go to hackathons, make friends and keep contact. These connec
 
 ### Speaking
 
-It's never too early and never too late to become a speaker. Speaking/presenting is an acquired skill and there is nothing to be ashamed of for your first appearances. I can clearly remember my first talks, not only didn't I make any sense but even my deck was a mess. Start from small meetups and keep at it, eventually, you get better and better.
+It's never too early and never too late to become a speaker. Speaking/presenting is an acquired skill and there is nothing to be ashamed of for your first appearances. I can clearly remember my first talks, not only did I not make any sense but even my deck was a mess. Start from small meetups and keep at it, eventually, you get better and better.
 
 ## You can do it
 
