@@ -136,7 +136,7 @@ It's never too early and never too late to become a speaker. Speaking/presenting
 
 The tech world can be cruel at the beginning but it gets more rewarding the more you dive into it. We are bound to fail and make mistakes, multiple times, at all points in our career, more so when we are starting up. This is the norm and yet we persist. So why let all this effort go to waste in an unfocused message and an invisible presence?
 
-P.S.: Thinking of pivoting to an engineering life-coach career, let me know in the comments if you'd buy my audio-book for $19.99
+P.S.: Thinking of pivoting to an engineer life-coach career, let me know in the comments if you'd buy my audio-book for $19.99
 
 [img.devbrand]:  /assets/blogimg/developer-branding.png  "The brand of a web developer"
 [img.devlogobrand]:  /assets/blogimg/developer-logo-branding.png  "Branding the logo of a web developer"
