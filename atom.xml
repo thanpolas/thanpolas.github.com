@@ -15,6 +15,9 @@ title : Atom Feed
  </author>
 
  {% for post in site.posts %}
+  {% if post.unlist == true %}
+    {% continue %}
+  {% endif %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{{ site.production_url }}{{ post.url }}"/>
