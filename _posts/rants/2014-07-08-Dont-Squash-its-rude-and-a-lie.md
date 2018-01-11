@@ -5,6 +5,7 @@ description: "It appears that more than enough open source maintainers have a fi
 category : javascript
 tags : [git]
 shortUrl: http://than.pol.as/WS9e
+unlist: true
 ---
 {% include JB/setup %}
 
