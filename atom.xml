@@ -1,5 +1,4 @@
 ---
-layout: nil
 title : Atom Feed
 ---
 <?xml version="1.0" encoding="utf-8"?>
@@ -16,6 +15,9 @@ title : Atom Feed
  </author>
 
  {% for post in site.posts %}
+  {% if post.unlist == true %}
+    {% continue %}
+  {% endif %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="{{ site.production_url }}{{ post.url }}"/>
