@@ -10,7 +10,7 @@ shortUrl: http://than.pol.as/onLV
 
 Finding a job in the tech world shouldn't be difficult considering today's market demand. However, if you are a self-driven person, and reading this blog post means that you are, there are a few simple steps you can take to improve your image and have it better reflect what you are and what you are passionate about. I am making the assumption that you are a self-driven person because you took the time to look into the interwebs, find this blog post and read it, so you can improve your selling and marketing skills, that is enough proof for me.
 
-I said "selling and marketing [yourself]" and I'm sure chills run down your spine. But let's face it, we are selling ourselves out there in the market and the market needs to know a few things about us to make an assessment. Us geeks are introverted by nature, and getting out of our comfort zone to "sell ourselves" makes us feel uneasy. The best advice I can give on that is to approach this as part of your job as a professional, rather than as a "self-promotion ". The market doesn't care if you snowboard or burn yourself in RPG games or do calisthenics. It does care though to see if you can articulate concepts, know your staff and where your expertise lies.
+I said "selling and marketing [yourself]" and I'm sure chills run down your spine. But let's face it, we are selling ourselves out there in the market and the market needs to know a few things about us to make an assessment. Us geeks are introverted by nature, and getting out of our comfort zone to "sell ourselves" makes us feel uneasy. The best advice I can give on that is to approach this as part of your job as a professional, rather than as a "self-promotion ". The market doesn't care if you snowboard or burn yourself in RPG games or do calisthenics. It does care though to see if you can articulate concepts, know your stuff and where your expertise lies.
 
 ## You are a Company
 
@@ -120,7 +120,7 @@ Like any other product, you need to distribute yourself. The amount of which you
 
 Open Source is the best and surer way to produce results in more than one aspects. Apart from the fact that people can start to know you from your work and contributions, you also train yourself and develop new disciplines as to the way you operate, document and test software.
 
-### Partitipation
+### Participation
 
 Reddit, Twitter, StackOverflow, GH Issues, blog posts, stay on top of the stream and jump in whenever you can help. This, naturally, can only have a snowballing effect so you need to keep at it for long periods to have any significant impact on your branding.
 
