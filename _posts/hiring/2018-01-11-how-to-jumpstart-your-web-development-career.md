@@ -4,7 +4,7 @@ title: "How To Jumpstart your Web Development Career"
 description: "When you are entering the Web Development industry you are flooded with choices and information, in this blog post I will try to create a checklist that both new and existing professionals in our industry can check against and be sure they are on the right path to finding a job. "
 category : hiring
 tags : [hiring, contracting, remote, freelance]
-shortUrl: http://than.pol.as/WS9e
+shortUrl: http://than.pol.as/onLV
 ---
 {% include JB/setup %}
 
