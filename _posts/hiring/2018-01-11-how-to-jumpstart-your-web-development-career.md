@@ -118,7 +118,7 @@ Like any other product, you need to distribute yourself. The amount of which you
 
 ### Open Source
 
-Open Source is the best and surer way to produce results in more than one aspects. Apart from the fact that people can start to know you from your work and contributions, you also train yourself and develop new disciplines as to the way you operate, document and test software.
+Open Source is the best and surer way to produce results in more than one aspects. Apart from the fact that people can get to know you from your work and contributions, you also train yourself and develop new disciplines as to the way you operate, document and test software.
 
 ### Participation
 
