@@ -10,7 +10,7 @@ shortUrl: http://than.pol.as/onLV
 
 Finding a job in the tech world shouldn't be difficult considering today's market demand. However, if you are a self-driven person, and reading this blog post means that you are, there are a few simple steps you can take to improve your image and have it better reflect who you are and what you are passionate about. I am making the assumption that you are a self-driven person because you took the time to look into the interwebs, find this blog post and read it, so you can improve your selling and marketing skills, that is enough proof for me.
 
-I said "selling and marketing [yourself]" and I'm sure chills run down your spine. But let's face it, we are selling ourselves out there in the market and the market needs to know a few things about us to make an assessment. Us geeks are introverted by nature, and getting out of our comfort zone to "sell ourselves" makes us feel uneasy. The best advice I can give on that is to approach this as part of your job as a professional, rather than as a "self-promotion ". The market doesn't care if you snowboard or burn yourself in RPG games or do calisthenics. It does care though to see if you can articulate concepts, know your stuff and where your expertise lies.
+I said "selling and marketing [yourself]" and I'm sure chills run down your spine. But let's face it, we are selling ourselves out there in the market and the market needs to know a few things about us to make an assessment. Us geeks are introverts by nature, and getting out of our comfort zone to "sell ourselves" makes us feel uneasy. The best advice I can give on that is to approach this as part of your job as a professional, rather than as a "self-promotion ". The market doesn't care if you snowboard or burn yourself in RPG games or do calisthenics. It does care though to see if you can articulate concepts, know your stuff and where your expertise lies.
 
 ## You are a Company
 
@@ -39,7 +39,7 @@ The act of finding a job, interviewing and networking is selling.
 
 #### Financial
 
-How you fare with your finances, what income do you expect, what expenses do you have to pay? Taxes, unpredictables, you need to have a loose grasp on these concepts so as you don't end up with surprises.
+How you fare with your finances, what income do you expect, what expenses do you have to pay? Taxes, unpredictables, you need to have at least a loose grasp on these concepts so as you don't end up with surprises.
 
 #### IT
 
