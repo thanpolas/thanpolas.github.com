@@ -308,7 +308,7 @@ externs:
 {% for extern in page.externs %}
   {% for ver in extern.versions %}
   <tr>
-  {% if {{forloop.length}} > 1 %}
+  {% if forloop.length > 1 %}
     {% if forloop.first %}
       <td class="multirow" rowspan="{{forloop.length}}"><a href="{{extern.libraryUrl}}">{{extern.libraryName}}</a></td>
     {% endif %}
