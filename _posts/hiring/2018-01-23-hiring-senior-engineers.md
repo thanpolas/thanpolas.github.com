@@ -5,6 +5,7 @@ description: "In this article we will dive into the hiring operations of a start
 category: hiring
 tags : [cto, hiring, recruiting, contracting, remote, freelance]
 shortUrl: "http://than.pol.as/p1ta"
+image: http://thanpol.as/assets/blogimg/senior-engineer-interview.jpg
 ---
 
 {% include JB/setup %}
