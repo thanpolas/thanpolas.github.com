@@ -233,7 +233,7 @@ As long as Market Value and Candidate's Ask are not far apart, and the ask is wi
 
 When your startup is still in the early stages and you are strapped for funds but need to have a Senior Engineer in the team, that's when company stock comes on the table. Suppose the Candidate asks for 100k units of currency, and the company can only afford 70k. That is a 30k per-year reduction and a 30% cut in the Candidate's market value.
 
-That, is an exchange for a cash deal and is a totally different thing from incentive tools like Stock Options which aim at motivating the employee to stay with the company as long as the business is good. Assuming the Candidate is willing to enter into such negotiations the company will have to offer Common Stock to compensate for the "cash investment" of the Candidate.
+That, is an exchange of stock for cash type of deal and is a totally different thing from incentive tools like Stock Options which aim at motivating the employee to stay with the company as long as the business is good. Assuming the Candidate is willing to enter into such negotiations the company will have to offer Common Stock to compensate for the "cash investment" of the Candidate.
 
 The "Cash Investment" isn't really an investment, in the commonly used sense. An engineer is not an angel investor and understands that this is an extremely risky investment to the point that it doesn't make any sense to view it as such. Instead, what is happening, is that the engineer through that very tangible act makes a commitment to the company and the cause. And they expect that commitment to be of equal and fair value from the company.
 
