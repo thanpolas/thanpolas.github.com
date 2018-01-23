@@ -7064,10 +7064,7 @@ article .content {
   color: #999;
 }
 .post p .post-image {
-  /* border: 1px solid #ddd; */
   display: inline-block;
-  /* -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1); */
-  /* box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1); */
 }
 .post p .post-image img {
   width: 80%;
