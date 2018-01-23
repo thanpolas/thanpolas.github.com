@@ -4,7 +4,7 @@ title: "Hiring Senior Engineers"
 description: "In this article we will dive into the hiring operations of a startup end to end and how to fine-tune it for senior engineers. Each section of the hiring workflow deserves its own article to properly analyze it in depth, so I will try to be as detailed as possible without making this post too long. The process is also remote-friendly as all operations of a contemporary startup should be in my humble opinion."
 category: hiring
 tags : [cto, hiring, recruiting, contracting, remote, freelance]
-shortUrl: ""
+shortUrl: "http://than.pol.as/p1ta"
 ---
 
 {% include JB/setup %}
