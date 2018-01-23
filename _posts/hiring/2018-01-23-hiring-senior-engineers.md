@@ -29,7 +29,7 @@ Supply and demand fluctuate based on the era, location and the specific technolo
 Locality can drive engineering talent prices down. A company in a third tier country may compensate a senior engineer for as low as 40k. I will not question the seniority of that engineer, as I know first hand there are such cases, however, local companies are making two bets:
 
 1. That the hired engineer is not able or does not currently wish to relocate.
-1. And that the engineer is not able or does not want to work remotely.
+1. That the engineer is not able or does not want to work remotely.
 
 That naturally shrinks the available pool of candidates dramatically, however, most locally entrenched companies play the long-game and target local markets with lesser competition, thus are able to afford longer periods of hiring.
 
