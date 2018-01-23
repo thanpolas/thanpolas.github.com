@@ -10,13 +10,13 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "less",
   "assets/themes/thanpolas/less", ".nvmrc"
 
   ]
-highlighter: auto
+highlighter: "rouge"
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : "Thanasis Polychronakis | Web Developer"
-jobDescription: Freelance Web Developer
+title : "Thanasis Polychronakis | Software Engineer, CTO, Founder"
+jobDescription: Software Engineer, CTO, Founder
 tagline: web development as it happens
 author :
   name : Thanasis Polychronakis
