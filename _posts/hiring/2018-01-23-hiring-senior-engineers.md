@@ -97,7 +97,7 @@ The next thing they will consider is that the company is experiencing growth, an
 
 ## Starting The Hiring Campaign
 
-Starting a hiring campaign is all about distribution. Getting your add under as many, relevant, eyes as possible. Even if you are hiring for in-house, do not neglect to post your Ad on popular job boards like [StackOverflow Jobs](stackoverflow.com/jobs) for the off-chance that a candidate may soon be moving to your location.
+Starting a hiring campaign is all about distribution. Getting your Ad under as many, relevant, eyes as possible. Even if you are hiring for in-house, do not neglect to post your Ad on popular job boards like [StackOverflow Jobs](stackoverflow.com/jobs) for the off-chance that a candidate may soon be moving to your location.
 
 Nothing more to say here, moving on to more important stuff...
 
