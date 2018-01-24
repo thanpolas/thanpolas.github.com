@@ -6751,17 +6751,32 @@ button.close {
 html,
 body {
   background: #F5F5F5;
-  background-image: -webkit-linear-gradient(top, #c2c2c2 0%, #F5F5F5 100%);
-  background-image: -o-linear-gradient(top, #c2c2c2 0%, #F5F5F5 100%);
-  background-image: linear-gradient(to bottom, #c2c2c2 0%, #F5F5F5 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc2c2c2', endColorstr='#fff5f5f5', GradientType=0);
 }
 /**
  * ------------------------------------
  * TYPOGRAPHY
  * ------------------------------------
  */
+.typography-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 880px;
+}
+.typography-container p {
+  margin: 35px 0;
+  line-height: 30px;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 300;
+}
+.typography-container li {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 14px;
+}
 .initial-dropped {
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -6902,6 +6917,9 @@ table.highlighttable td.linenos pre {
  * HEADER / FOOTER
  * ------------------------------------
  */
+.header-master {
+  background-color: #000;
+}
 .header-master .site-title-name {
   color: #fff;
 }
@@ -6918,16 +6936,10 @@ table.highlighttable td.linenos pre {
 .header-master .site-title small {
   font-size: 17.3px;
 }
-.header-unit {
-  margin-top: 20px;
-}
 .header-unit-inner {
   background: #000;
   padding-top: 29px;
   height: 120px;
-  border-top-left-radius: 30px;
-  -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 .content-gutter-left {
   padding-left: 40px;
@@ -6944,6 +6956,9 @@ table.highlighttable td.linenos pre {
 footer.footer-master {
   height: 400px;
   padding-top: 40px;
+  background: #f6f6f6;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.25);
 }
 .footer-copyright {
   font-size: 12px;
@@ -6957,13 +6972,9 @@ footer.footer-master {
   color: #888;
 }
 article .content {
-  padding: 40px;
+  padding: 15px;
   margin-bottom: 40px;
-  background-color: #fff;
-  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 6px 6px -3px rgba(0, 0, 0, 0.35), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 6px 6px -3px rgba(0, 0, 0, 0.35), 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fcfcfc;
 }
 .masthead .polas-nav {
   margin-top: 0;
@@ -7064,10 +7075,12 @@ article .content {
   color: #999;
 }
 .post p .post-image {
-  display: inline-block;
+  display: block;
 }
 .post p .post-image img {
-  width: 80%;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
   display: block;
 }
 .posts-collate li {
@@ -7093,7 +7106,7 @@ time.post {
   font-size: 13px;
   font-style: italic;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .posts-description {
   display: block;

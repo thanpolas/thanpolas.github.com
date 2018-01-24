@@ -1,54 +1,56 @@
-<article class="row post">
-  <div class="col-md-10 col-md-offset-1 content">
+<article class="post typography-container">
+  <div class="row">
+    <div class="col-md-12 content">
 
-    <div class="page-header">
-      <h1>{{ page.title }}</h1>
+      <div class="page-header">
+        <h1>{{ page.title }}</h1>
+      </div>
+      <time class="post" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+
+      {{ content }}
+
+      <div class="share-social">
+  {% if page.shortUrl != null %}
+    {% assign shareUrl = page.shortUrl %}
+  {% else %}
+    {% capture shareUrl %}{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}?utm_source=twitter&utm_medium=twitter-post&utm_campaign=twitter-button{% endcapture %}
+  {% endif %}
+        <h5>Share the love</h5>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ shareUrl }}" data-via="thanpolas" data-lang="en" data-related="thanpolas" data-counturl="{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}">Tweet</a>
+        <a href="https://twitter.com/thanpolas" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @thanpolas</a>
+
+        <!-- Google+ -->
+        <div class="g-plus" data-action="share"></div>
+
+        <!-- Place this tag after the last share tag. -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+
+      <div class="pagination">
+        <ul>
+        {% if page.previous %}
+          <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+        {% else %}
+          <li class="prev disabled"><a>&larr; Previous</a></li>
+        {% endif %}
+          <li><a href="{{ BASE_PATH }}/blog/">Archive</a></li>
+        {% if page.next %}
+          <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+        {% else %}
+          <li class="next disabled"><a>Next &rarr;</a>
+        {% endif %}
+        </ul>
+      </div>
+      {% include JB/comments %}
     </div>
-    <time class="post" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
-
-    {{ content }}
-
-    <div class="share-social">
-{% if page.shortUrl != null %}
-  {% assign shareUrl = page.shortUrl %}
-{% else %}
-  {% capture shareUrl %}{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}?utm_source=twitter&utm_medium=twitter-post&utm_campaign=twitter-button{% endcapture %}
-{% endif %}
-      <h5>Share the love</h5>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ shareUrl }}" data-via="thanpolas" data-lang="en" data-related="thanpolas" data-counturl="{{ site.production_url }}{{ BASE_PATH }}{{ page.url }}">Tweet</a>
-      <a href="https://twitter.com/thanpolas" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @thanpolas</a>
-
-      <!-- Google+ -->
-      <div class="g-plus" data-action="share"></div>
-
-      <!-- Place this tag after the last share tag. -->
-      <script type="text/javascript">
-        (function() {
-          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-          po.src = 'https://apis.google.com/js/platform.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-      </script>
-
-
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}/blog/">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
-      </ul>
-    </div>
-    {% include JB/comments %}
   </div>
 </article>
