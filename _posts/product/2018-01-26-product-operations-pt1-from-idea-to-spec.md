@@ -4,7 +4,7 @@ title: "Product Operations Pt1: From Idea To Spec"
 description: "In this article, we will dive into the workflows from idea conception to technical spec. In Part 2 we will discuss how a tech-spec gets implemented into an actual, tangible product."
 category: product
 tags : [cto, cpo, product, spec]
-shortUrl: "http://than.pol.as/p6kC"
+shortUrl: "http://than.pol.as/p8Zm"
 image: "/assets/blogimg/product-design.jpg"
 ---
 
