@@ -10,7 +10,7 @@ image: "/assets/blogimg/product-design.jpg"
 
 {% include JB/setup %}
 
-Designing, implementing and enforcing a Product Workflow can be a challenging task for early-stage startups. The "Product Operations" topic is so large that I have to split it into two parts. In this article, we will dive into the workflows from idea to technical spec. In Part 2 we will discuss how a tech-spec gets implemented into an actual, tangible product.
+Designing, implementing and enforcing a Product Workflow can be a challenging task for early-stage startups. The "Product Operations" topic is so large that I have to split it into two parts. In this article, we will dive into the workflows from idea to technical spec. In [Part 2][blog.pm] we will discuss how a tech-spec gets implemented into an actual, tangible product.
 
 ![Product Design][img.product]
 
@@ -94,6 +94,7 @@ Again, when the tech-spec is ready, the CTO needs to inform the team and have a 
 
 Depending on your particular case, you might need an extra step with your designer. They will take the final wireframes and produce high-end graphics. However, if you have a strong style guide and a rich reusable-components repository, then the designer's time can be minimal or none at all.
 
-The next steps are for the CTO to take the tech-spec and chop it into tasks. But that will be the subject of the next part of this two-part series.
+The next steps are for the CTO to take the tech-spec and chop it into tasks. But that will be the subject of the [next part of this two-part series][blog.pm].
 
 [img.product]:  /assets/blogimg/product-design.jpg  "Product Design"
+[blog.pm]: /product/product-operations-pt2-product-management "Product Management"
