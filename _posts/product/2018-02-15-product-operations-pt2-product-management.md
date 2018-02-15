@@ -4,7 +4,7 @@ title: "Product Operations Pt2: Product Management"
 description: "In this, second part, of a 2 part series, blog post we will dive into how to manage our day to day product and engineering operations, is essence breaking down what Product Management is."
 category: product
 tags : [cto, cpo, product, spec]
-shortUrl: ""
+shortUrl: "http://than.pol.as/pYNl"
 image: "/assets/blogimg/planning.jpg"
 ---
 
