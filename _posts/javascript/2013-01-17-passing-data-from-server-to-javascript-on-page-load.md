@@ -136,6 +136,6 @@ Be responsible and informative, don't spread fear and excommunicate knowledge.
 
 
 
-[ready.post]: http://thanpol.as/javascript/you-dont-need-dom-ready/ "thanpolas blog :: You Don't Need the DOM Ready Event"
+[ready.post]: http://thanpol.as/javascript/you-dont-need-dom-ready "thanpolas blog :: You Don't Need the DOM Ready Event"
 [server2js]: https://github.com/thanpolas/server2js "thanpolas server2js library"
 
