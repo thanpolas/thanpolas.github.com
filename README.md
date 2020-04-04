@@ -8,7 +8,7 @@ Just commit and push to origin/master
 
 ## Development
 
-type `grunt`
+type `jekyll serve i`
 
 ### Stylesheets
 
