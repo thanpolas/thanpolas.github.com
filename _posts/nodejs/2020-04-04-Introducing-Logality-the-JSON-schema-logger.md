@@ -13,7 +13,7 @@ Having your application produce the right amount and quality of logs will help y
 
 Having the opportunity to work with multiple startups, I came into close contact with all of Node.js' major logging packages. Lately, I had the luck to work with startups that are highly security aware, businesses for whom security is an existential threat. When tasked with the challenge of creating secure applications for them, I knew without hesitation that I had to create a new library to meet all the new heightened requirements that were at play.
 
-Logality was created, a new logger for Node.js that focuses on security, versatility, extensibility and practicality. [Not](https://www.loomsystems.com/blog/single-post/2017/01/26/9-logging-best-practices-based-on-hands-on-experience), [a few](https://www.scalyr.com/blog/the-10-commandments-of-logging/), [articles](https://www.loggly.com/blog/30-best-practices-logging-scale/), [have been written](https://logz.io/blog/logging-best-practices/) on best practices for logging, in this article we go through how Logality addresses these best practices and allows your application to be more robust, secure and compliant with modern privacy and security requirements.
+And thus, [Logality][logality] was created, a new logger for Node.js that focuses on security, versatility, extensibility and practicality. Not a few articles have been written[¹](https://www.loomsystems.com/blog/single-post/2017/01/26/9-logging-best-practices-based-on-hands-on-experience)[²](https://www.scalyr.com/blog/the-10-commandments-of-logging/)[³](https://www.loggly.com/blog/30-best-practices-logging-scale/)[⁴](https://logz.io/blog/logging-best-practices/) on best practices for logging, in this article we go through how Logality addresses these best practices and allows your application to be more robust, secure and compliant with modern privacy and security requirements.
 
 ## A Common Logging Schema
 
@@ -106,6 +106,16 @@ These are very challenging problems, to the point where no practical solution ex
 
 This is huge as it enables your application to granularly control how much information is logged from the libraries you are using. And at the same time have your third-party libraries log in the exact same format-schema that your entire infrastructure is logging, isn't that great?
 
+Piping happens simply by providing the child Logality instance to the parent's `pipe()` method:
+
+```js
+const thirdPartyLibrary = require('thirdparty');
+
+/* ... */
+
+applicationLogality.pipe(thirdPartyLibrary.logality);
+```
+
 ## Custom Output and Pretty Print
 
 Finally, after all the processing the log message has gone through, you can control how the final serialization and output is handled. By default Logality will JSON serialize and output to stdout but you may have other plans.
@@ -118,9 +128,9 @@ Logality also offers a built-in pretty print functionality that, as the word sug
 
 ## Synchronous or Asynchronous?
 
-With a flick of a switch you can have Logality become asynchronous and reveal its Promise API. When in async mode, Logality's Middleware and Custom Output functions will be able to handle a promise and allow you to capture log messages en route and store them in a persistent store.
+With a flick of a switch you can have Logality become asynchronous and reveal its Promise API. When in async mode, Logality's Middleware and Custom Output functions will be able to handle a promise and allow you to capture log messages en-route.
 
-Should you, for any reason, want to store some, or all, of the log messages into your database, by enabling async mode on Logality you can easily and safely perform that task:
+Say you want to push all log messages to a queue, or for any reason, you want to store some, or all, of the log messages into your database. By enabling async mode on Logality you can easily and safely perform those tasks:
 
 ```js
 // Security middleware for logality, store the log message
@@ -141,13 +151,13 @@ await log.warn('Login Failed', {security: true});
 
 As you rightfully observed, when async mode is enabled Logality's logging is, well, async, and thus returns a promise that needs to be resolved. Therefore, that is why you see the `await` before the `log.warn()` invocation.
 
-Personally, my use case [at SROP][srop] for using async mode and secondary data stores was for audit log trails. When an audit log event occurred, say a user logged in, the log is flagged as "audit" and Logality, using a middleware, knows to store it in a database accessible by the application. That way the users of the application can review their audit trail while at the same time have the event logged at our logging infrastructure.
+Personally, my use case for using async mode and secondary data stores [at SROP][srop] was for auditing log trails. When an audit log event occurred, say a user logged in, the log is flagged as "audit" and Logality, using a middleware, knows to store it in a database accessible by the application. That way the users of the application can review their audit trail while at the same time have the event logged at our logging infrastructure.
 
 ## Conclusion, Putting it all Together
 
-Logality offers some very innovative and novel concepts in logging that when combined can produce very powerful outcomes. Unlocking the ability for open source authors to have their libraries produce logs without them have to care about how those messages will be consumed is but one of the novelties.
+Logality offers some novel concepts in logging that when combined can produce very powerful outcomes. Enabling open source authors to have logs on their libraries is one of them.
 
-Another one are the built-in and custom serializers, where Logality comes with a set of built-in serializers to give you a head-start. For example the Express serializer accepts an Express Request data object and provides a useful, minimal output:
+Another one are the built-in and custom serializers. Logality comes with a set of built-in serializers to give you a head-start. For example the Express serializer accepts an Express Request data object and provides a useful, minimal output:
 
 ```json
     "event":{
