@@ -11,7 +11,7 @@ image: "/assets/blogimg/planning.jpg"
 
 Having your application produce the right amount and quality of logs will help you debug faster, optimize better and stay more safe and secure. I was always fascinated with logging and tried to figure out the best ways to log and create telemetry for my applications.
 
-Having the opportunity to work with multiple startups, I came into close contact with all of Node.js' major logging packages. Lately, I had the luck to work with startups that are highly security aware, businesses for whom security is an existential threat. When tasked with the challenge of creating secure applications for them, I knew without hesitation that I had to create a new library to meet all the new heightened requirements that were at play.
+Having the opportunity to work with multiple startups, I came into close contact with all of Node.js' major logging packages. Lately, I had the luck to work with highly security aware businesses, for whom security is an existential threat. When tasked with the challenge of creating secure applications for them, I knew without hesitation that I had to create a new library to meet all the new requirements that were at play.
 
 And thus, [Logality][logality] was created, a new logger for Node.js that focuses on security, versatility, extensibility and practicality. Not a few articles have been written[¹](https://www.loomsystems.com/blog/single-post/2017/01/26/9-logging-best-practices-based-on-hands-on-experience)[²](https://www.scalyr.com/blog/the-10-commandments-of-logging/)[³](https://www.loggly.com/blog/30-best-practices-logging-scale/)[⁴](https://logz.io/blog/logging-best-practices/) on best practices for logging, in this article we go through how Logality addresses these best practices and allows your application to be more robust, secure and compliant with modern privacy and security requirements.
 
@@ -104,7 +104,7 @@ As an open source contributor, one of the biggest problems I have been challenge
 
 These are very challenging problems, to the point where no practical solution exists. Until today that is, as Logality introduces piping. You can pipe one Logality instance into another and have all the middleware functions handle the piped logality's log messages.
 
-This is huge as it enables your application to granularly control how much information is logged from the libraries you are using. And at the same time have your third-party libraries log in the exact same format-schema that your entire infrastructure is logging, isn't that great?
+This is huge as it enables your application to granularly control how much information is logged from the libraries you are using. And at the same time have your third-party libraries log in the exact same format-schema that your entire infrastructure is logging. Isn't that great?
 
 Piping happens simply by providing the child Logality instance to the parent's `pipe()` method:
 
