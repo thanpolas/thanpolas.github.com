@@ -18,6 +18,7 @@ Having the opportunity to work with multiple startups, I came into close contact
 These are the logging requirements that justified creating a new library for logging, I could find some of them in some packages, but not all of them in one package:
 
 * [**Complete Flexibility on Properties**](#a-common-logging-schema) In order for my organization to have a common logging schema, it is required of the logging library to allow the definition of properties from scratch. A lot of the packages make those decisions for you leaving you with no options to normalize the logging schema. The most common example for this is the date field, you can find it as `dt`, `date`, `timestamp` or any other variance, without any option to change the name.
+* [**Serializers of Data Objects**](#serializers-of-data-objects) As [Logality][logality] is primarily a JSON logger, dealing with data, it features data serializers for known-schema data structures. Just drop your user data object to logality and the built-in or your custom serializer will make sure to transform the object so only what you want will be logged.
 * [**Support Custom Outputs**](#custom-output-and-pretty-print) Default output should be JSON but the library should not limit you as to the kind of output you want, for instance print human readable logs while on development.
 * [**Logging Metadata**](#logging-metadata) Automatically log location of file that the log originated from and other useful system information (OS version, runtime info, etc).
 * [**Middleware Support**](#the-power-of-middleware) Supporting middleware is a very powerful way to transform and augment each one of your log messages. The options that this feature opens up are endless. Middleware also have the power of filtering so you can suppress dynamically certain log messages.
@@ -182,7 +183,7 @@ Another one are the built-in and custom serializers. Logality comes with a set o
     }
 ```
 
-The options are limitless, this is just the beginning. Please share with me your thoughts, ideas and implementations of Logality.
+The options are limitless, this is just the beginning. Please share with me your thoughts, ideas and implementations of [Logality][logality].
 
 
 [logality]: https://github.com/thanpolas/logality
