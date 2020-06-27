@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Logs are Important, Introducing Logality"
-description: ""
+description: "Introducing Logality, a Node.js logger with powerful features and capabilities."
 category: nodejs
 tags : [nodejs, node, logging, json]
 image: "/assets/blogimg/planning.jpg"
@@ -13,9 +13,11 @@ Having your application produce the right amount and quality of logs will help y
 
 Having the opportunity to work with multiple startups, I came into close contact with all of Node.js' major logging packages. Lately, I had the luck to work with highly security aware businesses, for whom security is an existential threat. When tasked with the challenge of creating secure applications for them, I knew without hesitation that I had to create a new library to meet all the new requirements that were at play.
 
+I want to introduce you to [Logality][logality], a versatile and powerful logger for Node.js.
+
 ## The Logging Requirements
 
-These are the logging requirements that justified creating a new library for logging, I could find some of them in some packages, but not all of them in one package:
+These are the logging requirements that were on the drawing board when Logality was first implemented. I could find some of them in some packages, but not all of them in one package:
 
 * [**Complete Flexibility on Properties**](#a-common-logging-schema) In order for my organization to have a common logging schema, it is required of the logging library to allow the definition of properties from scratch. A lot of the packages make those decisions for you leaving you with no options to normalize the logging schema. The most common example for this is the date field, you can find it as `dt`, `date`, `timestamp` or any other variance, without any option to change the name.
 * [**Serializers of Data Objects**](#serializers-of-data-objects) As [Logality][logality] is primarily a JSON logger, dealing with data, it features data serializers for known-schema data structures. Just drop your user data object to logality and the built-in or your custom serializer will make sure to transform the object so only what you want will be logged.
