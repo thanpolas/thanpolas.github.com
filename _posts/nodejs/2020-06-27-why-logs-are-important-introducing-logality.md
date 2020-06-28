@@ -20,10 +20,10 @@ I want to introduce you to [Logality][logality], a versatile and powerful logger
 These are the logging requirements that were on the drawing board when Logality was first implemented. I could find some of them in some packages, but not all of them in one package:
 
 * [**Complete Flexibility on Properties**](#a-common-logging-schema). In order for my organization to have a common logging schema, it is required of the logging library to allow the definition of properties from scratch. A lot of the packages make those decisions for you leaving you with no options to normalize the logging schema. The most common example for this is the date field, you can find it as `dt`, `date`, `timestamp` or any other variance, without any option to change the name.
-* [**Serializers of Data Objects**](#serializers-of-data-objects). As [Logality][logality] is primarily a JSON logger, dealing with data, it features data serializers for known-schema data structures. Just drop your user data object to logality and the built-in or your custom serializer will make sure to transform the object so only what you want will be logged.
-* [**Support Custom Outputs**](#custom-output-and-pretty-print). Logality's Default output is JSON but the library should not limit you as to the kind of output you want, for instance print human readable logs while on development.
-* [**Logging Metadata**](#logging-metadata). Automatically log location of file that the log originated from and other useful system information (OS version, runtime info, etc).
-* [**Middleware Support**](#the-power-of-middleware). Supporting middleware is a very powerful way to transform and augment each one of your log messages. The options that this feature opens up are endless. Middleware also have the power of filtering so you can suppress dynamically certain log messages.
+* [**Serializers of Data Objects**](#serializers-of-data-objects). As [Logality][logality] is primarily a JSON logger, dealing with data is the most common operation. Being able to serialize known data structures is key in this case. Just drop your user data object to logality and the built-in or your custom serializer will make sure to transform the object so only what you want will be logged.
+* [**Support Custom Outputs**](#custom-output-and-pretty-print). Logality's Default output is JSON but the library should not limit you as to the kind of output you want, for instance print human readable logs while on development. Custom outputs also allow you to filter log messages so you can suppress dynamically certain types or log levels of messages.
+* [**Logging Metadata**](#logging-metadata). Have the logger automatically log the location of the file that the log originated from. As well as other useful system information (OS version, runtime info, etc).
+* [**Middleware Support**](#the-power-of-middleware). Supporting middleware is a very powerful way to transform and augment each one of your log messages. The options that this feature opens up are endless.
 * [**Logging for Libraries**](#linking-multiple-logality-instances). All open source contributors must have faced this challenge at least once: How do I output logs from my library? This is no easy task, Logality provides an eloquent and powerful solution to this problem.
 
 With these requirements in place, [Logality][logality] was created on May 18, 2018. Ever since then the library has been iteratively improving and bug fixed. Today, the current Version is 3.0.0, which was released on April of 2020. In the following sections, we will go through a more detailed analysis of the features and powerful capabilities of Logality.
@@ -34,9 +34,9 @@ The more standardized your log messages are, the easier it will be to query, par
 
 Logality is a JSON logger that provides an initial recommendation of a logging schema but allows you to define your own schemas down to the last property.
 
-This is a very important feature. As when you are trying to have a common logging schema across multiple operating systems, platforms and programming languages it is essential that your tooling allows you to be flexible and versatile.
+This is a very important feature. When you are trying to have a common logging schema across multiple operating systems, platforms and programming languages, it is essential that your tooling allows you to be flexible and versatile.
 
-Schema mutation in Logality happens through Middleware and Serializers, both of which we touch on below.
+Schema mutation in Logality happens through [Middleware](#the-power-of-middleware) and [Serializers](#serializers-of-data-objects), both of which we touch on below.
 
 ## Logging Metadata
 
@@ -47,7 +47,7 @@ Logality will take care of all your metadata needs so you won't need to log any 
 * The process id.
 * The process name.
 
-A simple `log.info('hello world')` log will produce the following log message:
+A simple `log.info('hello world')` log will produce the following log message (expanded):
 
 ```json
 {
@@ -71,6 +71,8 @@ A simple `log.info('hello world')` log will produce the following log message:
     }
 }
 ```
+
+With the use of [Middleware](#the-power-of-middleware) you can create and attach your own metadata on each one of your log messages.
 
 ## Serializers of Data Objects
 
@@ -106,6 +108,10 @@ logality.use((context) => {
 });
 ```
 
+With Middleware, you can create powerful data flows, augmenting log messages as they come in with rich metadata information collected from the environment and runtime.
+
+You can also have conditional transformations of the data that pass through logality for absolute control over the data flows and your compliance requirements.
+
 ## Linking Multiple Logality Instances
 
 As an open source contributor, one of the biggest problems I have been challenged with is how to log on open source libraries. If you want to have logging on your library you are challenged with quite a few problems:
@@ -115,7 +121,7 @@ As an open source contributor, one of the biggest problems I have been challenge
 * How do you format the logs according to your downstream application's standards?
 * Should you log to stdout, an event or a function?
 
-These are very challenging problems, to the point where no practical solution exists. Until today that is, as Logality introduces piping. You can pipe one Logality instance into another and have all the middleware functions handle the piped logality's log messages.
+These are very challenging problems, to the point where no practical solution exists. Until today that is, as Logality introduces piping. You can pipe one Logality instance into another and have all the middleware functions handle the piped logality's log messages. When Logality is piped, the log messages get passed as pure data objects so that the downstream consuming function can properly parse and manipulate them.
 
 This is huge as it enables your application to granularly control how much information is logged from the libraries you are using. And at the same time have your third-party libraries log in the exact same format-schema that your entire infrastructure is logging. Isn't that great?
 
@@ -132,6 +138,8 @@ applicationLogality.pipe(thirdPartyLibrary.logality);
 ## Custom Output and Pretty Print
 
 Finally, after all the processing the log message has gone through, you can control how the final serialization and output is handled. By default Logality will JSON serialize and output to stdout but you may have other plans.
+
+This operation also enables you to filter certain log messages based on your custom criteria. This is particularly useful when managing multiple log streams from various upstreams (third-party libraries) that are piping their logs to your main application Logality logger.
 
 Logality also offers a built-in pretty print functionality that, as the word suggests, will print the log messages in a human readable format, with nice colors, emojis and all. This is particularly useful when you are developing the application and don't want to see JSON serialized log messages.
 
