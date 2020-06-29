@@ -15,6 +15,8 @@ Having the opportunity to work with multiple startups, I came into close contact
 
 I want to introduce you to [Logality][logality], a versatile and powerful logger for Node.js.
 
+![Logging Flow](/assets/blogimg/planning.jpg)
+
 ## The Logging Requirements
 
 These are the logging requirements that were on the drawing board when Logality was first implemented. I could find some of them in some packages, but not all of them in one package:
