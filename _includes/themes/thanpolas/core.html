@@ -38,16 +38,16 @@
     <meta name="twitter:site" content="@thanpolas">
 
     <meta name="twitter:title" content="{{ page.title }}">
-    {% if page.image %}<meta name="twitter:image" content="{{ page.image }}">{% endif %}
+    {% if page.image %}<meta name="twitter:image" content="https://thanpol.as{{ page.image }}">{% endif %}
     {% if page.description %}<meta name="twitter:description" content="{{ page.description }}">{% endif %}
 
     <!-- Open Graph data -->
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:site_name" content="thanpol.as">
-    <meta property="og:url" content="http://thanpol.as{{ page.url }}">
+    <meta property="og:url" content="https://thanpol.as{{ page.url }}">
 
     {% if page.description %}<meta property="og:description" content="{{ page.description }}">{% endif %}
-    {% if page.image %}<meta property="og:image" content="{{ page.image }}">{% endif %}
+    {% if page.image %}<meta property="og:image" content="https://thanpol.as{{ page.image }}">{% endif %}
     <meta property="og:type" content="website">
 
   </head>
