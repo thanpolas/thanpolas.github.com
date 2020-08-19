@@ -15,11 +15,11 @@ highlighter: "rouge"
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : "Thanasis Polychronakis | Software Engineer, CTO, Founder"
+title : "Thanos Polychronakis | Software Engineer, CTO, Founder"
 jobDescription: Software Engineer, CTO, Founder
 tagline: web development as it happens
 author :
-  name : Thanasis Polychronakis
+  name : Thanos Polychronakis
   email : thanpolas@gmail.com
   github : thanpolas
   twitter : thanpolas

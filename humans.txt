@@ -3,7 +3,7 @@
 
 # Author
 
-   Author: Thanasis Polychronakis
+   Author: Thanos Polychronakis
    Contact: thanpolas@gmail.com
    Twitter: @thanpolas
 

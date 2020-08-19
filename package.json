@@ -1,11 +1,11 @@
 {
   "private": true,
   "name": "thanpol.as",
-  "description": "Blog of Thanasis Polychronakis",
+  "description": "Blog of Thanos Polychronakis",
   "version": "2.0.0",
   "homepage": "https://github.com/thanpolas/thanpolas.github.com",
   "author": {
-    "name": "Thanasis Polychronakis",
+    "name": "Thanos Polychronakis",
     "email": "thanpolas@gmail.com",
     "url": "http://thanpol.as"
   },

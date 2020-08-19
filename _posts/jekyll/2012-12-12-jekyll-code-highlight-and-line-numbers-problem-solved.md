@@ -141,7 +141,7 @@ After loosing so much time with this, I am left wondering at which point I took 
 [jekyll.plugin]: https://github.com/mojombo/jekyll/wiki/Plugins "Jekyll plugins"
 [jekyll.syntaxhighlight]: https://github.com/mojombo/jekyll/blob/master/lib/jekyll/tags/highlight.rb "Jekyll syntaxhighlight.rb file"
 [jekyll.md.rb]: https://github.com/mojombo/jekyll/blob/master/lib/jekyll/converters/markdown.rb#L6 "Jekyll markdown.rb"
-[thanpol.as]: http://thanpol.as/ "Thanasis Polychronakis website"
+[thanpol.as]: http://thanpol.as/ "Thanos Polychronakis website"
 [dom.ready]: http://api.jquery.com/ready/ "jQuery Document Ready event"
 [dabblet.table]: http://dabblet.com/gist/4258350 "Dabblet :: A non-wrapping pre inside a table cell"
 [albino]: https://github.com/github/albino "github :: albino, a ruby wrapper for pygmentize"
