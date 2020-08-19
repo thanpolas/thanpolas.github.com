@@ -8,7 +8,7 @@ tags : [startups, innovation]
 ---
 {% include JB/setup %}
 
-Hello, I am Thanasis and in my lifetime I have founded and dissolved many startups. Today I am on my fifth venture, working on a SaaS business for the past two years, a niche service that offers client-side network diagnostics [netscan.co](https://www.netscan.co).
+Hello, I am Thanos and in my lifetime I have founded and dissolved many startups. Today I am on my fifth venture, working on a SaaS business for the past two years, a niche service that offers client-side network diagnostics [netscan.co](https://www.netscan.co).
 
 ## Startup Marketing and Exposure
 
