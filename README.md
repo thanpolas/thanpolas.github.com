@@ -6,6 +6,12 @@ Access it at [http://thanpol.as](http://thanpol.as).
 
 Just commit and push to origin/master
 
+## Installing
+
+* Install Ruby and jekyll.
+* You might need to install webrick: `gem install webrick`.
+
+
 ## Development
 
 type `jekyll serve i`
