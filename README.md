@@ -26,4 +26,4 @@ assets/themes/thanpolas/less/
 
 ## License
 
-Copyright ©2016 Thanos Polychronakis and contributors. Code licensed under the MIT license, content licenced under CC0.
+Copyright Thanos Polychronakis and contributors. Code licensed under the MIT license, content licenced under CC0.
