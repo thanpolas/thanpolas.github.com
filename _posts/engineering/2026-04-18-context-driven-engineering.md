@@ -3,7 +3,10 @@ layout: post
 title: "Context-Driven Engineering: A Paradigm Shift for Teams Building with LLMs"
 description: "What happens when you give a powerful code generator unbounded access to a codebase with no explicit context. And how to fix it."
 category: engineering
+image: "/assets/blogimg/cde-head.png"
 ---
+
+![Context-Driven Engineering](/assets/blogimg/cde-head.png)
 
 ## The problem nobody is talking about
 
@@ -74,6 +77,8 @@ Context-Driven Engineering changes how work gets done. Every non-trivial change 
 Without a spec, behavior changes are invisible to everything downstream. Without a plan, the LLM drifts from intent. Without context, both the spec and the plan are built on assumptions.
 
 ## What changes in practice
+
+![The constrained LLM operating inside explicit boundaries](/assets/blogimg/cde-Constrained-LLM.png)
 
 The LLM is no longer autonomous. It operates inside the system you built, constrained by the context you wrote.
 
