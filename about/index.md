@@ -1,13 +1,19 @@
 ---
 layout: about
 title: "About me"
-description: "Me, about me, me pretty"
+description: "Senior Backend Engineer specializing in systems, reliability, and platform engineering."
 ---
 {% include JB/setup %}
 
-![Thanos Polychronakis](/assets/img/thanpolas-about.jpg) Hi! My name is Thanos Polychronakis, I have been working with startups and Internet based companies for over 20 years. As a CTO in many of them I have created engineering procedures and workflows to speed up and ensure the quality of the product produced. I've grown teams through my network and by [running robust hiring campaigns](http://thanpol.as/hiring/hiring-senior-engineers). I just love the startup game!
+![Thanos Polychronakis](/assets/img/thanpolas-about.jpg)
 
-Through my course I have contributed to a lot of open source projects that are the pylars of our industry and have created quite a few myself. I organized the [local Node.JS meetup](https://www.meetup.com/Thessaloniki-Node-js-Meetup/) back in my hometown and founded [skgtech.io](http://skgtech.io), a team that helped ignite the local tech meetup scene back in 2014. As a result of my community involvement I started and organized the [DEVit Conference](http://devitconf.org) for three years, up until I had to move to London and pass on the leadership to the community.![coding weapons](/assets/img/coding-weapons.png)
+I'm Thanos Polychronakis, a Senior Backend Engineer based in Thessaloniki, Greece.
 
-Today I am a happy camper in London, always looking to meet exciting people and new opportunities, please don't hesitate to get in touch!
+I've spent 20+ years building and stabilizing backend systems across startups and scale-ups. My focus is system reliability, execution models, and making broken platforms predictable and production-ready.
+
+Most recently I stabilized a non-deterministic Temporal-based workflow platform, driving an architecture reboot focused on determinism, explicit contracts, and testability.
+
+I've led engineering teams, delivered full-stack platforms, and taken ambiguous systems and made them shippable. I work best in environments with real technical problems to solve.
+
+Currently open to Senior Backend / Platform Engineer roles. Get in touch: thanpolas@gmail.com
 

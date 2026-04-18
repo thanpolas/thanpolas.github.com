@@ -3,17 +3,30 @@ layout: page
 title: "Projects / Work"
 
 projects:
-  - title: 'CIP'
-    name: 'CIP'
-    url: 'https://github.com/thanpolas/cip'
+  - title: 'Logality'
+    name: 'Logality'
+    url: 'https://github.com/thanpolas/logality'
     techs: [Node.js]
-    descr: CIP is Classical Inheritance at its best. It provides an easy to work with API for performing classical inheritance in Javascript. It features a powerfull and flexible <code>extend()</code> method that allows custom constructors and <a href="https://github.com/thanpolas/cip/#argument-stubbing-with-extend" title="CIP Argument Stubbing">argument stubbing</a> which enables to pass stubbed arguments to the parent constructor. CIP is a foundational building block.
+    descr: Production-grade structured logging library for Node.js. Middleware pipelines, custom serializers, async-safe. Used in production systems. 120+ GitHub stars.
 
   - title: 'Middlewarify'
     name: 'Middlewarify'
     url: 'https://github.com/thanpolas/middlewarify'
     techs: [Node.js, Promises/A+]
     descr: Middlewarify will apply the middleware pattern to your Objects. It will enable you to attach middleware using the typical <code>use()</code> method or use <code>before() / after()</code> hooks. Middlewarify uses the Promises/A+ spec for resolution and handling asynchronicity.
+
+  - title: 'Kickq'
+    name: 'Kickq'
+    url: 'https://github.com/verbling/kickq'
+    techs: [Node.js, redis]
+    descr: 'is a Job Queuing system for Node.js built on top of <a href="http://redis.io" title="Redis database">Redis</a>. It features reliable and fast handling of Jobs, delayed execution and an option for the Job Creator to get notified on the spot if the Job completes.'
+
+archived:
+  - title: 'CIP'
+    name: 'CIP'
+    url: 'https://github.com/thanpolas/cip'
+    techs: [Node.js]
+    descr: CIP is Classical Inheritance at its best. It provides an easy to work with API for performing classical inheritance in Javascript. It features a powerfull and flexible <code>extend()</code> method that allows custom constructors and <a href="https://github.com/thanpolas/cip/#argument-stubbing-with-extend" title="CIP Argument Stubbing">argument stubbing</a> which enables to pass stubbed arguments to the parent constructor. CIP is a foundational building block.
 
   - title: 'Kansas'
     name: 'Kansas'
@@ -38,12 +51,6 @@ projects:
     url: 'https://github.com/thanpolas/entity'
     techs: [Node.js]
     descr: Entity is a new application design concept, it abstracts the storage layer from the business logic and manages all the resources needed to perform operations.
-
-  - title: 'Kickq'
-    name: 'Kickq'
-    url: 'https://github.com/verbling/kickq'
-    techs: [Node.js, redis]
-    descr: 'is a Job Queuing system for Node.js built on top of <a href="http://redis.io" title="Redis database">Redis</a>. It features reliable and fast handling of Jobs, delayed execution and an option for the Job Creator to get notified on the spot if the Job completes.'
 
   - title: 'Assetflow'
     name: 'Assetflow'
@@ -136,20 +143,43 @@ projects:
 {% include JB/setup %}
 <div class="row">
 {% for project in page.projects %}
-  {% capture rowIter %}{% cycle 1, 2, 3 %}{% endcapture %}
+  {% capture rowIter %}{% cycle 'current': 1, 2, 3 %}{% endcapture %}
   <div class="col-md-4 project-unit">
-    <h3><a href="{{project.url}}">{{project.title}}</a></h3>
+    <h3>{% if project.url %}<a href="{{project.url}}">{{project.title}}</a>{% else %}{{project.title}}{% endif %}</h3>
     <ul class="code-pills">
       {% for tech in project.techs %}
         <li class="{{tech | downcase | replace: ' ', '-' | replace: '.', '-'}}">{{tech}}</li>
       {% endfor %}
     </ul>
-    <p><a href="{{project.url}}">{{project.name}}</a>{{project.descr}}</p>
+    <p>{% if project.url %}<a href="{{project.url}}">{{project.name}}</a> {% else %}<strong>{{project.name}}</strong> {% endif %}{{project.descr}}</p>
   </div>
-  {% if '3' == rowIter %}
+  {% if '3' == rowIter and forloop.last == false %}
 </div>
 <div class="row">
   {% endif %}
 
 {% endfor %}
 </div>
+
+<details class="archived-projects">
+  <summary><h2 style="display:inline-block;margin:0">Older Work</h2></summary>
+  <div class="row">
+  {% for project in page.archived %}
+    {% capture rowIter %}{% cycle 'archived': 1, 2, 3 %}{% endcapture %}
+    <div class="col-md-4 project-unit">
+      <h3><a href="{{project.url}}">{{project.title}}</a></h3>
+      <ul class="code-pills">
+        {% for tech in project.techs %}
+          <li class="{{tech | downcase | replace: ' ', '-' | replace: '.', '-'}}">{{tech}}</li>
+        {% endfor %}
+      </ul>
+      <p><a href="{{project.url}}">{{project.name}}</a>{{project.descr}}</p>
+    </div>
+    {% if '3' == rowIter %}
+  </div>
+  <div class="row">
+    {% endif %}
+
+  {% endfor %}
+  </div>
+</details>
