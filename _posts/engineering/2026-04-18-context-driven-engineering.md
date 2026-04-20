@@ -32,6 +32,14 @@ The result is what we call implicit architecture, behavior that emerges from ass
 
 Implicit architecture is the root cause of most production instability in LLM-assisted teams. Not the LLM itself. The absence of constraints around it.
 
+## What the data shows
+
+The data is now in. A February 2026 [ETH Zurich / LogicStar.ai study][r-eth-agents-md] evaluated AGENTS.md across 138 real-world GitHub tasks with four major coding agents: human-written context files improved task resolution rates by around 4%, while LLM-generated context files reduced performance by 3% and increased inference cost by more than 20%. Context matters, but only when humans write it.
+
+The [Opsera AI Coding Impact Benchmark Report][r-opsera-2026] from February 2026, covering over 250,000 developers across 60-plus enterprise organizations, found that AI-generated pull requests wait 4.6 times longer in review without governance frameworks, and AI-generated code introduces 15 to 18% more security vulnerabilities as autonomy expands. [Faros AI research][r-faros-paradox] from July 2025 reported PR volume up 98% on high-adoption teams with review time up 91%. Teams write more code faster and spend significantly more time validating it. Stanford and SambaNova's October 2025 [Agentic Context Engineering paper][r-ace-paper] showed that structured incremental context updates reduce drift and latency by up to 86% compared to unmanaged approaches.
+
+The industry now has numbers for what Context-Driven Engineering has been arguing. The unbounded LLM problem is not a hypothesis. It is measured.
+
 ## What LLMs actually amplify
 
 Here is the insight that changes how you think about this:
@@ -43,6 +51,22 @@ A senior engineer joining a codebase without context makes mistakes slowly. They
 An LLM without context makes mistakes at generation speed. It does not hesitate. It does not ask. It produces confident, plausible, wrong code.
 
 The problem scales with your codebase complexity and your LLM usage. The more you use LLMs, and the more complex your system, the more damage implicit architecture causes.
+
+## Why this is not just "context engineering"
+
+In 2025 the industry converged on a term. Andrej Karpathy framed it. Tobi Lütke echoed it. [Anthropic's September 2025 engineering post][r-anthropic-context] formalized it. [Thoughtworks' Technology Radar][r-thoughtworks-radar] declared 2025 the year of the shift. [MIT Technology Review][r-mit-tech-review] covered it in November. The term is "context engineering", and it is a real advance over the vibe coding that preceded it.
+
+The open standard is already emerging. [AGENTS.md][r-agents-md] was donated to the Linux Foundation's Agentic AI Foundation in December 2025, with support from OpenAI, Anthropic, and Sourcegraph. A single rules file at the root of the repository. Configuration for the agent.
+
+That is useful. It is also not the same thing.
+
+> **Context Engineering** is about giving the AI better inputs, curated context files, RAG systems, prompt structuring, retrieval. The goal is AI output quality.
+>
+> **Context-Driven Engineering** is broader. It treats context as the organizing principle of the codebase itself, not as configuration for an agent. The AI is one consumer of the context. The humans on the team are the primary consumers. The discipline covers how work gets done, not just how prompts get constructed.
+
+AGENTS.md is a configuration file. CDE is an engineering discipline. One tells the agent how to behave. The other defines how the team organizes its knowledge and how work flows through that knowledge.
+
+CDE is a superset. Adopt it and you get everything context engineering promises, better inputs, cleaner retrieval, fewer hallucinated assumptions. You also get a shared mental model across the team, coordination that survives handoffs, and enforcement discipline that a root-level rules file cannot provide.
 
 ## Context-Driven Engineering
 
@@ -96,6 +120,7 @@ You do not need to rewrite everything. Start small:
 2. Write a README for it: what it does, what it does not, its contracts, its known failure modes
 3. Before the next change to that component, read the README first
 4. After the change, update the README if reality has shifted
+5. If you are already using AGENTS.md or CLAUDE.md, keep it, CDE complements it. Treat those files as one artifact of the larger discipline, not as the endpoint.
 
 Do this consistently. Expand outward. Within weeks you will have a codebase where the LLM's scope is always defined, its assumptions are always constrained, and its output is always reviewable against an explicit standard.
 
@@ -105,6 +130,17 @@ The teams that will build reliable systems with LLMs are not the ones that use L
 
 Context-Driven Engineering is not a framework. It is a discipline. The premise is simple: a system that cannot be explained cannot be maintained, and a system without explicit context will be degraded by every LLM that touches it.
 
+The industry is converging on context engineering. That is good, it means the problem is finally being named. But naming the problem is not solving it. Adopting a rules file is not the same as building a discipline. The teams that will lead the next phase of AI-assisted development are the ones that make context the organizing principle of how they work, not a side-artifact for the agent to consume.
+
 Write the context. Keep it next to the code. Treat it as architecture.
 
 The LLM will do the rest, correctly this time.
+
+[r-eth-agents-md]: https://arxiv.org/abs/2602.11988
+[r-opsera-2026]: https://opsera.ai/resources/report/ai-coding-impact-2026-benchmark-report/
+[r-faros-paradox]: https://www.faros.ai/blog/ai-software-engineering
+[r-ace-paper]: https://arxiv.org/abs/2510.04618
+[r-mit-tech-review]: https://www.technologyreview.com/2025/11/05/1127477/from-vibe-coding-to-context-engineering-2025-in-software-development/
+[r-anthropic-context]: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+[r-thoughtworks-radar]: https://www.thoughtworks.com/radar
+[r-agents-md]: https://agents.md/
